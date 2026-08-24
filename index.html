@@ -625,8 +625,38 @@ tbody tr:hover td{background:var(--row-hover)}
 .trend-tooltip .tt-row{display:flex;align-items:center;gap:6px;margin-bottom:3px;font-size:.66rem;color:var(--muted)}
 .trend-tooltip .tt-sw{display:inline-block;width:10px;height:10px;border-radius:2px;flex-shrink:0}
 .trend-tooltip .tt-foot{margin-top:6px;color:var(--dim);font-size:.6rem}
+/* ── Help dots and popover ───────────────────────────────────────────────── */
+.hdot{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:15px;height:15px;border-radius:50%;flex-shrink:0;padding:0;
+  background:none;border:1.5px solid var(--border);color:var(--dim);
+  font-family:'Nunito',sans-serif;font-size:.55rem;font-weight:900;line-height:1;
+  cursor:help;transition:all .14s;vertical-align:middle;margin-left:5px
+}
+.hdot:hover,.hdot:focus{border-color:var(--gold);color:var(--gold);outline:none}
+#help-pop{
+  position:fixed;z-index:1200;display:none;pointer-events:none;width:270px;
+  background:var(--bg2);border:2px solid var(--border);border-radius:var(--radius-sm);
+  box-shadow:var(--shadow);padding:9px 13px;font-family:'Nunito',sans-serif
+}
+#help-pop.show{display:block}
+#help-pop .hp-t{font-size:.68rem;font-weight:800;color:var(--text);margin-bottom:4px}
+#help-pop .hp-b{font-size:.66rem;font-weight:600;color:var(--muted);line-height:1.7}
+/* section heading paired with a help dot */
+.sec-head{display:flex;align-items:center;gap:6px;margin-bottom:9px}
+.sec-head .sec-label{margin-bottom:0;flex:1;min-width:0}
+/* general one-line note under a control */
+.hint{font-size:.64rem;color:var(--muted);line-height:1.75;font-weight:600;margin-top:6px}
+.hint b{color:var(--text);font-weight:800}
+/* column header strip for the party editor */
+.pm-head{
+  display:flex;align-items:center;gap:9px;padding:6px 18px 7px;
+  border-bottom:1px solid var(--border2);
+  font-size:.55rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)
+}
+.pm-lr-word{font-size:.55rem;font-weight:800;color:var(--dim);width:74px;flex-shrink:0;line-height:1.2}
 /* ===========================================================================
-   THEME  ·  light "marble" (default) and dark "graphite"
+   THEME  ·  "marble" (default, :root) and "graphite" (html.dark)
    Colours and skin only — layout lives in the base rules above.
    =========================================================================== */
 :root{
@@ -650,7 +680,7 @@ tbody tr:hover td{background:var(--row-hover)}
   --panel-edge:rgba(124,40,168,.13);
   --bloom:rgba(124,40,168,.035);--grid:rgba(124,40,168,.03);--scan:#5d1c80;--scan-op:.01;
 }
-html.light{
+html.dark{
   --bg:#1b1b20;--bg2:#26262c;--surface:#2f2f37;
   --border:#3d3d47;--border2:#313139;
   --text:#f1eff5;--muted:#d6d5df;--dim:#b4b3bf;
@@ -779,29 +809,41 @@ input[type=range]{accent-color:var(--gold)}
 <aside class="sidebar">
   <div id="mode-toggle-wrap">
     <div class="mode-toggle">
-      <button class="mode-tab active" id="mode-exact" onclick="setVoteMode('exact')">Exact %</button>
-      <button class="mode-tab"        id="mode-poll"  onclick="setVoteMode('polling')">Polling ±</button>
+      <button class="mode-tab active" id="mode-exact" onclick="setVoteMode('exact')"
+        data-help="Exact %" data-help-text="The sliders are treated as the actual election result. Use this when you already know, or have decided, what the vote was.">Exact %</button>
+      <button class="mode-tab"        id="mode-poll"  onclick="setVoteMode('polling')"
+        data-help="Polling ±" data-help-text="The sliders are treated as opinion polls, and each run produces a real result somewhere near them, within the deviation you set below. Use this to see how many different outcomes the same polls could produce.">Polling ±</button>
     </div>
-    <div id="mode-hint-exact" style="font-size:.64rem;color:var(--muted);line-height:1.7;margin-bottom:10px;font-weight:600">
-      Vote shares used directly (normalised to 100%).
+    <div id="mode-hint-exact" class="hint" style="margin-bottom:10px">
+Vote shares are used exactly as set, normalised to 100%.
     </div>
-    <div id="mode-hint-poll" style="font-size:.64rem;color:var(--muted);line-height:1.7;margin-bottom:6px;font-weight:600;display:none">
-      Sliders are polling baselines. Each run samples within ± max deviation. Actual shown below after running.
+    <div id="mode-hint-poll" class="hint" style="margin-bottom:6px;display:none">
+Sliders are polling baselines, not results. Each run draws an actual result within the deviation set below, so the same settings give a different outcome every time. The actual is shown in the results table.
     </div>
     <div id="poll-dev-wrap" style="display:none">
-      <div class="sec-label" style="margin-top:4px">Max Polling Deviation</div>
+      <div class="sec-head" style="margin-top:4px">
+        <div class="sec-label">Max Polling Deviation</div>
+        <button type="button" class="hdot" tabindex="0" aria-label="Max polling deviation"
+          data-help="Max polling deviation"
+          data-help-text="The widest gap allowed between a party's polling baseline and its actual result. At 5%, a party polling 30% finishes somewhere between 25% and 35%. Low values model accurate polling, high values a volatile electorate.">?</button>
+      </div>
       <div class="var-wrap">
         <input type="range" id="poll-dev-sl" min="0" max="25" value="5" step="0.5"
                oninput="POLL_GLOBAL_DEV=parseFloat(this.value);document.getElementById('poll-dev-val').textContent=this.value+'%'">
         <span class="var-val" id="poll-dev-val">5%</span>
       </div>
-      <div style="font-size:.64rem;color:var(--muted);margin-top:5px;line-height:1.8;font-weight:600">
-        Maximum ± deviation from poll baselines.
+      <div class="hint" style="margin-top:5px">
+        Furthest a party's result can land from its poll. 0 = polls are exact · 25 = wildly unpredictable night.
       </div>
       <hr class="sep" style="margin:10px 0">
     </div>
   </div>
-  <div class="sec-label">National Vote Shares</div>
+  <div class="sec-head">
+    <div class="sec-label">National Vote Shares</div>
+    <button type="button" class="hdot" tabindex="0" aria-label="National vote shares"
+      data-help="National vote shares"
+      data-help-text="Each party's share of the vote nationwide. Individual districts swing around these figures by the District Variance amount rather than copying them exactly.">?</button>
+  </div>
   <div id="trends-row" style="display:none;align-items:center;gap:6px;margin-bottom:10px;position:relative">
     <label class="trend-toggle-row" style="margin-bottom:0" title="Enable per-party momentum trends">
       <input type="checkbox" id="trends-cb" onchange="setTrendsEnabled(this.checked)">
@@ -825,32 +867,48 @@ input[type=range]{accent-color:var(--gold)}
     <span id="total-display">Total: <b class="tb-num">100.0%</b></span>
   </div>
   <div style="display:flex;gap:6px;margin-top:12px">
-    <button class="run-btn" id="run-btn" style="flex:3" onclick="runElection(1)">▶  Run</button>
-    <input  type="number" id="runs-n" value="10" min="2" max="200" title="Number of runs for multi-run"
+    <button class="run-btn" id="run-btn" style="flex:3" onclick="runElection(1)"
+      data-help="Run once" data-help-text="Runs a single election with the current settings and reports the seats won.">▶  Run</button>
+    <input  type="number" id="runs-n" value="10" min="2" max="200"
+      data-help="Number of runs" data-help-text="How many elections Run N× simulates, from 2 to 200."
       style="width:50px;background:var(--surface);border:2px solid var(--border);color:var(--text);
              font-family:'Nunito',sans-serif;font-size:.72rem;text-align:center;padding:0 4px;
              outline:none;-moz-appearance:textfield">
-    <button class="run-btn" id="runm-btn" style="flex:3" onclick="runMulti()">Run N×</button>
+    <button class="run-btn" id="runm-btn" style="flex:3" onclick="runMulti()"
+      data-help="Run N times" data-help-text="Runs the election repeatedly and reports the mean outcome plus each party's seat range and median. This is how you tell a typical result from a fluke.">Run N×</button>
   </div>
-  <button class="cfg-btn" onclick="openModal()">⚙  Configure Districts</button>
-  <button class="cfg-btn" onclick="openPartyModal()" style="margin-top:5px">⚙  Configure Parties</button>
-  <button class="cfg-btn" onclick="openTransferModal()" style="margin-top:5px">⚙  Vote Transfers (STV)</button>
+  <button class="cfg-btn" onclick="openModal()"
+    data-help="Configure districts" data-help-text="Set up the constituencies: how many there are, how many deputies each elects, which region it belongs to and which parties stand there.">⚙  Configure Districts</button>
+  <button class="cfg-btn" onclick="openPartyModal()" style="margin-top:5px"
+    data-help="Configure parties" data-help-text="Add, remove or rename parties, and set each one's colour, starting vote share and left-right position.">⚙  Configure Parties</button>
+  <button class="cfg-btn" onclick="openTransferModal()" style="margin-top:5px"
+    data-help="Vote transfers (STV)" data-help-text="Under STV voters rank candidates rather than picking one. When a party clears the quota with votes to spare, or is eliminated, those ballots pass to whoever the voters ranked next. This sets which parties they pass to.">⚙  Vote Transfers (STV)</button>
 
   <hr class="sep">
 
-  <div class="sec-label">District Variance</div>
+  <div class="sec-head">
+    <div class="sec-label">District Variance</div>
+    <button type="button" class="hdot" tabindex="0" aria-label="District variance"
+      data-help="District variance"
+      data-help-text="How far a single district's vote may swing from the national share, since parties are stronger in some places than others. At 0 every district votes identically to the country; at 75 local results can bear little relation to the national picture.">?</button>
+  </div>
   <div class="var-wrap">
     <input type="range" id="var-sl" min="0" max="75" value="8"
            oninput="document.getElementById('var-display').textContent=this.value+'%'">
     <span class="var-val" id="var-display">8%</span>
   </div>
-  <div style="font-size:.64rem;color:var(--muted);margin-top:6px;line-height:1.8;font-weight:600">
-    Per-district swing around national share.<br>0 = pure national · 75 = high volatility
+  <div class="hint">
+Per-district swing around the national share.<br>0 = every district mirrors the country · 75 = strongholds and wipeouts
   </div>
 
   <hr class="sep">
 
-  <div class="sec-label">Simulation Seed</div>
+  <div class="sec-head">
+    <div class="sec-label">Simulation Seed</div>
+    <button type="button" class="hdot" tabindex="0" aria-label="Simulation seed"
+      data-help="Simulation seed"
+      data-help-text="Locks the random number generator to a fixed value, so Run reproduces exactly the same election. Useful for sharing a result, or for isolating the effect of changing one other setting. Leave blank for a fresh draw each run.">?</button>
+  </div>
   <div style="display:flex;align-items:center;gap:8px">
     <input type="number" id="seed-inp" min="0" max="999999" placeholder="random"
       style="flex:1;background:var(--surface);border:2px solid var(--border);color:var(--gold2);
@@ -861,8 +919,8 @@ input[type=range]{accent-color:var(--gold)}
              font-size:.58rem;padding:5px 8px;cursor:pointer;transition:all .12s"
       title="Clear seed (use random)">✕</button>
   </div>
-  <div style="font-size:.64rem;color:var(--muted);margin-top:5px;line-height:1.8;font-weight:600">
-    Fixed seed → same result every run.<br>Empty = random each time.
+  <div class="hint" style="margin-top:5px">
+Fixed seed → identical result every run.<br>Empty → random each time.
   </div>
 
   <hr class="sep">
@@ -887,15 +945,18 @@ input[type=range]{accent-color:var(--gold)}
       <line x1="52" y1="15" x2="52" y2="22" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
       <rect x="28" y="62" width="16" height="4" rx="2" fill="currentColor"/>
     </svg>
-    <p>Configure districts, set vote shares, then press ▶ Run or Run N×</p>
+    <p>Set the vote shares on the left, then press ▶ Run for one election, or Run N× to repeat it and see the range of outcomes.</p>
   </div>
   <div id="results" style="display:none">
     <div id="hemi-wrap">
       <div class="hemi-toolbar">
         <span>Arc order:</span>
-        <button class="hemi-sort-btn active" id="hsort-entry" onclick="setHemiSort('entry')">Entry</button>
-        <button class="hemi-sort-btn"        id="hsort-lr"    onclick="setHemiSort('lr')">Left → Right</button>
-        <button class="hemi-sort-btn"        id="hsort-size"  onclick="setHemiSort('size')">By Size</button>
+        <button class="hemi-sort-btn active" id="hsort-entry" onclick="setHemiSort('entry')"
+          data-help="As listed" data-help-text="Parties are seated in the order they appear in Configure Parties.">As Listed</button>
+        <button class="hemi-sort-btn"        id="hsort-lr"    onclick="setHemiSort('lr')"
+          data-help="Left to right" data-help-text="Parties are seated by their left-right position, the way a real chamber is arranged. Set each party's position in Configure Parties.">Left → Right</button>
+        <button class="hemi-sort-btn"        id="hsort-size"  onclick="setHemiSort('size')"
+          data-help="By size" data-help-text="Largest party first, smallest last.">By Size</button>
       </div>
       <svg id="hemi-svg" viewBox="0 0 540 330" xmlns="http://www.w3.org/2000/svg"></svg>
     </div>
@@ -915,14 +976,16 @@ input[type=range]{accent-color:var(--gold)}
       <div class="tscroll"><table>
         <thead><tr>
           <th>Party</th>
-          <th id="vote-pct-hdr">Vote %</th>
-          <th id="poll-pct-hdr" style="display:none">Poll %</th>
-          <th id="trend-hdr" style="display:none">Trend</th>
-          <th id="vote-range-hdr" style="display:none">Vote Range</th>
-          <th>Seats</th>
-          <th id="range-hdr" style="display:none">Seat Range</th>
-          <th id="median-hdr" style="display:none">Median</th>
-          <th>Seat %</th><th>±pp</th><th>Bar</th>
+          <th id="vote-pct-hdr" data-help="Vote %" data-help-text="The share of all votes cast that the party won.">Vote %</th>
+          <th id="poll-pct-hdr" style="display:none" data-help="Poll %" data-help-text="What the opinion polls said before the election, i.e. where you left the slider. Compare it with the actual result beside it to see how far the polls were off.">Poll %</th>
+          <th id="trend-hdr" style="display:none" data-help="Trend" data-help-text="The momentum bias set for this party: up arrows push it to beat its polling baseline, down arrows to fall short of it.">Trend</th>
+          <th id="vote-range-hdr" style="display:none" data-help="Vote range" data-help-text="Across all the runs, the lowest and highest vote share this party managed.">Vote Range</th>
+          <th data-help="Seats" data-help-text="Deputies won. Over multiple runs this is the mean across all runs.">Seats</th>
+          <th id="range-hdr" style="display:none" data-help="Seat range" data-help-text="Across all the runs, the fewest and the most seats this party won. A wide gap means its result was fragile.">Seat Range</th>
+          <th id="median-hdr" style="display:none" data-help="Median" data-help-text="The middle seat count across all runs: half gave more, half gave fewer. Less distorted by a single outlier run than the mean.">Median</th>
+          <th data-help="Seat %" data-help-text="The share of all seats in the chamber the party holds.">Seat %</th>
+          <th data-help="±pp — disproportionality" data-help-text="Seat share minus vote share, in percentage points. Positive means the party converted votes into seats better than proportionality would give; negative means it was under-rewarded. Under STV small parties with thinly spread support usually run negative.">±pp</th>
+          <th>Bar</th>
         </tr></thead>
         <tbody id="ov-body"></tbody>
       </table></div>
@@ -938,12 +1001,19 @@ input[type=range]{accent-color:var(--gold)}
       </table></div>
     </div>
     <div id="panel-coalition" class="panel">
-      <div class="sec-label">Build a Coalition</div>
+      <div class="sec-head">
+        <div class="sec-label">Build a Coalition</div>
+        <button type="button" class="hdot" tabindex="0" aria-label="Build a coalition"
+          data-help="Build a coalition"
+          data-help-text="Click party tags to add them to a governing bloc. The bar fills with their combined seats; the two marks are the simple majority threshold and the two-thirds supermajority threshold.">?</button>
+      </div>
       <div id="c-tags" class="c-tags"></div>
       <div class="c-track">
         <div class="c-fill" id="c-fill" style="width:0%"></div>
-        <div class="c-mark" id="c-mark" style="left:50.33%"></div>
-        <div class="c-mark-super" id="c-mark-super" style="left:66.67%"></div>
+        <div class="c-mark" id="c-mark" style="left:50.33%"
+          data-help="Majority threshold" data-help-text="Half the chamber plus one. A coalition past this mark can carry an ordinary vote in the Assembly."></div>
+        <div class="c-mark-super" id="c-mark-super" style="left:66.67%"
+          data-help="Supermajority threshold" data-help-text="Two-thirds of the chamber plus one — the bar for measures that need more than a simple majority."></div>
       </div>
       <div class="c-meter">
         <div>
@@ -952,7 +1022,7 @@ input[type=range]{accent-color:var(--gold)}
         </div>
         <div style="text-align:right">
           <div class="c-status no" id="c-status">—</div>
-          <div class="c-note" id="c-note">Majority = 151 / 300</div>
+          <div class="c-note" id="c-note">Majority = 151 / 300 · two-thirds = 201</div>
         </div>
       </div>
 
@@ -960,12 +1030,13 @@ input[type=range]{accent-color:var(--gold)}
         <div class="ed-header">
           <div>
             <div class="ed-title">Executive Directorate</div>
-            <div style="font-size:.6rem;color:var(--dim);margin-top:2px">Ministerial seat distribution</div>
+            <div style="font-size:.6rem;color:var(--dim);margin-top:2px">Ministerial posts shared between coalition parties in proportion to the seats each brings</div>
           </div>
           <div class="ed-total-wrap">
             <span>Posts:</span>
             <input type="number" class="ed-total-inp" id="ed-total" value="10" min="2" max="50"
-              oninput="updateMeter()" onblur="this.value=Math.max(2,Math.min(50,parseInt(this.value)||10));updateMeter()" title="Total ministerial posts to distribute (2–50)">
+              oninput="updateMeter()" onblur="this.value=intField(this,10,2,50);updateMeter()"
+              data-help="Ministerial posts" data-help-text="Total posts in the Executive Directorate, 2 to 50, apportioned between coalition parties in proportion to the seats each contributes.">
             <span style="color:var(--dim);font-size:.58rem">(2–50)</span>
           </div>
         </div>
@@ -998,7 +1069,7 @@ input[type=range]{accent-color:var(--gold)}
     <div class="runlog-wrap" id="runlog-wrap">
       <div class="runlog-toggle" onclick="toggleRunLog()">
         <span class="runlog-toggle-lbl">Recent Runs</span>
-        <span class="runlog-toggle-hint">&nbsp;· max 20 shown · click a row to restore</span>
+        <span class="runlog-toggle-hint">&nbsp;· last 20 runs · click a row to restore it</span>
         <span id="runlog-count" style="font-size:.6rem;color:var(--dim)"></span>
         <span class="runlog-toggle-arrow" id="runlog-arrow">▾</span>
       </div>
@@ -1047,11 +1118,14 @@ input[type=range]{accent-color:var(--gold)}
       <label>Deputies<input type="number" id="gen-dep" min="1" step="1" placeholder="auto" inputmode="numeric" onkeydown="_intKey(event)" oninput="this.value=this.value.replace(/[^0-9]/g,'')"></label>
       <label>Districts<input type="number" id="gen-dis" min="1" step="1" placeholder="auto" inputmode="numeric" onkeydown="_intKey(event)" oninput="this.value=this.value.replace(/[^0-9]/g,'')"></label>
       <button class="mbtn ok" onclick="generateDistricts()" style="margin:0">⚄ Generate</button>
-      <span class="gen-hint">Min and max seats per district are required (whole numbers 1 to 100, may be equal). Enter a total number of deputies and/or districts; leave one blank and it is filled in at random. This replaces the current list.</span>
+      <span class="gen-hint">Builds a fresh set of districts. Min and max seats bound how large each district can be, and may be equal. Give a total number of deputies, or of districts, or both; whichever you leave blank is filled in at random. This replaces the list below.</span>
     </div>
     <div class="region-mgmt" id="region-mgmt-panel">
       <div style="font-size:.62rem;font-weight:800;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">
-        Regions — + assign unassigned · 🗑 delete region and districts · ✕ delete only region
+        Regions
+      </div>
+      <div class="hint" style="margin:-4px 0 8px">
+        Regions group districts so a party can poll differently in different parts of the country. On each region: <b>+</b> assigns every unassigned district to it, <b>✕</b> deletes the region but keeps its districts, <b>🗑</b> deletes the region and its districts.
       </div>
       <div class="region-chips" id="region-chips"></div>
       <button class="region-add-btn" onclick="addRegion()">+ Add Region</button>
@@ -1076,7 +1150,7 @@ input[type=range]{accent-color:var(--gold)}
 
   <div class="modal-footer">
     <div class="mf-info" id="modal-info">— districts · — seats · majority: —</div>
-    <div class="mf-hint">Seats 2–9 recommended for STV · Uncheck a party to exclude it from that district · "all" toggles the whole column</div>
+    <div class="mf-hint">Seats 2–9 recommended for STV · untick a party to keep it off that district's ballot · "all" toggles the whole column</div>
   </div>
 
 </div>
@@ -1097,14 +1171,27 @@ input[type=range]{accent-color:var(--gold)}
 
   <div class="modal-body">
     <div class="pm-hint">
-      Click the colour swatch to pick a colour · Abbreviation (ID) is used throughout the tool · Full name shown in tables · Default share sets the sidebar slider starting value · Removing a party also removes it from all districts.
+      One row per party. Click the swatch to change the colour. The <b>code</b> is the short ID used on charts and in tables; the <b>full name</b> appears in the results table; <b>start %</b> is where that party's sidebar slider begins. Removing a party also removes it from every district.
+    </div>
+    <div class="pm-head">
+      <span style="width:20px;text-align:right">#</span>
+      <span style="width:24px">Col.</span>
+      <span style="width:54px">Code</span>
+      <span style="flex:1;min-width:0">Party name</span>
+      <span style="width:62px">Start %</span>
+      <span style="width:120px;display:flex;align-items:center">Left–Right (0–10)
+        <button type="button" class="hdot" tabindex="0" aria-label="Left-right position"
+          data-help="Left–Right position"
+          data-help-text="Where the party sits ideologically: 0 is far left, 5 is centre, 10 is far right. Two things use it — the Left → Right seating arc, and the default vote-transfer weights, which assume a voter's next preference goes to the nearest party.">?</button>
+      </span>
+      <span style="width:22px"></span>
     </div>
     <div id="pm-body"></div>
   </div>
 
   <div class="modal-footer">
     <div class="mf-info" id="pm-info">— parties</div>
-    <div class="mf-hint">IDs should be short (2–4 chars) and unique</div>
+    <div class="mf-hint">IDs should be short (2–4 characters) and unique</div>
   </div>
 
 </div>
@@ -1123,7 +1210,7 @@ input[type=range]{accent-color:var(--gold)}
   <div class="modal-body" id="sc-modal-body"></div>
   <div class="modal-footer">
     <div class="mf-info" id="sc-modal-info">— scenarios</div>
-    <div class="mf-hint">Click party tags to toggle inclusion in a scenario</div>
+    <div class="mf-hint">Click a party tag to add or remove it from that scenario</div>
   </div>
 </div>
 </div>
@@ -1134,30 +1221,65 @@ input[type=range]{accent-color:var(--gold)}
   <div class="modal-hdr">
     <div class="modal-title">Vote Transfers (STV)</div>
     <div class="modal-btns">
-      <button class="mbtn" onclick="autoGenTransfersFromUI()">↺ From left-right</button>
+      <button class="mbtn" onclick="autoGenTransfersFromUI()"
+        data-help="Rebuild from left-right" data-help-text="Rebuilds every row below from the parties' left-right positions, assuming voters pass their next preference to the nearest party. This discards any weights you have set by hand.">↺ From left-right</button>
       <button class="mbtn ok" onclick="closeTransferModal()">✓ Apply & Close</button>
     </div>
   </div>
   <div class="pm-hint">
-    When a party exceeds quota or is eliminated, its votes transfer to the others by these weights (auto-derived from left-right proximity, fully editable). The party weights normalise to 100% on close. The grey <b>None</b> slider is the share of those voters who give no further preference, so that fraction exhausts and leaves the count instead of transferring.
+    Under STV a voter ranks candidates rather than picking one, so votes a party cannot use are passed on rather than wasted. That happens twice: when a party clears the <b>quota</b> (the number of votes needed for a seat) with a <b>surplus</b> to spare, and when a trailing party is <b>eliminated</b>. Each block below is one party, and its sliders set which parties those transferred votes go to. The grey <b>None</b> slider is the share of voters who ranked nobody else, so those ballots <b>exhaust</b> and leave the count instead of transferring. The remaining weights are normalised to 100% when you close. They are auto-derived from left-right proximity and fully editable.
   </div>
   <div class="modal-body" id="transfer-body"></div>
 </div>
 </div>
 
+<div id="help-pop"><div class="hp-t"></div><div class="hp-b"></div></div>
+
 <script>
 
-let PARTIES=[
-  {id:'CF', name:'Civic Front',                  c:'#AD2548',share:30.7,lr:4},
-  {id:'WCA',name:"Workers' Cooperative Alliance",c:'#E03434',share:14.8,lr:0},
-  {id:'MCP',name:'Moderate Civic Party',         c:'#8B1CB4',share:9.3 ,lr:7},
-  {id:'GM', name:'Green Movement',               c:'#47922c',share:11.7,lr:2},
-  {id:'FT', name:'Forward Thermidor',            c:'#F9921C',share:2.6 ,lr:6},
-  {id:'NCG',name:'New Civic Generation',         c:'#EFE11B',share:12.4,lr:3},
-  {id:'RMB',name:'Rural and Maritime Bloc',      c:'#16c68c',share:7.0 ,lr:5},
-  {id:'CiU',name:'Citizens in Unity',            c:'#283C84',share:10.1,lr:9},
-  {id:'Ind',name:'Independents',                 c:'#777777',share:1.4 ,lr:5},
-];
+// ── Help popovers ─────────────────────────────────────────────────────────────
+// Anything carrying data-help (heading) and data-help-text (body) gets a
+// floating explanation on hover or keyboard focus. One listener on the document
+// rather than a handler per control, so markup added later works for free.
+(function(){
+  let pop=null;
+  function showHelp(el){
+    if(!pop) pop=document.getElementById('help-pop');
+    if(!pop) return;
+    pop.querySelector('.hp-t').textContent=el.getAttribute('data-help')||'';
+    pop.querySelector('.hp-b').textContent=el.getAttribute('data-help-text')||'';
+    pop.classList.add('show');
+    const r=el.getBoundingClientRect(), pr=pop.getBoundingClientRect();
+    let left=r.left+r.width/2-pr.width/2;
+    left=Math.max(8,Math.min(left,window.innerWidth-pr.width-8));
+    let top=r.bottom+8;
+    if(top+pr.height>window.innerHeight-8) top=Math.max(8,r.top-pr.height-8);
+    pop.style.left=left+'px';pop.style.top=top+'px';
+  }
+  function hideHelp(){ if(pop) pop.classList.remove('show'); }
+  document.addEventListener('mouseover',e=>{const t=e.target.closest&&e.target.closest('[data-help]');if(t)showHelp(t);});
+  document.addEventListener('mouseout', e=>{const t=e.target.closest&&e.target.closest('[data-help]');if(t)hideHelp();});
+  document.addEventListener('focusin',  e=>{const t=e.target.closest&&e.target.closest('[data-help]');if(t)showHelp(t);});
+  document.addEventListener('focusout', e=>{const t=e.target.closest&&e.target.closest('[data-help]');if(t)hideHelp();});
+  window.addEventListener('scroll',hideHelp,true);
+})();
+
+// Label for the 0-10 left-right scale, so the raw number is never shown bare.
+// Measured as distance from the centre so the bands mirror exactly: a party at
+// 3.5 and one at 6.5 always get corresponding labels.
+function lrWord(v){
+  const n=parseFloat(v);
+  if(isNaN(n)) return '';
+  const d=Math.abs(n-5);
+  if(d<=0.5) return 'centre';
+  const side=n<5?'left':'right';
+  if(d<1.5) return 'centre-'+side;
+  if(d<3.5) return side;
+  return 'far '+side;
+}
+
+// Party defaults. Returns fresh objects each call so Reset to Default can never
+// hand back the objects the UI has been mutating.
 const DEFAULT_PARTIES=()=>[
   {id:'CF', name:'Civic Front',                  c:'#AD2548',share:30.7,lr:4},
   {id:'WCA',name:"Workers' Cooperative Alliance",c:'#E03434',share:14.8,lr:0},
@@ -1169,6 +1291,7 @@ const DEFAULT_PARTIES=()=>[
   {id:'CiU',name:'Citizens in Unity',            c:'#283C84',share:10.1,lr:9},
   {id:'Ind',name:'Independents',                 c:'#777777',share:1.4 ,lr:5},
 ];
+let PARTIES=DEFAULT_PARTIES();
 
 function getPID(){ return PARTIES.map(p=>p.id); }
 function getPMAP(){ return Object.fromEntries(PARTIES.map(p=>[p.id,p])); }
@@ -1732,7 +1855,7 @@ function runElection(n) {
 }
 
 function runMulti() {
-  const n = Math.max(2, Math.min(200, parseInt(document.getElementById('runs-n').value) || 10));
+  const n = intField('runs-n', 10, 2, 200);
   runElection(n);
 }
 
@@ -1856,12 +1979,12 @@ function drawHemi(seats,ts,maj){
   });
 
   // ── 4. Theme colours ──────────────────────────────────────────────────────
-  const isLight=document.documentElement.classList.contains('light');
-  const emptyDot   = isLight?'#c8cde0':'#1e2235';
-  const markerClr  = isLight?'#b9922e':'#f0c560';
-  const markerText = isLight?'#9f7d1d':'#f0c560';
-  const legendText = isLight?'#5a6380':'#7a8498';
-  const seatStroke = isLight?'#140f24':'#ffffff';
+  const isDark=document.documentElement.classList.contains('dark');
+  const emptyDot   = isDark?'#c8cde0':'#1e2235';
+  const markerClr  = isDark?'#b9922e':'#f0c560';
+  const markerText = isDark?'#9f7d1d':'#f0c560';
+  const legendText = isDark?'#5a6380':'#7a8498';
+  const seatStroke = isDark?'#140f24':'#ffffff';
 
   // ── Majority boundary angle — always the gap after the (maj)-th seat ───────
   const mi = Math.max(0, Math.min(allPos.length-1, maj-1));
@@ -1991,15 +2114,18 @@ function median(arr){
 }
 
 function renderCards(nat,shares,ts){
-  const el=document.getElementById('cards');el.innerHTML='';
+  const el=document.getElementById('cards');
   const hasMulti=MULTI_SIM&&MULTI_SIM.results&&MULTI_SIM.results.length>1;
   const polling=VOTE_MODE==='polling'&&SIM.pollBase;
+  const cards=[];
   PARTIES.forEach(p=>{
     let rangeHtml='';
     if(hasMulti){
       const vals=MULTI_SIM.results.map(r=>r[p.id]||0);
       const lo=Math.min(...vals),hi=Math.max(...vals),med=median(vals);
-      rangeHtml=`<div class="card-sub" style="font-size:.56rem">
+      rangeHtml=`<div class="card-sub" style="font-size:.56rem;cursor:help"
+        data-help="Range across the runs"
+        data-help-text="Lowest and highest seat count ${p.id} reached in any single run, then the median: half the runs were above it, half below. A wide gap means the party's result was fragile.">
         <span class="range-lo">${lo}</span><span class="range-sep">–</span><span class="range-hi">${hi}</span>
         <span style="color:var(--muted);margin-left:4px">med ${med}</span>
       </div>`;
@@ -2007,15 +2133,16 @@ function renderCards(nat,shares,ts){
     const voteLabel = polling
       ? `actual ${(shares[p.id]*100).toFixed(1)}% · poll ${(SIM.pollBase[p.id]*100).toFixed(1)}%`
       : `${(shares[p.id]*100).toFixed(1)}% vote`;
-    el.innerHTML+=`<div class="card" style="border-left-color:${p.c}">
+    cards.push(`<div class="card" style="border-left-color:${p.c}">
       <div class="card-id">${p.id}</div>
       <div class="card-seats" style="color:${p.c}">${nat[p.id]}</div>
       ${rangeHtml}
-      <div class="card-sub">${(nat[p.id]/ts*100).toFixed(1)}% seats</div>
+      <div class="card-sub" style="cursor:help" data-help="Seat share" data-help-text="Share of all seats in the chamber held by ${p.id}. Compare it with the vote share below: a gap either way is STV disproportionality.">${(nat[p.id]/ts*100).toFixed(1)}% seats</div>
       <div class="card-sub" style="font-size:.56rem">${voteLabel}</div>
       <div class="card-bar"><div class="card-bar-fill" style="width:${Math.min(100,nat[p.id]/ts*100).toFixed(1)}%;background:${p.c}"></div></div>
-    </div>`;
+    </div>`);
   });
+  el.innerHTML=cards.join('');
 }
 
 function renderOverview(nat,shares,ts){
@@ -2036,7 +2163,8 @@ function renderOverview(nat,shares,ts){
   const voteHdrEl=document.getElementById('vote-pct-hdr');
   if(voteHdrEl) voteHdrEl.textContent=polling?'Actual %':'Vote %';
 
-  const tbody=document.getElementById('ov-body');tbody.innerHTML='';
+  const tbody=document.getElementById('ov-body');
+  const rows=[];
   [...PARTIES].sort((a,b)=>nat[b.id]-nat[a.id]).forEach(p=>{
     const vp   = shares[p.id]*100;
     const base = polling ? SIM.pollBase[p.id]*100 : vp;
@@ -2069,7 +2197,7 @@ function renderOverview(nat,shares,ts){
       : `<td style="display:none"></td>`;
     const vpStyle = polling ? `style="color:var(--gold2);font-weight:500"` : '';
 
-    tbody.innerHTML+=`<tr>
+    rows.push(`<tr>
       <td><span style="color:${p.c};font-weight:600">${p.id}</span>
           <span style="color:var(--muted);font-size:.58rem;margin-left:6px">${p.name}</span></td>
       <td ${vpStyle}>${vp.toFixed(1)}%</td>
@@ -2082,30 +2210,35 @@ function renderOverview(nat,shares,ts){
       <td>${sp.toFixed(1)}%</td>
       <td class="${dc}">${(dev>=0?'+':'')+dev.toFixed(1)}pp</td>
       <td class="bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width:${bw}%;background:${p.c}"></div></div></td>
-    </tr>`;
+    </tr>`);
   });
   const extras=(hasMulti?'<td></td><td></td>':'')
     +(polling?'<td></td>':'<td style="display:none"></td>')
     +(hasTrends?'<td></td>':'')
     +(hasVoteRange?'<td></td>':'');
-  tbody.innerHTML+=`<tr class="tfoot"><td>Total</td><td>—</td>${extras}<td>${ts}</td>${hasMulti?'<td></td>':''}<td>100.0%</td><td></td><td></td></tr>`;
+  rows.push(`<tr class="tfoot"><td>Total</td><td>—</td>${extras}<td>${ts}</td>${hasMulti?'<td></td>':''}<td>100.0%</td><td></td><td></td></tr>`);
+  tbody.innerHTML=rows.join('');
 }
 
 function renderDistricts(dists,ts){
   document.getElementById('dt-hdr').innerHTML=
     `<th>District</th><th>Region</th><th>Seats</th>`+PARTIES.map(p=>`<th style="color:${p.c}">${p.id}</th>`).join('');
-  const tbody=document.getElementById('dt-body');tbody.innerHTML='';
-  dists.forEach(d=>{
+  const tbody=document.getElementById('dt-body');
+  const rows=dists.map(d=>{
     const cells=PARTIES.map(p=>{
-      if(!d.parties.has(p.id))return`<td style="color:var(--dim)">—</td>`;
+      if(!d.parties.has(p.id)) return `<td style="color:var(--dim)">—</td>`;
       const n=d.won[p.id]||0;
-      return`<td ${n?`style="color:${p.c};font-weight:600"`:''}">${n||'·'}</td>`;
+      const style=n?` style="color:${p.c};font-weight:600"`:'';
+      return `<td${style}>${n||'·'}</td>`;
     }).join('');
-    const regionCell=d.region?`<td style="color:var(--muted);font-size:.68rem">${d.region}</td>`:`<td style="color:var(--dim)">—</td>`;
-    tbody.innerHTML+=`<tr><td>${d.name}</td>${regionCell}<td>${d.seats}</td>${cells}</tr>`;
+    const regionCell=d.region
+      ? `<td style="color:var(--muted);font-size:.68rem">${d.region}</td>`
+      : `<td style="color:var(--dim)">—</td>`;
+    return `<tr><td>${d.name}</td>${regionCell}<td>${d.seats}</td>${cells}</tr>`;
   });
   const tots=PARTIES.map(p=>`<td style="color:${p.c};font-weight:600">${SIM.nat[p.id]||0}</td>`).join('');
-  tbody.innerHTML+=`<tr class="tfoot"><td>Total</td><td></td><td>${ts}</td>${tots}</tr>`;
+  rows.push(`<tr class="tfoot"><td>Total</td><td></td><td>${ts}</td>${tots}</tr>`);
+  tbody.innerHTML=rows.join('');
 }
 
 function renderRegions(dists, ts){
@@ -2192,7 +2325,7 @@ function renderCoalition(nat,ts,maj){
   document.getElementById('c-mark').style.left=`calc(${maj}/${ts}*100%)`;
   const superMaj=Math.floor(ts*2/3)+1;
   document.getElementById('c-mark-super').style.left=`calc(${superMaj}/${ts}*100%)`;
-  document.getElementById('c-note').textContent=`Majority = ${maj} / ${ts}`;
+  document.getElementById('c-note').textContent=`Majority = ${maj} / ${ts} · two-thirds = ${superMaj}`;
   updateMeter();
   renderScenarios(nat,maj);
 }
@@ -2219,7 +2352,7 @@ function renderDirectorate(){
   const inp  = document.getElementById('ed-total');
   if(!bar||!leg||!inp)return;
 
-  const totalPosts = Math.max(2, Math.min(50, parseInt(inp.value)||10));
+  const totalPosts = intField(inp, 10, 2, 50);
   const PMAP = getPMAP();
 
   // Collect selected parties and their seat counts
@@ -2603,6 +2736,19 @@ function deleteDistrict(idx){WORKING.splice(idx,1);buildModalTable();}
 // Block characters that would make a non-integer (decimal point, comma, sign, exponent).
 function _intKey(e){ if(['.',',','e','E','+','-'].includes(e.key)) e.preventDefault(); }
 
+// Read a numeric field and clamp it into range. The fallback applies only when
+// the box is empty or unparseable — never to a valid 0, which is a meaningful
+// setting for variance, left-right position and transfer weights alike.
+function numField(idOrEl, fallback, lo, hi){
+  const el = typeof idOrEl === 'string' ? document.getElementById(idOrEl) : idOrEl;
+  const v  = parseFloat(el && el.value);
+  if(isNaN(v)) return fallback;
+  return Math.min(hi, Math.max(lo, v));
+}
+function intField(idOrEl, fallback, lo, hi){
+  return Math.round(numField(idOrEl, fallback, lo, hi));
+}
+
 // Lay out `total` seats over `n` districts, each within [mn, mx]. Each district
 // starts at a uniform-random size across the whole range (so sizes are spread,
 // not bunched around the mean), then a few seats are added or removed at random
@@ -2802,7 +2948,10 @@ function buildModalTable(){
     const tS=document.createElement('td');
     const si=document.createElement('input');si.type='number';si.className='d-seats';
     si.min=1;si.max=20;si.value=d.seats;
-    si.oninput=(i=>()=>{WORKING[i].seats=Math.max(1,parseInt(si.value)||1);updateModalInfo();})(idx);
+    // No upper clamp here on purpose: the spinner suggests 20, but generated or
+    // imported configs may legitimately carry larger districts, and snapping them
+    // down the moment the field is touched would quietly rewrite them.
+    si.oninput=(i=>()=>{WORKING[i].seats=intField(si,1,1,Infinity);updateModalInfo();})(idx);
     tS.appendChild(si);tr.appendChild(tS);
 
     // Region dropdown
@@ -3078,21 +3227,27 @@ function buildPartyTable(){
     const shareInp=document.createElement('input');
     shareInp.type='number';shareInp.className='pm-share';shareInp.value=p.share;
     shareInp.min=0;shareInp.max=100;shareInp.step=0.5;
-    shareInp.title='Default vote share %';
+    shareInp.setAttribute('data-help','Starting vote share');
+    shareInp.setAttribute('data-help-text','Where this party\'s slider in the left-hand panel starts. You can still move the slider afterwards; this is only the opening value.');
     shareInp.oninput=(i=>()=>{PWORKING[i].share=Math.max(0,parseFloat(shareInp.value)||0);})(idx);
 
-    // L→R position (0=far left, 10=far right)
+    // Political position on a 0–10 left-to-right scale, shown with a plain word
     const lrWrap=document.createElement('span');
-    lrWrap.style.cssText='display:inline-flex;align-items:center;gap:3px;flex-shrink:0';
-    const lrLbl=document.createElement('span');
-    lrLbl.style.cssText='font-size:.55rem;color:var(--dim)';lrLbl.textContent='L↔R';
+    lrWrap.style.cssText='display:inline-flex;align-items:center;gap:6px;flex-shrink:0;width:120px';
     const lrInp=document.createElement('input');
-    lrInp.type='number';lrInp.className='pm-share';lrInp.style.width='40px';
+    lrInp.type='number';lrInp.className='pm-share';lrInp.style.width='44px';
     lrInp.value=(p.lr!==undefined?p.lr:5);
     lrInp.min=0;lrInp.max=10;lrInp.step=0.5;
-    lrInp.title='Left-right position (0 = far left, 10 = far right)';
-    lrInp.oninput=(i=>()=>{PWORKING[i].lr=Math.max(0,Math.min(10,parseFloat(lrInp.value)||5));})(idx);
-    lrWrap.append(lrLbl,lrInp);
+    lrInp.setAttribute('data-help','Left–Right position');
+    lrInp.setAttribute('data-help-text','Where the party sits ideologically: 0 is far left, 5 is centre, 10 is far right. Two things use it — the Left → Right seating arc, and the default vote-transfer weights, which assume a voter\'s next preference goes to the nearest party.');
+    const lrWordEl=document.createElement('span');
+    lrWordEl.className='pm-lr-word';
+    lrWordEl.textContent=lrWord(lrInp.value);
+    lrInp.oninput=(i=>()=>{
+      const v=numField(lrInp,5,0,10);
+      PWORKING[i].lr=v; lrWordEl.textContent=lrWord(v);
+    })(idx);
+    lrWrap.append(lrInp,lrWordEl);
 
     const del=document.createElement('button');del.className='pm-del';del.textContent='✕';
     del.title=`Remove ${p.id}`;
@@ -3427,10 +3582,10 @@ function saveConfig(){
   const allActive=DISTRICTS.every(d=>d.parties.size===pids.length && pids.every(id=>d.parties.has(id)));
 
   const cfg={
-    version:3,
-    theme: document.documentElement.classList.contains('light')?'light':'dark',
+    version:4,
+    theme: document.documentElement.classList.contains('dark')?'dark':'light',
     voteMode:VOTE_MODE,
-    variance:parseFloat(document.getElementById('var-sl').value)||8,
+    variance:numField('var-sl', 8, 0, 75),
     pollGlobalDev:POLL_GLOBAL_DEV,
     seed:document.getElementById('seed-inp').value.trim()||'',
     hemiSort:HEMI_SORT,
@@ -3572,9 +3727,10 @@ function loadConfig(evt){
       if(cfg.trendsEnabled!==undefined){ TRENDS_ENABLED=cfg.trendsEnabled; }
       const tCb=document.getElementById('trends-cb'); if(tCb) tCb.checked=TRENDS_ENABLED;
       if(cfg.theme){
-        const wantLight=cfg.theme==='light';
-        const isLight=document.documentElement.classList.contains('light');
-        if(wantLight!==isLight) toggleTheme();
+        // Up to v3 the graphite skin was stored as "light" because the CSS class
+        // was misnamed; v4 onwards uses the obvious spelling.
+        const wantDark = (cfg.version||0) >= 4 ? cfg.theme==='dark' : cfg.theme==='light';
+        if(wantDark !== document.documentElement.classList.contains('dark')) toggleTheme();
       }
       rebuildSidebar();
       setVoteMode(VOTE_MODE);
@@ -3675,9 +3831,9 @@ function exportCSV(){
 }
 
 function toggleTheme(){
-  const isLight=document.documentElement.classList.toggle('light');
+  const isDark=document.documentElement.classList.toggle('dark');
   const btn=document.getElementById('theme-btn');
-  btn.textContent=isLight?'🌙 Dark':'☀ Light';
+  btn.textContent=isDark?'🌙 Dark':'☀ Light';
   // If results are showing, redraw the hemicycle so SVG colours update
   if(SIM) drawHemi(SIM.nat, totalSeats(), majority());
 }
