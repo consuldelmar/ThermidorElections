@@ -1085,6 +1085,163 @@ tbody tr:hover td { background: var(--row-hover); }
 .mz-d i.vacant { background: var(--border2); }
 .mz-d i.dim { opacity: .14; }
 .mosaic-hint { margin: -2px 0 10px; }
+
+/* =====================================================================
+   Motion layer: the results crawl, party cards that respond, bars that
+   fill, numbers that count, and seats that re-take their places.
+   ===================================================================== */
+:root { --fx-out: cubic-bezier(.16, 1, .3, 1); --fx-spring: cubic-bezier(.34, 1.56, .64, 1); }
+
+/* ---------- The results crawl in the top bar ---------- */
+.topbar-brand { flex: 0 1 auto; }
+.ticker {
+  flex: 1 1 260px; min-width: 0; max-width: 760px; display: flex; align-items: stretch; height: 32px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 999px; overflow: hidden;
+}
+.ticker-label {
+  display: flex; align-items: center; flex-shrink: 0; padding: 0 22px 0 14px;
+  background: linear-gradient(135deg, var(--primary), var(--primary2)); color: #fff;
+  font-family: var(--f-ui); font-size: .64rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.ticker-label::before {
+  content: ''; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--accent);
+  animation: fx-onair 2.2s infinite;
+}
+@keyframes fx-onair { 0% { box-shadow: 0 0 0 0 rgba(240,197,96,.7); } 70%, 100% { box-shadow: 0 0 0 6px rgba(240,197,96,0); } }
+.ticker-track {
+  position: relative; flex: 1; min-width: 0; overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 93%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 93%, transparent);
+}
+.ticker-run {
+  position: absolute; top: 0; bottom: 0; left: 0; display: flex; align-items: center; white-space: nowrap;
+  font-size: .74rem; font-weight: 700; color: var(--muted);
+}
+.ticker-run.moving { animation: fx-crawl var(--crawl, 40s) linear infinite; }
+.ticker-track:hover .ticker-run { animation-play-state: paused; }
+@keyframes fx-crawl { to { transform: translateX(-50%); } }
+.tk-item { display: inline-flex; align-items: center; gap: 7px; padding: 0 16px; }
+.tk-item i { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.tk-item b { font-family: var(--f-num); font-size: .84rem; font-weight: 500; color: var(--text); }
+.tk-item em { font-style: normal; font-weight: 600; color: var(--dim); font-size: .68rem; }
+.tk-item.tk-lead strong { color: var(--primary); font-weight: 800; }
+.tk-idle { padding: 0 16px; color: var(--dim); font-weight: 600; }
+@media (max-width: 1180px) { .ticker { display: none; } }
+
+/* ---------- Party cards: hover, pick and fade ---------- */
+.card {
+  position: relative; overflow: hidden;
+  transition: transform .35s var(--fx-spring), box-shadow .3s, opacity .3s, filter .3s;
+}
+.card::after {
+  content: ''; position: absolute; right: -26px; bottom: -30px; width: 84px; height: 94px; pointer-events: none;
+  clip-path: polygon(50% 0, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  background: var(--c); opacity: .08; transition: transform .55s var(--fx-spring), opacity .3s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 14px 28px -14px var(--c), var(--shadow); }
+.card:hover::after { transform: rotate(30deg) scale(1.18); opacity: .16; }
+.card:active { transform: translateY(-1px) scale(.98); }
+.card.on {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 2px var(--c), 0 18px 34px -16px var(--c);
+  animation: fx-picked .5s var(--fx-spring);
+}
+.card.on::after { opacity: .2; transform: rotate(30deg) scale(1.25); }
+.card.faded { opacity: .38; transform: scale(.97); filter: saturate(.6); }
+@keyframes fx-picked { 0% { transform: translateY(0) scale(.96); } 60% { transform: translateY(-6px) scale(1.03); } 100% { transform: translateY(-4px); } }
+
+/* ---------- Picked tags, chips and rows answer the click ---------- */
+.c-tag, .path-chip, .sc-ed-ptag { transition: transform .3s var(--fx-spring), box-shadow .2s, border-color .2s, background .2s, color .2s; }
+.c-tag:hover, .path-chip:hover { transform: translateY(-2px); }
+.c-tag.on, .path-chip.on { transform: translateY(-2px); animation: fx-pop .45s var(--fx-spring); }
+@keyframes fx-pop { 0% { transform: scale(.9); } 60% { transform: translateY(-3px) scale(1.06); } 100% { transform: translateY(-2px); } }
+.cmp-row { transition: background .2s, transform .3s var(--fx-spring); }
+.cmp-row:hover { transform: translateX(3px); }
+.cmp-row.on .cmp-check { animation: fx-pop .4s var(--fx-spring); }
+.sc-row { position: relative; transition: background .2s, padding .3s var(--fx-out); }
+.sc-row::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--primary); transition: width .3s var(--fx-out); }
+.sc-row:hover { padding-left: 19px; }
+.sc-row:hover::before { width: 4px; }
+
+/* ---------- Bars that fill ---------- */
+.c-track { height: 10px; }
+.c-fill { position: relative; overflow: hidden; transition: width .65s var(--fx-spring); }
+.c-fill::after {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(-45deg, rgba(255,255,255,.22) 0 8px, transparent 8px 16px);
+  animation: fx-stripes 1s linear infinite;
+}
+@keyframes fx-stripes { to { background-position: 22.6px 0; } }
+.c-chance-bar div { transition: width .5s var(--fx-out); }
+.ed-seg { transition: width .55s var(--fx-spring), transform .25s var(--fx-spring); }
+.ed-seg:hover { transform: translateY(-2px); }
+.card-bar-fill, .mini-bar-fill, .vd-fill, .region-bar { transform-origin: left; }
+.sp-bar i { transform-origin: bottom; }
+@keyframes fx-grow-x { from { transform: scaleX(0); } }
+@keyframes fx-grow-y { from { transform: scaleY(0); } }
+#results.fresh-run .card { animation: fx-card-in .6s both var(--fx-spring); animation-delay: calc(var(--i, 0) * 50ms + .25s); }
+@keyframes fx-card-in { from { opacity: 0; transform: translateY(20px) scale(.93); } }
+#results.fresh-run .card-bar-fill { animation: fx-grow-x 1s both var(--fx-out); animation-delay: calc(var(--i, 0) * 50ms + .55s); }
+.verdict.fresh .vd-fill { animation: fx-grow-x 1s .7s both var(--fx-out); }
+.verdict.fresh .vd-seal svg { animation: fx-seal .9s .55s both var(--fx-spring); }
+@keyframes fx-seal { from { opacity: 0; transform: rotate(-120deg) scale(.3); } }
+.panel.entering .mini-bar-fill, #results.fresh-run .mini-bar-fill { animation: fx-grow-x .9s .25s both var(--fx-out); }
+.panel.entering .sp-bar i, #results.fresh-run .sp-bar i { animation: fx-grow-y .8s .3s both var(--fx-out); }
+.panel.entering .region-bar { animation: fx-grow-x .8s both var(--fx-out); }
+.panel.entering .ed-bar { animation: fx-grow-x .7s both var(--fx-out); transform-origin: left; }
+.panel.entering .mz-d i { animation: fx-tile .45s both var(--fx-spring); animation-delay: calc(var(--k, 0) * 1ms); }
+@keyframes fx-tile { from { opacity: 0; transform: scale(.2); } }
+.mz-d { transition: transform .25s var(--fx-spring), border-color .2s, box-shadow .2s; }
+.mz-d:hover { transform: translateY(-2px) scale(1.1); position: relative; z-index: 1; }
+.mz-d i { transition: opacity .3s, transform .3s var(--fx-spring); }
+.mz-d i.dim { transform: scale(.75); }
+
+/* ---------- Seats re-take their places after a click ---------- */
+#hemi-svg.reseat .seat {
+  transform-box: fill-box; transform-origin: center;
+  animation: fx-seat .4s both var(--fx-spring); animation-delay: calc(var(--d, 0ms) * .45);
+}
+@keyframes fx-seat { from { opacity: .15; transform: scale(.35); } }
+
+/* ---------- Tabs: a sliding underline, panels that rise in ---------- */
+.tabs { position: relative; }
+.tab-ink {
+  position: absolute; bottom: -1px; left: 0; width: 0; height: 3px; border-radius: 3px 3px 0 0;
+  background: linear-gradient(90deg, var(--primary), var(--accent)); pointer-events: none;
+  transition: left .45s var(--fx-spring), width .45s var(--fx-spring);
+}
+.tabs.inked .tab.active { border-bottom-color: transparent; }
+.panel.active { animation: fx-panel .4s var(--fx-out); }
+@keyframes fx-panel { from { opacity: 0; transform: translateY(10px); } }
+
+/* ---------- Feedback ---------- */
+.feedback {
+  margin-top: 14px; padding: 12px 14px; text-align: center;
+  background: var(--surface); border: 1px solid var(--panel-edge); border-radius: var(--radius-sm);
+}
+.fb-title { font-size: .7rem; font-weight: 800; color: var(--text); line-height: 1.5; }
+.fb-link {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 6px 13px;
+  background: linear-gradient(135deg, var(--primary), var(--primary2)); color: #fff; border-radius: 999px;
+  font-size: .68rem; font-weight: 800; letter-spacing: .04em; text-decoration: none;
+  box-shadow: var(--shadow-sm); transition: transform .25s var(--fx-spring), filter .2s;
+}
+.fb-link:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.fb-alt { margin-top: 8px; font-size: .66rem; font-weight: 600; color: var(--muted); }
+.fb-copy {
+  padding: 1px 7px; margin-left: 2px; cursor: pointer;
+  background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; color: var(--primary);
+  font-family: var(--f-num); font-size: .66rem; font-weight: 500; transition: border-color .15s, color .15s;
+}
+.fb-copy:hover { border-color: var(--primary); }
+.fb-copy.copied { color: var(--green); border-color: var(--green); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-run.moving, .card.on, .c-tag.on, .path-chip.on, .c-fill::after, .ticker-label::before,
+  #results.fresh-run .card, #results.fresh-run .card-bar-fill, .verdict.fresh .vd-fill, .verdict.fresh .vd-seal svg,
+  .panel.entering *, #hemi-svg.reseat .seat, .panel.active { animation: none !important; }
+}
 </style>
 </head>
 <body>
@@ -1093,6 +1250,10 @@ tbody tr:hover td { background: var(--row-hover); }
 
 <header class="topbar">
   <div class="topbar-brand"><img class="topbar-flag" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCABCAG4DASIAAhEBAxEB/8QAGwABAQEAAwEBAAAAAAAAAAAAAAgJBQYHBAH/xAAxEAAABQIFAwMCBQUAAAAAAAAAAQIDBAURBgcYVqUSIdMIE+MxURQWMkFxCRUkQ2L/xAAbAQEAAgMBAQAAAAAAAAAAAAAABQYCAwcECP/EADARAAECAwQHCAMBAAAAAAAAAAABAgMEEQUhUdEGExZSYZHSEhUxQVNioaJxscHw/9oADAMBAAIRAxEAPwCTAAB3M6KAAAAAAAAAAAAAAAAAAAAAAUDoKz02RykTyhoKz02RykTyjYSwWHN9pJvdbyXMqne0fBPnMx70FZ6bI5SJ5Q0FZ6bI5SJ5RsJYLBtJN7reS5jvaPgnzmY96Cs9NkcpE8oaCs89kcpE8o2EsJY9e2aGKcvcK4ciYbq7tHaqjspM12KRJfcbbaSaUId7m3dSu6kl1WKxGX7+Oc0tmZOA6O5jVROC+a0xNsK0ZiM9GIiX/nMzixhkdijLusKpeJ2YtMmoR1uR2JjUx1sj+nWllaugz+yjI7dxy+B/S3mNmWxIewtSIlaRHV0OpaqcZt1v7Gppa0rSR/sZlY/2MdWpVKxBmtQJFcgTYSKcma9HRARVo0SY6tsyJxxapBKQ0m6097OrWZlfoJVxzFHxBibJ3MHD9MXXGv7jJYVJg1GizUlIjpSvoW26TalJbUSiO6UqW0qx9k9yKvu0tt+CizcWExYe5fVExrXxx/SXntS0Ee7VtW/Gl37O9aCs9NkcpE8oaCs9NkcpE8o079OGMKxj7JLCdexBJbm1mXFM5UhtkmidWlxaOroLsRmSSM7WK9+xfQvSbCzwdKJmNDbFa1tHIi+C+d+JHutSOxytVEu/OZj3oKz02RykTyhoKz02RykTyjYSwWG3aSb3W8lzMe9o+CfOZj3oKz02RykTyhoKz02RykTyjYSwWDaSb3W8lzHe0fBPnM/QEia+j2RyfxBr6PZHJ/EKdrmYnN9rLG9f6u6SuwEia+j2RyfxBr6PZHJ/EGuZiNrLG9f6u6SuxGH9SdtZ0DAyvbWbapM1n3Ok+glqZQaUmr9JGrpOxGZXMuw5TX0eyOT+IfHWPXDBxBTJNOqmXbFRp8lBtvRZU9LjTqT+pKSpkyMv5EfPw2Tks+AjqKtPhUX+G+BphY0GIj9d4e13SZy4Yr+D8rMBLo2MmJ6ZSpNSWuXFpH4htJSn4C0EpSlpspJU8rEZFf312M7XP7sQSKRj7MHDmJ8Oxn4FMgNTykpnwvwav8ioyJqVfqMuhJSlNkarXS0kyI79vXcyaJhrEtRVJwtRF4djq7nTZ01Uphs7/wCpwkE4hP8AwfWn7dI7hk5WsE5YyGJ9XwT+cKvHX1sLlzCbhx1F3JTcf21Ea79/ccNSvt0iEiRp+YhrJuYiVuV3lThx/wBcSCaU6PQ6TCTNUrcnZdWvFKVpx8+JcnpCJem/Ay1tOs+5DU6lDzakK6VPOKSdlER9yMj/AIMh7EJEL18mRW/JHJ/EGvo9kcn8QskusOBBZC7VeyiJyShFv0usZ71frvH2u6SuwEia+j2RyfxBr6PZHJ/EN+uZiYbWWN6/1d0ldgJE19Hsjk/iDX0eyOT+INczEbWWN6/1d0kjgACNPnUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2Q==" alt="Flag of Higher Thermidor"><a class="topbar-title" href="https://www.nationstates.net/nation=higher_thermidor" target="_blank" rel="noopener" title="View Higher Thermidor on NationStates">Civic Assembly of <span>Higher Thermidor</span> — Election Simulator</a></div>
+  <div class="ticker" aria-label="Latest result">
+    <div class="ticker-label">Results</div>
+    <div class="ticker-track"><div class="ticker-run" id="ticker-run"><span class="tk-idle">No votes counted yet. Set the shares and press Run.</span></div></div>
+  </div>
   <div class="topbar-tools">
     <a class="help-btn" href="https://www.nationstates.net/page=dispatch/id=2795939" target="_blank" rel="noopener"
       title="Open the guide: how the app works and what every control does">? Guide</a>
@@ -1223,6 +1384,12 @@ tbody tr:hover td { background: var(--row-hover); }
   <button class="cfg-btn reset-btn" onclick="resetToDefault()">↺ Reset to Default</button>
 
   <div class="credits">Created by <b>F. Puyó</b>, <b>Consuldelmar</b> and <b>JuliaCerezo</b></div>
+  <div class="feedback">
+    <div class="fb-title">Got any feedback, or found a bug or an error?</div>
+    <a class="fb-link" href="https://www.nationstates.net/nation=higher_thermidor" target="_blank" rel="noopener"
+      title="Opens Higher Thermidor's nation page on NationStates">✉ Contact us on NationStates</a>
+    <div class="fb-alt">or on Discord: <button type="button" class="fb-copy" onclick="copyDiscord(this)" title="Click to copy the username">@consuldelmar</button></div>
+  </div>
 </aside>
 
 <main class="main">
@@ -1276,7 +1443,7 @@ tbody tr:hover td { background: var(--row-hover); }
     <div class="sec-label">Seat Distribution</div>
     <div id="cards" class="cards"></div>
 
-    <div class="tabs">
+    <div class="tabs" id="tabs"><span class="tab-ink" aria-hidden="true"></span>
       <div class="tab active" data-t="overview" onclick="switchTab(this)">Overview</div>
       <div class="tab" data-t="districts" onclick="switchTab(this)">Districts</div>
       <div class="tab" data-t="coalition" onclick="switchTab(this)">Coalitions</div>
@@ -5694,6 +5861,160 @@ resetSurplusKept();
 rebuildSidebar();
 updateTopbar();
 drawEmptyArc();
+
+// ---------------------------------------------------------------------------
+// Motion layer: numbers that count, the results crawl in the top bar, the
+// sliding tab underline, panels that replay their bars, and seats that re-take
+// their places after a click. None of it changes a result.
+// ---------------------------------------------------------------------------
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+// Count a number up (or down) in place. A newer count on the same element wins.
+function countUp(el, to, { from = 0, dur = 900, delay = 0 } = {}) {
+  if (!el) return;
+  const token = (el._countToken || 0) + 1;
+  el._countToken = token;
+  if (reduceMotion.matches || from === to) { el.textContent = to; return; }
+  el.textContent = from;
+  const t0 = performance.now() + delay;
+  const step = now => {
+    if (el._countToken !== token) return;
+    const k = Math.min(1, Math.max(0, (now - t0) / dur));
+    el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - k, 4)));
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// The underline that slides to the active tab.
+function placeTabInk() {
+  const tabs = $('tabs');
+  if (!tabs) return;
+  const ink = tabs.querySelector('.tab-ink'), act = tabs.querySelector('.tab.active');
+  if (!ink || !act || !act.offsetWidth) return;
+  ink.style.left = act.offsetLeft + 'px';
+  ink.style.width = act.offsetWidth + 'px';
+  tabs.classList.add('inked');
+}
+window.addEventListener('resize', placeTabInk);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeTabInk);
+
+// A panel that has just come into view replays its bars and tiles.
+function enterPanel(panel) {
+  if (!panel) return;
+  panel.querySelectorAll('.mz-d i').forEach((tile, k) => tile.style.setProperty('--k', Math.min(k, 300) * 4));
+  panel.classList.remove('entering');
+  void panel.offsetWidth;
+  panel.classList.add('entering');
+  clearTimeout(panel._enterTimer);
+  panel._enterTimer = setTimeout(() => panel.classList.remove('entering'), 1800);
+}
+
+// The results crawl: who leads, then every seated party.
+function tickerIdle(text) {
+  const run = $('ticker-run');
+  if (!run) return;
+  run.classList.remove('moving');
+  run.innerHTML = `<span class="tk-idle">${esc(text)}</span>`;
+}
+function updateTicker() {
+  const run = $('ticker-run');
+  if (!run || !sim) return;
+  const maj = majority();
+  const seatsOf = p => sim.nat[p.id] || 0;
+  const ranked = [...parties].filter(p => seatsOf(p) > 0).sort((a, b) => seatsOf(b) - seatsOf(a));
+  if (!ranked.length) return tickerIdle('No seats were filled in this run.');
+  const top = seatsOf(ranked[0]);
+  const tied = ranked.filter(p => seatsOf(p) === top);
+  const head = tied.length > 1 ? `${tied.map(p => p.name).join(' and ')} tie for first on ${top} seats`
+    : top >= maj ? `${ranked[0].name} wins a majority with ${top} seats`
+    : `${ranked[0].name} leads with ${top} seats, ${maj - top} short of ${maj}`;
+  const items = [`<span class="tk-item tk-lead"><strong>${esc(head)}</strong></span>`];
+  ranked.forEach(p => {
+    const share = ((sim.shares[p.id] || 0) * 100).toFixed(1);
+    items.push(`<span class="tk-item"><i style="background:${p.c}"></i>${esc(p.name)} <b>${seatsOf(p)}</b><em>${share}%</em></span>`);
+  });
+  items.push(`<span class="tk-item"><em>${hasMultiRuns() ? `Median of ${multiSim.results.length} runs` : `Single run · seed ${esc(sim.seed)}`}</em></span>`);
+  const once = items.join('');
+  run.innerHTML = once + once;
+  run.style.setProperty('--crawl', Math.max(20, run.scrollWidth / 2 / 55).toFixed(1) + 's');
+  run.classList.remove('moving');
+  void run.offsetWidth;
+  run.classList.add('moving');
+}
+
+// Clicks and key presses mark the next chamber drawing as an answer to the user.
+let lastUserAction = 0;
+document.addEventListener('pointerdown', () => { lastUserAction = performance.now(); }, true);
+document.addEventListener('keydown', () => { lastUserAction = performance.now(); }, true);
+
+// The Discord handle copies itself when clicked.
+function copyDiscord(btn) {
+  const done = () => {
+    btn.classList.add('copied');
+    btn.textContent = 'copied ✓';
+    setTimeout(() => { btn.classList.remove('copied'); btn.textContent = '@consuldelmar'; }, 1600);
+  };
+  if (navigator.clipboard) navigator.clipboard.writeText('consuldelmar').then(done, () => {});
+}
+
+// Hook the motion into the existing steps.
+{
+  const baseRender = render;
+  render = function () {
+    const fresh = sweepNext;
+    baseRender.apply(this, arguments);
+    updateTicker();
+    placeTabInk();
+    if (!fresh) return;
+    const res = $('results');
+    res.classList.remove('fresh-run');
+    void res.offsetWidth;
+    res.classList.add('fresh-run');
+    clearTimeout(res._freshTimer);
+    res._freshTimer = setTimeout(() => res.classList.remove('fresh-run'), 2800);
+    document.querySelectorAll('#cards .card').forEach((card, i) => {
+      card.style.setProperty('--i', i);
+      const num = card.querySelector('.card-seats');
+      if (num) countUp(num, parseInt(num.textContent, 10) || 0, { dur: 1100, delay: 250 + i * 50 });
+    });
+    enterPanel(document.querySelector('.panel.active'));
+  };
+
+  const baseDraw = drawChamber;
+  drawChamber = function () {
+    baseDraw.apply(this, arguments);
+    const svg = $('hemi-svg');
+    svg.classList.remove('reseat');
+    if (!sweepNext && performance.now() - lastUserAction < 600) {
+      void svg.getBoundingClientRect();
+      svg.classList.add('reseat');
+    }
+  };
+
+  const baseSwitch = switchTab;
+  switchTab = function (tab) {
+    baseSwitch(tab);
+    placeTabInk();
+    enterPanel($('panel-' + tab.dataset.t));
+  };
+
+  const baseMeter = updateMeter;
+  updateMeter = function () {
+    const el = $('c-seats-big');
+    const before = parseInt(el.textContent, 10);
+    baseMeter.apply(this, arguments);
+    const after = parseInt(el.textContent, 10);
+    if (!isNaN(after) && before !== after) countUp(el, after, { from: isNaN(before) ? 0 : before, dur: 550 });
+  };
+
+  const baseEmpty = showEmptyState;
+  showEmptyState = function () {
+    baseEmpty.apply(this, arguments);
+    tickerIdle('The districts changed. Run a new election to see the result.');
+  };
+}
+
 </script>
 </body>
 </html>
