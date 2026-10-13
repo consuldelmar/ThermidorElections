@@ -1,0 +1,51 @@
+{
+  "version": 5,
+  "theme": "light",
+  "voteMode": "exact",
+  "variance": 8,
+  "pollGlobalDev": 5,
+  "seed": "",
+  "hemiSort": "entry",
+  "chamberLayout": "hemicycle",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "SD", "name": "Social Democrats", "colour": "#C8323C", "lr": 3, "al": 4.5, "share": 30.9 },
+    { "id": "LIB", "name": "Liberal Party", "colour": "#E0A800", "lr": 6, "al": 3, "share": 16.9 },
+    { "id": "CU", "name": "Conservative Union", "colour": "#2A5CAA", "lr": 7.5, "al": 6.5, "share": 27 },
+    { "id": "GRN", "name": "Greens", "colour": "#3E9B4F", "lr": 2, "al": 3, "share": 11.8 },
+    { "id": "AGR", "name": "Agrarian League", "colour": "#8C6A2F", "lr": 5.5, "al": 6, "share": 9.8 },
+    { "id": "Ind", "name": "Independents", "colour": "#777777", "lr": 5, "al": 5, "share": 3.5 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "districtsByRegion": {
+    "Capital": [7,6,6,5],
+    "North": [5,5,4,4,3],
+    "South": [6,5,5,4,4,3],
+    "East": [5,5,4,4,4,4,3]
+  },
+  "regionalPolling": {
+    "columns": ["Capital","North","South","East"],
+    "SD": [36,30,28,30],
+    "LIB": [24,14,16,14],
+    "CU": [20,30,30,28],
+    "GRN": [16,12,10,10],
+    "AGR": [1,10,12,15],
+    "Ind": [3,4,4,3]
+  },
+  "transfers": {
+    "columns": ["SD","LIB","CU","GRN","AGR","Ind","None","Kept"],
+    "SD": [0,14,10,26,16,19,15,85],
+    "LIB": [14,0,17,11,22,23,13,85],
+    "CU": [12,21,0,10,22,19,16,85],
+    "GRN": [29,13,10,0,14,16,18,85],
+    "AGR": [14,19,16,10,0,29,12,85],
+    "Ind": [16,20,13,12,29,0,10,85]
+  },
+  "scenarios": {
+    "Left": ["SD","GRN"],
+    "Centre-Left": ["SD","LIB","GRN"],
+    "Centre-Right": ["CU","LIB","AGR"],
+    "Right": ["CU","AGR"],
+    "Grand Coalition": ["SD","CU"]
+  }
+}
