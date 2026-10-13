@@ -31,7 +31,7 @@ Keyboard shortcuts: **R** or **Enter** runs one election, **N** runs the batch, 
 
 ## Credits and license
 
-Created by F. Puyó, Consuldelmar and JuliaCerezo.
+Created by F. Puyó, CerezoJulia and Consuldelmar.
 
 The code is released under the [MIT License](LICENSE). The flag of Higher Thermidor and its default dataset belong to the authors' NationStates worldbuilding and are included as an example; if you publish your own version, please replace them with your country's.
 
