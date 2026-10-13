@@ -2917,21 +2917,13 @@ function svgText(text, attrs) {
 }
 
 // Clicking a party, in the chamber legend or on its seat card. In Westminster
-// it crosses the floor; with a coalition picked it becomes the only one picked
-// (or clears the pick); otherwise it highlights the party's seats.
+// it crosses the floor; in the hemicycle it joins or leaves the selection.
 function pickParty(p) {
   if (!sim) return;
-  if (chamberLayout === 'westminster') {
-    toggleCoalitionMember(p);
-  } else if (selected.size > 0) {
-    const sole = selected.size === 1 && selected.has(p.id);
-    selectCoalition(sole ? [] : [p.id]);
-    updateMeter();
-  } else {
-    hemiHighlight = hemiHighlight === p.id ? null : p.id;
-    drawChamber(sim.nat, totalSeats(), majority());
-    renderVerdict();
-  }
+  // In both layouts a click adds the party to the coalition or takes it out,
+  // so several parties can be picked from the cards or the chamber legend.
+  hemiHighlight = null;
+  toggleCoalitionMember(p);
 }
 
 // What clicking a party will do, for the legend's and the cards' tooltips.
@@ -2939,10 +2931,7 @@ function pickHint(p) {
   if (chamberLayout === 'westminster') {
     return selected.has(p.id) ? `Click to move ${p.name} to the opposition` : `Click to move ${p.name} to the government benches`;
   }
-  if (selected.size) {
-    return selected.size === 1 && selected.has(p.id) ? 'Click to clear the selection' : `Click to focus ${p.name} and drop the coalition`;
-  }
-  return hemiHighlight === p.id ? 'Click to clear the highlight' : `Click to highlight ${p.name}'s seats`;
+  return selected.has(p.id) ? `Click to take ${p.name} out of the selection` : `Click to add ${p.name} to the selection`;
 }
 
 // Shows on the seat cards and the district mosaic which parties are picked:
