@@ -4,7 +4,7 @@ An election simulator for the Civic Assembly of [Higher Thermidor](https://www.n
 
 [**Open the simulator**](https://consuldelmar.github.io/ThermidorElections/) · [**Read the guide on NationStates**](https://www.nationstates.net/page=dispatch/id=2795939)
 
-!\[The simulator after a run, with a three-party coalition selected](docs/screenshot.png)
+![The simulator after a run, with a three-party coalition selected](docs/screenshot.png)
  
 ## What it does
 
