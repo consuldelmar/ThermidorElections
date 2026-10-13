@@ -1,0 +1,1416 @@
+{
+  "version": 6,
+  "title": "House of Representatives of Australia",
+  "titleHighlight": "Australia",
+  "election": "Federal election, 3 May 2025",
+  "source": "First preferences by division: Australian Electoral Commission, 2025 federal election (via the aec-2025-narrative dataset on GitHub). Compass positions: estimates on the Chapel Hill Expert Survey scales, which don't cover Australia. Preference flows: estimates.",
+  "notes": "Preferential voting is STV with one seat per division. Country Liberal votes count as Liberal. Independents are one group: in each division it takes the strongest independent; the other independents and all minor parties are 'Other candidates'. Nobody stops ranking (voting is compulsory and preferential).",
+  "system": { "type": "stv", "threshold": 0 },
+  "swing": "proportional",
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "westminster",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "ALP", "name": "Labor", "colour": "#E13940", "lr": 4, "al": 4, "share": 34.56 },
+    { "id": "LIB", "name": "Liberal", "colour": "#1C4F9C", "lr": 7, "al": 6.5, "share": 20.92 },
+    { "id": "LNP", "name": "Liberal National (Qld)", "colour": "#3A86D4", "lr": 7.5, "al": 7.5, "share": 7.1 },
+    { "id": "NAT", "name": "Nationals", "colour": "#006644", "lr": 6.5, "al": 8, "share": 3.8 },
+    { "id": "GRN", "name": "Greens", "colour": "#10C25B", "lr": 1.5, "al": 1, "share": 12.2 },
+    { "id": "ON", "name": "One Nation", "colour": "#F36C21", "lr": 7, "al": 9.5, "share": 6.4 },
+    { "id": "IND", "name": "Independents", "colour": "#2EC4B6", "lr": 5, "al": 3.5, "share": 6.59 },
+    { "id": "KAP", "name": "Katter's Australian Party", "colour": "#8B1A1A", "lr": 5, "al": 8.5, "share": 0.33 },
+    { "id": "CA", "name": "Centre Alliance", "colour": "#FFB000", "lr": 5, "al": 4, "share": 0.24 },
+    { "id": "OTH", "name": "Other candidates", "colour": "#A0A0A0", "lr": 5, "al": 5, "share": 7.85 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": ["New South Wales", "Victoria", "Queensland", "Western Australia", "South Australia", "Tasmania", "Australian Capital Territory", "Northern Territory"],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "Banks",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 98935,
+      "Baseline": { "ALP": 36.427, "LIB": 39.099, "GRN": 11.883, "ON": 3.705, "IND": 2.016, "OTH": 6.869 }
+    },
+    {
+      "District ID": 2,
+      "District Name": "Barton",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 99951,
+      "Baseline": { "ALP": 47.121, "LIB": 24.174, "GRN": 15.893, "ON": 5.576, "OTH": 7.237 }
+    },
+    {
+      "District ID": 3,
+      "District Name": "Bennelong",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 109812,
+      "Baseline": { "ALP": 45.351, "LIB": 35.069, "GRN": 11.776, "ON": 2.308, "OTH": 5.497 }
+    },
+    {
+      "District ID": 4,
+      "District Name": "Berowra",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 115568,
+      "Baseline": { "ALP": 27.014, "LIB": 41.716, "GRN": 11.925, "ON": 4.071, "IND": 11.366, "OTH": 3.909 }
+    },
+    {
+      "District ID": 5,
+      "District Name": "Blaxland",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 86886,
+      "Baseline": { "ALP": 46.038, "LIB": 19.592, "GRN": 7.888, "ON": 3.552, "IND": 18.763, "OTH": 4.166 }
+    },
+    {
+      "District ID": 6,
+      "District Name": "Bradfield",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 112202,
+      "Baseline": { "ALP": 20.292, "LIB": 38.035, "GRN": 6.73, "ON": 1.537, "IND": 27.013, "OTH": 6.393 }
+    },
+    {
+      "District ID": 7,
+      "District Name": "Calare",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 106267,
+      "Baseline": { "ALP": 10.432, "NAT": 29.715, "GRN": 3.532, "ON": 7.716, "IND": 23.688, "OTH": 24.917 }
+    },
+    {
+      "District ID": 8,
+      "District Name": "Chifley",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 89414,
+      "Baseline": { "ALP": 52.652, "LIB": 19.698, "GRN": 9.757, "ON": 5.97, "IND": 1.699, "OTH": 10.224 }
+    },
+    {
+      "District ID": 9,
+      "District Name": "Cook",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 106364,
+      "Baseline": { "ALP": 31.471, "LIB": 48.062, "GRN": 9.942, "ON": 4.36, "OTH": 6.164 }
+    },
+    {
+      "District ID": 10,
+      "District Name": "Cowper",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 107735,
+      "Baseline": { "ALP": 11.8, "NAT": 37.904, "GRN": 4.225, "ON": 6.364, "IND": 29.346, "OTH": 10.361 }
+    },
+    {
+      "District ID": 11,
+      "District Name": "Cunningham",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 115474,
+      "Baseline": { "ALP": 44.691, "LIB": 23.22, "GRN": 20.424, "ON": 7.59, "OTH": 4.075 }
+    },
+    {
+      "District ID": 12,
+      "District Name": "Dobell",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 103427,
+      "Baseline": { "ALP": 42.801, "LIB": 27.804, "GRN": 10.294, "ON": 8.74, "OTH": 10.36 }
+    },
+    {
+      "District ID": 13,
+      "District Name": "Eden-Monaro",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 107088,
+      "Baseline": { "ALP": 43.038, "LIB": 31.882, "GRN": 10.028, "ON": 6.958, "IND": 2.334, "OTH": 5.761 }
+    },
+    {
+      "District ID": 14,
+      "District Name": "Farrer",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 103063,
+      "Baseline": { "ALP": 15.089, "LIB": 43.413, "GRN": 4.934, "ON": 6.601, "IND": 19.956, "OTH": 10.007 }
+    },
+    {
+      "District ID": 15,
+      "District Name": "Fowler",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 92938,
+      "Baseline": { "ALP": 37.562, "LIB": 12.271, "GRN": 6.766, "ON": 4.126, "IND": 33.472, "OTH": 5.804 }
+    },
+    {
+      "District ID": 16,
+      "District Name": "Gilmore",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 111053,
+      "Baseline": { "ALP": 38.128, "LIB": 34.44, "GRN": 7.143, "ON": 5.004, "IND": 7.538, "OTH": 7.748 }
+    },
+    {
+      "District ID": 17,
+      "District Name": "Grayndler",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 110878,
+      "Baseline": { "ALP": 53.54, "LIB": 14.31, "GRN": 25.115, "ON": 3.161, "IND": 2.314, "OTH": 1.559 }
+    },
+    {
+      "District ID": 18,
+      "District Name": "Greenway",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 102755,
+      "Baseline": { "ALP": 50.413, "LIB": 27.473, "GRN": 10.723, "ON": 4.574, "IND": 2.638, "OTH": 4.179 }
+    },
+    {
+      "District ID": 19,
+      "District Name": "Hughes",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 98295,
+      "Baseline": { "ALP": 38.996, "LIB": 36.453, "GRN": 11.416, "ON": 5.344, "OTH": 7.792 }
+    },
+    {
+      "District ID": 20,
+      "District Name": "Hume",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 99467,
+      "Baseline": { "ALP": 27.218, "LIB": 43.849, "GRN": 8.5, "ON": 8.01, "IND": 4.459, "OTH": 7.964 }
+    },
+    {
+      "District ID": 21,
+      "District Name": "Hunter",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 111672,
+      "Baseline": { "ALP": 43.504, "NAT": 18.169, "GRN": 7.42, "ON": 16.128, "OTH": 14.778 }
+    },
+    {
+      "District ID": 22,
+      "District Name": "Kingsford Smith",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND"],
+      "Votes": 99132,
+      "Baseline": { "ALP": 50.787, "LIB": 26.151, "GRN": 13.558, "ON": 5.916, "IND": 3.588 }
+    },
+    {
+      "District ID": 23,
+      "District Name": "Lindsay",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 98146,
+      "Baseline": { "ALP": 32.097, "LIB": 39.74, "GRN": 9.594, "ON": 6.863, "IND": 1.12, "OTH": 10.586 }
+    },
+    {
+      "District ID": 24,
+      "District Name": "Lyne",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 109350,
+      "Baseline": { "ALP": 19.814, "NAT": 36.241, "GRN": 6.38, "ON": 8.39, "IND": 15.494, "OTH": 13.681 }
+    },
+    {
+      "District ID": 25,
+      "District Name": "Macarthur",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 93536,
+      "Baseline": { "ALP": 48.195, "LIB": 23.085, "GRN": 12.842, "ON": 7.843, "OTH": 8.034 }
+    },
+    {
+      "District ID": 26,
+      "District Name": "Mackellar",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 111847,
+      "Baseline": { "ALP": 12.069, "LIB": 35.448, "GRN": 6.132, "ON": 2.526, "IND": 37.982, "OTH": 5.844 }
+    },
+    {
+      "District ID": 27,
+      "District Name": "Macquarie",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 109705,
+      "Baseline": { "ALP": 42.635, "LIB": 31.578, "GRN": 12.457, "ON": 8.739, "OTH": 4.59 }
+    },
+    {
+      "District ID": 28,
+      "District Name": "McMahon",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND"],
+      "Votes": 97835,
+      "Baseline": { "ALP": 45.523, "LIB": 26.798, "GRN": 9.12, "ON": 8.733, "IND": 9.826 }
+    },
+    {
+      "District ID": 29,
+      "District Name": "Mitchell",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 109553,
+      "Baseline": { "ALP": 33.222, "LIB": 46.332, "GRN": 13.732, "ON": 4.272, "OTH": 2.442 }
+    },
+    {
+      "District ID": 30,
+      "District Name": "New England",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 114346,
+      "Baseline": { "ALP": 20.318, "NAT": 52.22, "GRN": 7.891, "ON": 9.958, "IND": 3.708, "OTH": 5.905 }
+    },
+    {
+      "District ID": 31,
+      "District Name": "Newcastle",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 108266,
+      "Baseline": { "ALP": 45.309, "LIB": 19.062, "GRN": 22.224, "ON": 5.347, "OTH": 8.058 }
+    },
+    {
+      "District ID": 32,
+      "District Name": "Page",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 107594,
+      "Baseline": { "ALP": 22.037, "NAT": 44.658, "GRN": 15.117, "ON": 5.699, "IND": 2.1, "OTH": 10.388 }
+    },
+    {
+      "District ID": 33,
+      "District Name": "Parkes",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 104887,
+      "Baseline": { "ALP": 19.669, "NAT": 39.959, "GRN": 6.106, "ON": 13.653, "IND": 2.476, "OTH": 18.138 }
+    },
+    {
+      "District ID": 34,
+      "District Name": "Parramatta",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 97190,
+      "Baseline": { "ALP": 47.769, "LIB": 30.723, "GRN": 12.106, "ON": 2.73, "IND": 1.542, "OTH": 5.129 }
+    },
+    {
+      "District ID": 35,
+      "District Name": "Paterson",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 108704,
+      "Baseline": { "ALP": 37.064, "LIB": 27.232, "GRN": 7.561, "ON": 7.593, "IND": 9.719, "OTH": 10.831 }
+    },
+    {
+      "District ID": 36,
+      "District Name": "Reid",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 101217,
+      "Baseline": { "ALP": 48.575, "LIB": 31.721, "GRN": 11.54, "ON": 2.324, "IND": 3.061, "OTH": 2.78 }
+    },
+    {
+      "District ID": 37,
+      "District Name": "Richmond",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 104952,
+      "Baseline": { "ALP": 30.396, "NAT": 24.578, "GRN": 26.472, "ON": 5.44, "IND": 1.671, "OTH": 11.443 }
+    },
+    {
+      "District ID": 38,
+      "District Name": "Riverina",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 105837,
+      "Baseline": { "ALP": 18.43, "NAT": 40.324, "GRN": 4.504, "ON": 9.852, "IND": 6.528, "OTH": 20.361 }
+    },
+    {
+      "District ID": 39,
+      "District Name": "Robertson",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 101463,
+      "Baseline": { "ALP": 44.756, "LIB": 30.386, "GRN": 8.988, "ON": 6.931, "IND": 3.327, "OTH": 5.612 }
+    },
+    {
+      "District ID": 40,
+      "District Name": "Shortland",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 108108,
+      "Baseline": { "ALP": 44.605, "LIB": 26.206, "GRN": 11.338, "ON": 9.077, "IND": 4.445, "OTH": 4.329 }
+    },
+    {
+      "District ID": 41,
+      "District Name": "Sydney",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 107249,
+      "Baseline": { "ALP": 55.155, "LIB": 17.585, "GRN": 21.596, "ON": 3.448, "OTH": 2.215 }
+    },
+    {
+      "District ID": 42,
+      "District Name": "Warringah",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 114895,
+      "Baseline": { "ALP": 14.568, "LIB": 31.721, "GRN": 8.748, "ON": 1.722, "IND": 39.68, "OTH": 3.562 }
+    },
+    {
+      "District ID": 43,
+      "District Name": "Watson",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 82834,
+      "Baseline": { "ALP": 48.003, "LIB": 15.193, "GRN": 8.932, "ON": 3.228, "IND": 14.739, "OTH": 9.904 }
+    },
+    {
+      "District ID": 44,
+      "District Name": "Wentworth",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 110431,
+      "Baseline": { "ALP": 13.383, "LIB": 36.362, "GRN": 10.179, "ON": 2.377, "IND": 36.479, "OTH": 1.22 }
+    },
+    {
+      "District ID": 45,
+      "District Name": "Werriwa",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 87614,
+      "Baseline": { "ALP": 40.844, "LIB": 30.82, "GRN": 11.125, "ON": 3.994, "IND": 2.548, "OTH": 10.67 }
+    },
+    {
+      "District ID": 46,
+      "District Name": "Whitlam",
+      "Seats": 1,
+      "Region": "New South Wales",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 109316,
+      "Baseline": { "ALP": 38.631, "LIB": 28.274, "GRN": 12.403, "ON": 7.665, "IND": 4.799, "OTH": 8.228 }
+    },
+    {
+      "District ID": 47,
+      "District Name": "Aston",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 109849,
+      "Baseline": { "ALP": 37.257, "LIB": 37.672, "GRN": 11.533, "ON": 3.403, "IND": 2.22, "OTH": 7.915 }
+    },
+    {
+      "District ID": 48,
+      "District Name": "Ballarat",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 104540,
+      "Baseline": { "ALP": 42.35, "LIB": 28.585, "GRN": 14.333, "ON": 7.68, "IND": 2.807, "OTH": 4.244 }
+    },
+    {
+      "District ID": 49,
+      "District Name": "Bendigo",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 106617,
+      "Baseline": { "ALP": 33.551, "LIB": 10.482, "NAT": 29.739, "GRN": 11.329, "ON": 4.935, "IND": 1.051, "OTH": 8.911 }
+    },
+    {
+      "District ID": 50,
+      "District Name": "Bruce",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 109494,
+      "Baseline": { "ALP": 45.308, "LIB": 22.98, "GRN": 12.067, "ON": 8.157, "OTH": 11.487 }
+    },
+    {
+      "District ID": 51,
+      "District Name": "Calwell",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 89831,
+      "Baseline": { "ALP": 30.527, "LIB": 15.698, "GRN": 8.281, "ON": 3.757, "IND": 11.95, "OTH": 29.786 }
+    },
+    {
+      "District ID": 52,
+      "District Name": "Casey",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 110563,
+      "Baseline": { "ALP": 24.258, "LIB": 40.876, "GRN": 10.95, "ON": 5.068, "IND": 10.483, "OTH": 8.365 }
+    },
+    {
+      "District ID": 53,
+      "District Name": "Chisholm",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 112696,
+      "Baseline": { "ALP": 38.737, "LIB": 37.238, "GRN": 12.499, "ON": 1.913, "IND": 5.932, "OTH": 3.681 }
+    },
+    {
+      "District ID": 54,
+      "District Name": "Cooper",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 107586,
+      "Baseline": { "ALP": 41.967, "LIB": 15.132, "GRN": 25.211, "ON": 5.283, "OTH": 12.407 }
+    },
+    {
+      "District ID": 55,
+      "District Name": "Corangamite",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 104020,
+      "Baseline": { "ALP": 37.314, "LIB": 34.117, "GRN": 14.348, "ON": 3.214, "IND": 4.389, "OTH": 6.619 }
+    },
+    {
+      "District ID": 56,
+      "District Name": "Corio",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 110227,
+      "Baseline": { "ALP": 42.84, "LIB": 24.879, "GRN": 15.868, "ON": 9.937, "IND": 3.565, "OTH": 2.911 }
+    },
+    {
+      "District ID": 57,
+      "District Name": "Deakin",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 115507,
+      "Baseline": { "ALP": 34.783, "LIB": 38.727, "GRN": 11.911, "ON": 2.634, "IND": 7.145, "OTH": 4.8 }
+    },
+    {
+      "District ID": 58,
+      "District Name": "Dunkley",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 109174,
+      "Baseline": { "ALP": 38.28, "LIB": 32.323, "GRN": 11.586, "ON": 6.864, "IND": 2.959, "OTH": 7.988 }
+    },
+    {
+      "District ID": 59,
+      "District Name": "Flinders",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 114923,
+      "Baseline": { "ALP": 22.295, "LIB": 41.223, "GRN": 6.356, "ON": 5.3, "IND": 21.237, "OTH": 3.588 }
+    },
+    {
+      "District ID": 60,
+      "District Name": "Fraser",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 107467,
+      "Baseline": { "ALP": 42.605, "LIB": 16.866, "GRN": 25.283, "ON": 4.778, "OTH": 10.468 }
+    },
+    {
+      "District ID": 61,
+      "District Name": "Gellibrand",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 105202,
+      "Baseline": { "ALP": 46.619, "LIB": 26.177, "GRN": 17.046, "ON": 5.979, "OTH": 4.179 }
+    },
+    {
+      "District ID": 62,
+      "District Name": "Gippsland",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 104758,
+      "Baseline": { "ALP": 21.279, "NAT": 52.536, "GRN": 8.493, "ON": 14.431, "OTH": 3.261 }
+    },
+    {
+      "District ID": 63,
+      "District Name": "Goldstein",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 115673,
+      "Baseline": { "ALP": 13.67, "LIB": 43.422, "GRN": 7.193, "ON": 1.761, "IND": 30.718, "OTH": 3.236 }
+    },
+    {
+      "District ID": 64,
+      "District Name": "Gorton",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 113430,
+      "Baseline": { "ALP": 43.052, "LIB": 29.17, "GRN": 10.794, "ON": 6.292, "OTH": 10.692 }
+    },
+    {
+      "District ID": 65,
+      "District Name": "Hawke",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 103817,
+      "Baseline": { "ALP": 39.126, "LIB": 30.229, "GRN": 9.804, "ON": 9.666, "OTH": 11.175 }
+    },
+    {
+      "District ID": 66,
+      "District Name": "Holt",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 99233,
+      "Baseline": { "ALP": 45.031, "LIB": 25.032, "GRN": 11.208, "ON": 8.722, "OTH": 10.007 }
+    },
+    {
+      "District ID": 67,
+      "District Name": "Hotham",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 106211,
+      "Baseline": { "ALP": 48.846, "LIB": 25.747, "GRN": 14.857, "ON": 4.669, "OTH": 5.881 }
+    },
+    {
+      "District ID": 68,
+      "District Name": "Indi",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 105761,
+      "Baseline": { "ALP": 8.343, "LIB": 30.706, "GRN": 3.63, "ON": 7.196, "IND": 42.287, "OTH": 7.837 }
+    },
+    {
+      "District ID": 69,
+      "District Name": "Isaacs",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 108181,
+      "Baseline": { "ALP": 49.412, "LIB": 28.341, "GRN": 14.051, "ON": 4.612, "OTH": 3.585 }
+    },
+    {
+      "District ID": 70,
+      "District Name": "Jagajaga",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 111099,
+      "Baseline": { "ALP": 42.56, "LIB": 29.455, "GRN": 15.602, "ON": 3.868, "IND": 4.651, "OTH": 3.864 }
+    },
+    {
+      "District ID": 71,
+      "District Name": "Kooyong",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 114868,
+      "Baseline": { "ALP": 11.901, "LIB": 43.13, "GRN": 7.748, "ON": 1.046, "IND": 33.913, "OTH": 2.263 }
+    },
+    {
+      "District ID": 72,
+      "District Name": "La Trobe",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 103618,
+      "Baseline": { "ALP": 32.127, "LIB": 39.131, "GRN": 12.919, "ON": 7.678, "OTH": 8.145 }
+    },
+    {
+      "District ID": 73,
+      "District Name": "Lalor",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 99284,
+      "Baseline": { "ALP": 43.596, "LIB": 26.056, "GRN": 15.29, "ON": 7.036, "IND": 2.116, "OTH": 5.905 }
+    },
+    {
+      "District ID": 74,
+      "District Name": "Macnamara",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 100338,
+      "Baseline": { "ALP": 36.106, "LIB": 32.496, "GRN": 25.475, "ON": 2.794, "IND": 1.835, "OTH": 1.295 }
+    },
+    {
+      "District ID": 75,
+      "District Name": "Mallee",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 103707,
+      "Baseline": { "ALP": 19.13, "NAT": 49.71, "GRN": 9.138, "ON": 11.006, "OTH": 11.016 }
+    },
+    {
+      "District ID": 76,
+      "District Name": "Maribyrnong",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON"],
+      "Votes": 111197,
+      "Baseline": { "ALP": 41.426, "LIB": 30.463, "GRN": 21.218, "ON": 6.893 }
+    },
+    {
+      "District ID": 77,
+      "District Name": "McEwen",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 104616,
+      "Baseline": { "ALP": 37.355, "LIB": 32.522, "GRN": 11.099, "ON": 6.566, "OTH": 12.459 }
+    },
+    {
+      "District ID": 78,
+      "District Name": "Melbourne",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 97448,
+      "Baseline": { "ALP": 31.341, "LIB": 19.772, "GRN": 39.464, "ON": 2.502, "IND": 3.288, "OTH": 3.634 }
+    },
+    {
+      "District ID": 79,
+      "District Name": "Menzies",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 109430,
+      "Baseline": { "ALP": 34.736, "LIB": 40.641, "GRN": 10.964, "ON": 1.967, "IND": 6.366, "OTH": 5.327 }
+    },
+    {
+      "District ID": 80,
+      "District Name": "Monash",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 102520,
+      "Baseline": { "ALP": 20.293, "LIB": 31.778, "GRN": 4.938, "ON": 7.965, "IND": 17.098, "OTH": 17.928 }
+    },
+    {
+      "District ID": 81,
+      "District Name": "Nicholls",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 105450,
+      "Baseline": { "ALP": 24.239, "NAT": 46.242, "GRN": 7.809, "ON": 11.47, "OTH": 10.24 }
+    },
+    {
+      "District ID": 82,
+      "District Name": "Scullin",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 96545,
+      "Baseline": { "ALP": 44.899, "LIB": 20.516, "GRN": 9.415, "ON": 6.63, "OTH": 18.54 }
+    },
+    {
+      "District ID": 83,
+      "District Name": "Wannon",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 108403,
+      "Baseline": { "ALP": 10.551, "LIB": 43.645, "GRN": 3.161, "ON": 4.178, "IND": 31.376, "OTH": 7.089 }
+    },
+    {
+      "District ID": 84,
+      "District Name": "Wills",
+      "Seats": 1,
+      "Region": "Victoria",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 109781,
+      "Baseline": { "ALP": 35.588, "LIB": 12.863, "GRN": 35.374, "ON": 3.5, "OTH": 12.675 }
+    },
+    {
+      "District ID": 85,
+      "District Name": "Blair",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 116953,
+      "Baseline": { "ALP": 36.617, "LNP": 27.188, "GRN": 10.349, "ON": 9.7, "OTH": 16.146 }
+    },
+    {
+      "District ID": 86,
+      "District Name": "Bonner",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 99106,
+      "Baseline": { "ALP": 39.507, "LNP": 35.473, "GRN": 12.425, "ON": 3.818, "OTH": 8.776 }
+    },
+    {
+      "District ID": 87,
+      "District Name": "Bowman",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 107987,
+      "Baseline": { "ALP": 31.714, "LNP": 39.613, "GRN": 11.75, "ON": 7.084, "IND": 3.125, "OTH": 6.713 }
+    },
+    {
+      "District ID": 88,
+      "District Name": "Brisbane",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 110745,
+      "Baseline": { "ALP": 32.152, "LNP": 34.269, "GRN": 25.882, "ON": 2.527, "OTH": 5.17 }
+    },
+    {
+      "District ID": 89,
+      "District Name": "Capricornia",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 98658,
+      "Baseline": { "ALP": 31.911, "LNP": 36.565, "GRN": 6.184, "ON": 15.564, "OTH": 9.776 }
+    },
+    {
+      "District ID": 90,
+      "District Name": "Dawson",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 98468,
+      "Baseline": { "ALP": 26.21, "LNP": 41.682, "GRN": 7.052, "ON": 10.418, "OTH": 14.639 }
+    },
+    {
+      "District ID": 91,
+      "District Name": "Dickson",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 105579,
+      "Baseline": { "ALP": 33.626, "LNP": 34.693, "GRN": 7.635, "ON": 4.195, "IND": 12.194, "OTH": 7.658 }
+    },
+    {
+      "District ID": 92,
+      "District Name": "Fadden",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 111398,
+      "Baseline": { "ALP": 27.403, "LNP": 40.959, "GRN": 9.299, "ON": 7.986, "IND": 2.804, "OTH": 11.55 }
+    },
+    {
+      "District ID": 93,
+      "District Name": "Fairfax",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 111048,
+      "Baseline": { "ALP": 24.86, "LNP": 37.889, "GRN": 10.222, "ON": 7.413, "IND": 11.783, "OTH": 7.833 }
+    },
+    {
+      "District ID": 94,
+      "District Name": "Fisher",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 118472,
+      "Baseline": { "ALP": 22.267, "LNP": 37.224, "GRN": 9.619, "ON": 6.077, "IND": 16.287, "OTH": 8.526 }
+    },
+    {
+      "District ID": 95,
+      "District Name": "Flynn",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 97543,
+      "Baseline": { "ALP": 25.057, "LNP": 37.421, "GRN": 5.687, "ON": 14.223, "IND": 3.209, "OTH": 14.403 }
+    },
+    {
+      "District ID": 96,
+      "District Name": "Forde",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 107528,
+      "Baseline": { "ALP": 34.243, "LNP": 30.711, "GRN": 11.42, "ON": 10.275, "IND": 2.963, "OTH": 10.387 }
+    },
+    {
+      "District ID": 97,
+      "District Name": "Griffith",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 109212,
+      "Baseline": { "ALP": 34.507, "LNP": 26.577, "GRN": 31.654, "ON": 2.458, "OTH": 4.804 }
+    },
+    {
+      "District ID": 98,
+      "District Name": "Groom",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 103219,
+      "Baseline": { "ALP": 16.636, "LNP": 40.983, "GRN": 5.577, "ON": 9.553, "IND": 17.142, "OTH": 10.109 }
+    },
+    {
+      "District ID": 99,
+      "District Name": "Herbert",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "KAP", "OTH"],
+      "Votes": 98362,
+      "Baseline": { "ALP": 23.023, "LNP": 48.739, "GRN": 9.382, "ON": 5.185, "KAP": 6.668, "OTH": 7.003 }
+    },
+    {
+      "District ID": 100,
+      "District Name": "Hinkler",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 109370,
+      "Baseline": { "ALP": 31.182, "LNP": 38.008, "GRN": 7.315, "ON": 13.256, "IND": 2.927, "OTH": 7.313 }
+    },
+    {
+      "District ID": 101,
+      "District Name": "Kennedy",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "KAP", "OTH"],
+      "Votes": 97162,
+      "Baseline": { "ALP": 16.382, "LNP": 23.811, "GRN": 5.929, "ON": 7.761, "IND": 1.672, "KAP": 40.365, "OTH": 4.08 }
+    },
+    {
+      "District ID": 102,
+      "District Name": "Leichhardt",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "KAP", "OTH"],
+      "Votes": 94480,
+      "Baseline": { "ALP": 36.503, "LNP": 27.25, "GRN": 9.289, "ON": 8.01, "IND": 1.756, "KAP": 6.347, "OTH": 10.845 }
+    },
+    {
+      "District ID": 103,
+      "District Name": "Lilley",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 105440,
+      "Baseline": { "ALP": 46.075, "LNP": 27.698, "GRN": 16.402, "ON": 4.254, "OTH": 5.571 }
+    },
+    {
+      "District ID": 104,
+      "District Name": "Longman",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 121929,
+      "Baseline": { "ALP": 35.462, "LNP": 36.054, "GRN": 9.853, "ON": 9.893, "OTH": 8.739 }
+    },
+    {
+      "District ID": 105,
+      "District Name": "Maranoa",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 97687,
+      "Baseline": { "ALP": 16.046, "LNP": 53.177, "GRN": 5.151, "ON": 12.303, "OTH": 13.323 }
+    },
+    {
+      "District ID": 106,
+      "District Name": "McPherson",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 97215,
+      "Baseline": { "ALP": 23.431, "LNP": 35.918, "GRN": 8.409, "ON": 4.35, "IND": 13.749, "OTH": 14.143 }
+    },
+    {
+      "District ID": 107,
+      "District Name": "Moncrieff",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 100326,
+      "Baseline": { "ALP": 24.456, "LNP": 41.91, "GRN": 9.527, "ON": 5.875, "IND": 7.616, "OTH": 10.615 }
+    },
+    {
+      "District ID": 108,
+      "District Name": "Moreton",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 93831,
+      "Baseline": { "ALP": 42.307, "LNP": 25.719, "GRN": 21.669, "ON": 2.863, "OTH": 7.443 }
+    },
+    {
+      "District ID": 109,
+      "District Name": "Oxley",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 104062,
+      "Baseline": { "ALP": 52.748, "LNP": 21.118, "GRN": 13.433, "ON": 5.514, "OTH": 7.186 }
+    },
+    {
+      "District ID": 110,
+      "District Name": "Petrie",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 116792,
+      "Baseline": { "ALP": 36.422, "LNP": 37.842, "GRN": 11.818, "ON": 6.72, "OTH": 7.199 }
+    },
+    {
+      "District ID": 111,
+      "District Name": "Rankin",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 91669,
+      "Baseline": { "ALP": 49.42, "LNP": 19.746, "GRN": 10.944, "ON": 6.568, "OTH": 13.322 }
+    },
+    {
+      "District ID": 112,
+      "District Name": "Ryan",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 103462,
+      "Baseline": { "ALP": 28.239, "LNP": 34.608, "GRN": 28.983, "ON": 2.249, "OTH": 5.921 }
+    },
+    {
+      "District ID": 113,
+      "District Name": "Wide Bay",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "IND", "OTH"],
+      "Votes": 105058,
+      "Baseline": { "ALP": 25.958, "LNP": 39.078, "GRN": 8.643, "ON": 12.037, "IND": 4.845, "OTH": 9.439 }
+    },
+    {
+      "District ID": 114,
+      "District Name": "Wright",
+      "Seats": 1,
+      "Region": "Queensland",
+      "Active Parties": ["ALP", "LNP", "GRN", "ON", "OTH"],
+      "Votes": 116880,
+      "Baseline": { "ALP": 25.418, "LNP": 34.06, "GRN": 9.521, "ON": 16.254, "OTH": 14.748 }
+    },
+    {
+      "District ID": 115,
+      "District Name": "Brand",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 93793,
+      "Baseline": { "ALP": 45.861, "LIB": 19.694, "GRN": 13.233, "ON": 12.751, "OTH": 8.46 }
+    },
+    {
+      "District ID": 116,
+      "District Name": "Bullwinkel",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 104664,
+      "Baseline": { "ALP": 31.946, "LIB": 24.3, "NAT": 15.771, "GRN": 11.205, "ON": 8.609, "OTH": 8.168 }
+    },
+    {
+      "District ID": 117,
+      "District Name": "Burt",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 98691,
+      "Baseline": { "ALP": 46.735, "LIB": 19.129, "GRN": 11.486, "ON": 9.919, "IND": 2.179, "OTH": 10.552 }
+    },
+    {
+      "District ID": 118,
+      "District Name": "Canning",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 100647,
+      "Baseline": { "ALP": 29.905, "LIB": 42.519, "GRN": 8.909, "ON": 11.414, "OTH": 7.253 }
+    },
+    {
+      "District ID": 119,
+      "District Name": "Cowan",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 96141,
+      "Baseline": { "ALP": 46.625, "LIB": 24.166, "GRN": 10.783, "ON": 5.064, "IND": 3.554, "OTH": 9.807 }
+    },
+    {
+      "District ID": 120,
+      "District Name": "Curtin",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 105348,
+      "Baseline": { "ALP": 14.833, "LIB": 40.282, "GRN": 7.817, "ON": 2.592, "IND": 32.228, "OTH": 2.248 }
+    },
+    {
+      "District ID": 121,
+      "District Name": "Durack",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 87962,
+      "Baseline": { "ALP": 23.4, "LIB": 32.878, "NAT": 13.61, "GRN": 8.181, "ON": 10.082, "OTH": 11.849 }
+    },
+    {
+      "District ID": 122,
+      "District Name": "Forrest",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 99457,
+      "Baseline": { "ALP": 22.545, "LIB": 31.18, "NAT": 4.797, "GRN": 7.883, "ON": 8.717, "IND": 18.305, "OTH": 6.572 }
+    },
+    {
+      "District ID": 123,
+      "District Name": "Fremantle",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 102130,
+      "Baseline": { "ALP": 38.605, "LIB": 18.852, "GRN": 11.556, "ON": 6.115, "IND": 23.01, "OTH": 1.862 }
+    },
+    {
+      "District ID": 124,
+      "District Name": "Hasluck",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 95551,
+      "Baseline": { "ALP": 48.354, "LIB": 22.159, "GRN": 12.467, "ON": 7.378, "OTH": 9.642 }
+    },
+    {
+      "District ID": 125,
+      "District Name": "Moore",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 106837,
+      "Baseline": { "ALP": 32.511, "LIB": 31.445, "GRN": 11.117, "ON": 4.53, "IND": 6.329, "OTH": 14.067 }
+    },
+    {
+      "District ID": 126,
+      "District Name": "O'Connor",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "OTH"],
+      "Votes": 100115,
+      "Baseline": { "ALP": 21.056, "LIB": 34.448, "NAT": 12.797, "GRN": 10.002, "ON": 11.04, "OTH": 10.656 }
+    },
+    {
+      "District ID": 127,
+      "District Name": "Pearce",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 98093,
+      "Baseline": { "ALP": 40.067, "LIB": 28.523, "GRN": 11.866, "ON": 9.266, "OTH": 10.278 }
+    },
+    {
+      "District ID": 128,
+      "District Name": "Perth",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON"],
+      "Votes": 99756,
+      "Baseline": { "ALP": 43.052, "LIB": 26.09, "GRN": 24.527, "ON": 6.331 }
+    },
+    {
+      "District ID": 129,
+      "District Name": "Swan",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 98280,
+      "Baseline": { "ALP": 42.63, "LIB": 26.93, "GRN": 17.487, "ON": 5.221, "OTH": 7.732 }
+    },
+    {
+      "District ID": 130,
+      "District Name": "Tangney",
+      "Seats": 1,
+      "Region": "Western Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 110991,
+      "Baseline": { "ALP": 42.503, "LIB": 34.261, "GRN": 12.983, "ON": 4.072, "OTH": 6.18 }
+    },
+    {
+      "District ID": 131,
+      "District Name": "Adelaide",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 114089,
+      "Baseline": { "ALP": 46.487, "LIB": 24.166, "GRN": 18.969, "ON": 4.018, "OTH": 6.36 }
+    },
+    {
+      "District ID": 132,
+      "District Name": "Barker",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 108714,
+      "Baseline": { "ALP": 22.493, "LIB": 48.255, "NAT": 1.741, "GRN": 8.155, "ON": 8.194, "IND": 2.725, "OTH": 8.436 }
+    },
+    {
+      "District ID": 133,
+      "District Name": "Boothby",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 117339,
+      "Baseline": { "ALP": 42.624, "LIB": 32.485, "GRN": 17.084, "ON": 3.034, "OTH": 4.773 }
+    },
+    {
+      "District ID": 134,
+      "District Name": "Grey",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "NAT", "GRN", "ON", "IND", "OTH"],
+      "Votes": 106881,
+      "Baseline": { "ALP": 22.504, "LIB": 34.886, "NAT": 3.076, "GRN": 5.916, "ON": 9.966, "IND": 17.538, "OTH": 6.112 }
+    },
+    {
+      "District ID": 135,
+      "District Name": "Hindmarsh",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 112471,
+      "Baseline": { "ALP": 48.141, "LIB": 23.103, "GRN": 13.555, "ON": 4.974, "IND": 1.588, "OTH": 8.639 }
+    },
+    {
+      "District ID": 136,
+      "District Name": "Kingston",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 112695,
+      "Baseline": { "ALP": 53.026, "LIB": 18.629, "GRN": 13.442, "ON": 6.227, "OTH": 8.675 }
+    },
+    {
+      "District ID": 137,
+      "District Name": "Makin",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 106148,
+      "Baseline": { "ALP": 47.824, "LIB": 22.488, "GRN": 12.373, "ON": 6.738, "OTH": 10.577 }
+    },
+    {
+      "District ID": 138,
+      "District Name": "Mayo",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "CA", "OTH"],
+      "Votes": 125182,
+      "Baseline": { "ALP": 21.343, "LIB": 23.606, "GRN": 13.619, "ON": 5.986, "CA": 29.919, "OTH": 5.527 }
+    },
+    {
+      "District ID": 139,
+      "District Name": "Spence",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 111582,
+      "Baseline": { "ALP": 44.329, "LIB": 18.688, "GRN": 14.488, "ON": 9.548, "IND": 2.464, "OTH": 10.484 }
+    },
+    {
+      "District ID": 140,
+      "District Name": "Sturt",
+      "Seats": 1,
+      "Region": "South Australia",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 117137,
+      "Baseline": { "ALP": 35.286, "LIB": 34.343, "GRN": 15.618, "ON": 3.445, "IND": 7.182, "OTH": 4.126 }
+    },
+    {
+      "District ID": 141,
+      "District Name": "Bass",
+      "Seats": 1,
+      "Region": "Tasmania",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 71594,
+      "Baseline": { "ALP": 39.633, "LIB": 31.443, "GRN": 12.891, "ON": 6.48, "IND": 5.38, "OTH": 4.174 }
+    },
+    {
+      "District ID": 142,
+      "District Name": "Braddon",
+      "Seats": 1,
+      "Region": "Tasmania",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 74840,
+      "Baseline": { "ALP": 39.523, "LIB": 31.668, "GRN": 8.442, "ON": 7.628, "IND": 8.25, "OTH": 4.49 }
+    },
+    {
+      "District ID": 143,
+      "District Name": "Clark",
+      "Seats": 1,
+      "Region": "Tasmania",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND"],
+      "Votes": 67531,
+      "Baseline": { "ALP": 20.049, "LIB": 13.681, "GRN": 13.191, "ON": 4.197, "IND": 48.883 }
+    },
+    {
+      "District ID": 144,
+      "District Name": "Franklin",
+      "Seats": 1,
+      "Region": "Tasmania",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 76462,
+      "Baseline": { "ALP": 39.029, "LIB": 18.837, "GRN": 10.484, "ON": 4.961, "IND": 21.692, "OTH": 4.999 }
+    },
+    {
+      "District ID": 145,
+      "District Name": "Lyons",
+      "Seats": 1,
+      "Region": "Tasmania",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 76832,
+      "Baseline": { "ALP": 43.081, "LIB": 26.207, "GRN": 10.883, "ON": 6.722, "IND": 3.204, "OTH": 9.902 }
+    },
+    {
+      "District ID": 146,
+      "District Name": "Bean",
+      "Seats": 1,
+      "Region": "Australian Capital Territory",
+      "Active Parties": ["ALP", "LIB", "GRN", "IND"],
+      "Votes": 102700,
+      "Baseline": { "ALP": 41.05, "LIB": 23.043, "GRN": 9.5, "IND": 26.407 }
+    },
+    {
+      "District ID": 147,
+      "District Name": "Canberra",
+      "Seats": 1,
+      "Region": "Australian Capital Territory",
+      "Active Parties": ["ALP", "LIB", "GRN", "IND", "OTH"],
+      "Votes": 93405,
+      "Baseline": { "ALP": 48.32, "LIB": 18.308, "GRN": 19.811, "IND": 10.906, "OTH": 2.655 }
+    },
+    {
+      "District ID": 148,
+      "District Name": "Fenner",
+      "Seats": 1,
+      "Region": "Australian Capital Territory",
+      "Active Parties": ["ALP", "LIB", "GRN", "OTH"],
+      "Votes": 94460,
+      "Baseline": { "ALP": 53.799, "LIB": 21.938, "GRN": 16.401, "OTH": 7.862 }
+    },
+    {
+      "District ID": 149,
+      "District Name": "Lingiari",
+      "Seats": 1,
+      "Region": "Northern Territory",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "OTH"],
+      "Votes": 45632,
+      "Baseline": { "ALP": 44.644, "LIB": 30.994, "GRN": 10.181, "ON": 9.055, "OTH": 5.126 }
+    },
+    {
+      "District ID": 150,
+      "District Name": "Solomon",
+      "Seats": 1,
+      "Region": "Northern Territory",
+      "Active Parties": ["ALP", "LIB", "GRN", "ON", "IND", "OTH"],
+      "Votes": 60130,
+      "Baseline": { "ALP": 32.847, "LIB": 35.992, "GRN": 10.256, "ON": 6.707, "IND": 12.475, "OTH": 1.723 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": ["New South Wales", "Victoria", "Queensland", "Western Australia", "South Australia", "Tasmania", "Australian Capital Territory", "Northern Territory"],
+    "ALP": [35.1952, 33.9495, 30.9828, 35.5903, 38.308, 36.605, 47.5315, 37.9371],
+    "LIB": [24.2165, 27.5811, 0.0, 28.6643, 27.9901, 24.5026, 21.1619, 33.8354],
+    "LNP": [0.0, 0.0, 34.9126, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "NAT": [7.3119, 4.6152, 0.0, 2.8817, 0.4576, 0.0, 0.0, 0.0],
+    "GRN": [11.0635, 13.5862, 11.7573, 11.9734, 13.4172, 11.1183, 15.0579, 10.2239],
+    "ON": [6.0226, 5.7853, 7.8444, 7.6092, 6.1515, 6.0284, 0.0, 7.7202],
+    "IND": [8.6093, 6.6596, 3.4399, 5.5045, 3.0608, 16.905, 12.8395, 7.0923],
+    "KAP": [0.0, 0.0, 1.6438, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "CA": [0.0, 0.0, 0.0, 0.0, 3.3079, 0.0, 0.0, 0.0],
+    "OTH": [7.5811, 7.823, 9.419, 7.7766, 7.3068, 4.8407, 3.4092, 3.1911]
+  },
+  "scenarios": {
+    "Labor alone": ["ALP"],
+    "Coalition": ["LIB", "LNP", "NAT"],
+    "Coalition + One Nation": ["LIB", "LNP", "NAT", "ON"],
+    "Labor + Greens": ["ALP", "GRN"],
+    "Labor + Greens + Independents": ["ALP", "GRN", "IND"]
+  },
+  "transfers": {
+    "columns": ["ALP", "LIB", "LNP", "NAT", "GRN", "ON", "IND", "KAP", "CA", "OTH", "None", "Kept"],
+    "ALP": [0, 4.7, 4.7, 4.7, 26.8, 2.0, 26.8, 6.7, 20.1, 3.4, 0, 85],
+    "LIB": [3.8, 0, 26.6, 26.6, 1.1, 5.7, 13.3, 5.7, 13.3, 3.8, 0, 85],
+    "LNP": [3.8, 26.6, 0, 26.6, 1.1, 5.7, 13.3, 5.7, 13.3, 3.8, 0, 85],
+    "NAT": [3.7, 26.1, 26.1, 0, 1.1, 5.6, 13.1, 7.5, 13.1, 3.7, 0, 85],
+    "GRN": [44.4, 6.7, 6.7, 6.7, 0, 0.7, 22.2, 1.5, 7.4, 3.7, 0, 85],
+    "ON": [7.8, 21.2, 21.2, 21.2, 0.4, 0, 5.3, 14.1, 1.8, 7.1, 0, 85],
+    "IND": [21.9, 16.4, 16.4, 16.4, 8.2, 4.4, 0, 5.5, 8.2, 2.7, 0, 85],
+    "KAP": [10.1, 20.2, 20.2, 20.2, 0.8, 16.2, 6.1, 0, 2.0, 4.0, 0, 85],
+    "CA": [18.2, 18.2, 18.2, 18.2, 6.8, 4.5, 9.1, 4.5, 0, 2.3, 0, 85],
+    "OTH": [12.7, 19.8, 19.8, 19.8, 4.8, 9.9, 6.0, 4.0, 3.2, 0, 0, 85]
+  }
+}
