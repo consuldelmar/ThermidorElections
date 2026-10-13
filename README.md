@@ -2,7 +2,7 @@
 
 An election simulator for the Civic Assembly of [Higher Thermidor](https://www.nationstates.net/nation=higher_thermidor), a nation on NationStates. It counts multi-member districts by the Single Transferable Vote, and you can set it up for any country: your own parties, districts, regions and vote transfers.
 
-[**Open the simulator**](https://consuldelmar.github.io/ThermidorElections/) · [**Read the guide on NationStates**](https://www.nationstates.net/page=dispatch/id=2795939)
+[**Open the simulator**](https://consuldelmar.github.io/ThermidorElections/) · [**Read the guide on NationStates**](https://www.nationstates.net/page=dispatch/id=2823704)
 
 ![The simulator after a run, with a three-party coalition selected](docs/screenshot.png)
  
