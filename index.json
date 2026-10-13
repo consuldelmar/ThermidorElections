@@ -1,0 +1,4 @@
+[
+  { "file": "spain-2023.json", "name": "Spain", "election": "2023 general election", "system": "D'Hondt, 52 provinces", "seats": 350 },
+  { "file": "uk-2024.json", "name": "United Kingdom", "election": "2024 general election", "system": "First past the post, 650 constituencies", "seats": 650 }
+]
