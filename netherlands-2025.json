@@ -1,0 +1,70 @@
+{
+  "version": 6,
+  "title": "House of Representatives of the Netherlands",
+  "titleHighlight": "Netherlands",
+  "election": "General election, 29 October 2025",
+  "source": "Votes: Kiesraad official result (7 November 2025), via Wikipedia. Compass positions: estimates on the Chapel Hill Expert Survey scales (economic left-right; GAL-TAN as Liberty-Authority).",
+  "notes": "One nationwide district of 150 seats under D'Hondt; a list needs one full seat's worth of votes (0.67%). Shares are among the 15 lists that won seats (98.6% of valid votes).",
+  "system": { "type": "dhondt", "threshold": 0.67 },
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "hemicycle",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "D66", "name": "D66", "colour": "#01AF40", "lr": 5, "al": 2, "share": 17.18 },
+    { "id": "PVV", "name": "PVV", "colour": "#0E2C5C", "lr": 5.5, "al": 9.5, "share": 16.9 },
+    { "id": "VVD", "name": "VVD", "colour": "#FF7709", "lr": 8, "al": 6, "share": 14.45 },
+    { "id": "GLP", "name": "GroenLinks–PvdA", "colour": "#D40036", "lr": 2, "al": 1.5, "share": 12.97 },
+    { "id": "CDA", "name": "CDA", "colour": "#00855F", "lr": 6, "al": 6, "share": 11.96 },
+    { "id": "JA21", "name": "JA21", "colour": "#242B57", "lr": 8, "al": 8.5, "share": 6.03 },
+    { "id": "FVD", "name": "Forum voor Democratie", "colour": "#841818", "lr": 7.5, "al": 9.5, "share": 4.61 },
+    { "id": "BBB", "name": "BBB", "colour": "#95C11F", "lr": 6, "al": 7.5, "share": 2.69 },
+    { "id": "DENK", "name": "DENK", "colour": "#00B7B2", "lr": 3, "al": 6, "share": 2.4 },
+    { "id": "SGP", "name": "SGP", "colour": "#B5651D", "lr": 7, "al": 9.5, "share": 2.28 },
+    { "id": "PVDD", "name": "Partij voor de Dieren", "colour": "#006B2D", "lr": 1.5, "al": 1, "share": 2.1 },
+    { "id": "CU", "name": "ChristenUnie", "colour": "#00A7EB", "lr": 4.5, "al": 7.5, "share": 1.93 },
+    { "id": "SP", "name": "SP", "colour": "#F06060", "lr": 1, "al": 5, "share": 1.92 },
+    { "id": "50P", "name": "50PLUS", "colour": "#B23AA7", "lr": 4.5, "al": 6, "share": 1.45 },
+    { "id": "VOLT", "name": "Volt", "colour": "#4B2C83", "lr": 4, "al": 1.5, "share": 1.12 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": [],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "Netherlands",
+      "Seats": 150,
+      "Region": null,
+      "Active Parties": ["D66", "PVV", "VVD", "GLP", "CDA", "JA21", "FVD", "BBB", "DENK", "SGP", "PVDD", "CU", "SP", "50P", "VOLT"],
+      "Votes": 10421591,
+      "Baseline": { "D66": 17.182, "PVV": 16.897, "VVD": 14.449, "GLP": 12.975, "CDA": 11.964, "JA21": 6.031, "FVD": 4.61, "BBB": 2.686, "DENK": 2.402, "SGP": 2.285, "PVDD": 2.105, "CU": 1.932, "SP": 1.915, "50P": 1.449, "VOLT": 1.118 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": [],
+    "D66": [],
+    "PVV": [],
+    "VVD": [],
+    "GLP": [],
+    "CDA": [],
+    "JA21": [],
+    "FVD": [],
+    "BBB": [],
+    "DENK": [],
+    "SGP": [],
+    "PVDD": [],
+    "CU": [],
+    "SP": [],
+    "50P": [],
+    "VOLT": []
+  },
+  "scenarios": {
+    "D66 + VVD + CDA (Jetten cabinet)": ["D66", "VVD", "CDA"],
+    "D66 + VVD + CDA + GL-PvdA": ["D66", "VVD", "CDA", "GLP"],
+    "D66 + CDA + GL-PvdA": ["D66", "CDA", "GLP"],
+    "Right bloc": ["PVV", "VVD", "JA21", "FVD", "BBB", "SGP"]
+  }
+}

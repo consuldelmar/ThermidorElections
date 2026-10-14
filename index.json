@@ -1,0 +1,11 @@
+[
+  { "file": "spain-2023.json", "name": "Spain", "election": "2023 general election", "system": "D'Hondt, 52 provinces", "seats": 350 },
+  { "file": "uk-2024.json", "name": "United Kingdom", "election": "2024 general election", "system": "First past the post, 650 constituencies", "seats": 650 },
+  { "file": "australia-2025.json", "name": "Australia", "election": "2025 federal election", "system": "Preferential voting, 150 divisions", "seats": 150 },
+  { "file": "canada-2025.json", "name": "Canada", "election": "2025 federal election", "system": "First past the post, 343 ridings", "seats": 343 },
+  { "file": "ireland-2024.json", "name": "Ireland", "election": "2024 general election", "system": "STV, 43 constituencies", "seats": 174 },
+  { "file": "netherlands-2025.json", "name": "Netherlands", "election": "2025 general election", "system": "D'Hondt, one nationwide district", "seats": 150 },
+  { "file": "germany-2025.json", "name": "Germany", "election": "2025 federal election", "system": "Sainte-Laguë, nationwide second vote, 5%", "seats": 630 },
+  { "file": "portugal-2025.json", "name": "Portugal", "election": "2025 legislative election", "system": "D'Hondt, 22 constituencies", "seats": 230 },
+  { "file": "new-zealand-2023.json", "name": "New Zealand", "election": "2023 general election", "system": "Sainte-Laguë, nationwide party vote", "seats": 120 }
+]

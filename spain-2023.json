@@ -1,0 +1,523 @@
+{
+  "version": 6,
+  "title": "Congress of Deputies of Spain",
+  "titleHighlight": "Spain",
+  "election": "General election, 23 July 2023",
+  "source": "Votes by province: official results (BOE, 1 Sept 2023) via historiaelectoral.com. Compass positions: set by the author.",
+  "notes": "Shares are among the 11 lists that won seats (96.7% of valid votes); minor lists and blank votes are left out. PSC counts as PSOE and every Sumar list as Sumar. D'Hondt in each province with the 3% threshold, applied to the listed parties' votes.",
+  "system": { "type": "dhondt", "threshold": 3 },
+  "swing": "proportional",
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "hemicycle",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "PP", "name": "Partido Popular", "colour": "#1D84CE", "lr": 7, "al": 7, "share": 34.17 },
+    { "id": "PSOE", "name": "Partido Socialista Obrero Español", "colour": "#E30613", "lr": 4, "al": 3.5, "share": 32.75 },
+    { "id": "VOX", "name": "Vox", "colour": "#63BE21", "lr": 8, "al": 9, "share": 12.8 },
+    { "id": "SMR", "name": "Sumar", "colour": "#E51C55", "lr": 2, "al": 2, "share": 12.75 },
+    { "id": "ERC", "name": "Esquerra Republicana de Catalunya", "colour": "#FFB232", "lr": 3, "al": 3, "share": 1.95 },
+    { "id": "JxC", "name": "Junts per Catalunya", "colour": "#20C0B2", "lr": 7, "al": 5.5, "share": 1.66 },
+    { "id": "EHB", "name": "EH Bildu", "colour": "#A3C940", "lr": 2, "al": 1.5, "share": 1.4 },
+    { "id": "PNV", "name": "EAJ-PNV", "colour": "#1B7A3E", "lr": 5.5, "al": 5, "share": 1.16 },
+    { "id": "BNG", "name": "Bloque Nacionalista Galego", "colour": "#7FB2E5", "lr": 1.5, "al": 2, "share": 0.64 },
+    { "id": "CC", "name": "Coalición Canaria", "colour": "#F2D21B", "lr": 6, "al": 5, "share": 0.49 },
+    { "id": "UPN", "name": "Unión del Pueblo Navarro", "colour": "#2A52BE", "lr": 7, "al": 6.5, "share": 0.22 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": ["Galicia", "Asturias", "Cantabria", "País Vasco", "Navarra", "La Rioja", "Aragón", "Castilla y León", "Cataluña", "Illes Balears", "Comunitat Valenciana", "Región de Murcia", "Comunidad de Madrid", "Castilla-La Mancha", "Extremadura", "Andalucía", "Canarias", "Ceuta", "Melilla"],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "A Coruña",
+      "Seats": 8,
+      "Region": "Galicia",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "BNG"],
+      "Votes": 667850,
+      "Baseline": { "PP": 43.763, "PSOE": 28.584, "VOX": 5.152, "SMR": 12.371, "BNG": 10.13 }
+    },
+    {
+      "District ID": 2,
+      "District Name": "Lugo",
+      "Seats": 4,
+      "Region": "Galicia",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "BNG"],
+      "Votes": 196079,
+      "Baseline": { "PP": 50.882, "PSOE": 30.693, "VOX": 4.408, "SMR": 5.246, "BNG": 8.77 }
+    },
+    {
+      "District ID": 3,
+      "District Name": "Ourense",
+      "Seats": 4,
+      "Region": "Galicia",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "BNG"],
+      "Votes": 183785,
+      "Baseline": { "PP": 50.702, "PSOE": 30.489, "VOX": 4.941, "SMR": 5.534, "BNG": 8.334 }
+    },
+    {
+      "District ID": 4,
+      "District Name": "Pontevedra",
+      "Seats": 7,
+      "Region": "Galicia",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "BNG"],
+      "Votes": 564377,
+      "Baseline": { "PP": 40.338, "PSOE": 31.847, "VOX": 4.88, "SMR": 13.398, "BNG": 9.538 }
+    },
+    {
+      "District ID": 5,
+      "District Name": "Asturias",
+      "Seats": 7,
+      "Region": "Asturias",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 581066,
+      "Baseline": { "PP": 36.625, "PSOE": 35.288, "VOX": 12.833, "SMR": 15.253 }
+    },
+    {
+      "District ID": 6,
+      "District Name": "Cantabria",
+      "Seats": 5,
+      "Region": "Cantabria",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 342878,
+      "Baseline": { "PP": 42.967, "PSOE": 34.005, "VOX": 14.362, "SMR": 8.666 }
+    },
+    {
+      "District ID": 7,
+      "District Name": "Bizkaia",
+      "Seats": 8,
+      "Region": "País Vasco",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "EHB", "PNV"],
+      "Votes": 600697,
+      "Baseline": { "PP": 11.742, "PSOE": 26.211, "VOX": 2.675, "SMR": 11.086, "EHB": 20.953, "PNV": 27.333 }
+    },
+    {
+      "District ID": 8,
+      "District Name": "Gipuzkoa",
+      "Seats": 6,
+      "Region": "País Vasco",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "EHB", "PNV"],
+      "Votes": 370735,
+      "Baseline": { "PP": 8.826, "PSOE": 23.658, "VOX": 2.125, "SMR": 10.811, "EHB": 31.646, "PNV": 22.934 }
+    },
+    {
+      "District ID": 9,
+      "District Name": "Araba/Álava",
+      "Seats": 4,
+      "Region": "País Vasco",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "EHB", "PNV"],
+      "Votes": 166183,
+      "Baseline": { "PP": 18.18, "PSOE": 28.147, "VOX": 3.955, "SMR": 12.974, "EHB": 19.85, "PNV": 16.894 }
+    },
+    {
+      "District ID": 10,
+      "District Name": "Navarra",
+      "Seats": 5,
+      "Region": "Navarra",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "EHB", "UPN"],
+      "Votes": 325242,
+      "Baseline": { "PP": 17.567, "PSOE": 28.764, "VOX": 5.993, "SMR": 13.504, "EHB": 18.126, "UPN": 16.046 }
+    },
+    {
+      "District ID": 11,
+      "District Name": "La Rioja",
+      "Seats": 4,
+      "Region": "La Rioja",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 170563,
+      "Baseline": { "PP": 46.736, "PSOE": 36.539, "VOX": 10.0, "SMR": 6.725 }
+    },
+    {
+      "District ID": 12,
+      "District Name": "Huesca",
+      "Seats": 3,
+      "Region": "Aragón",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 115019,
+      "Baseline": { "PP": 39.805, "PSOE": 35.044, "VOX": 13.176, "SMR": 11.975 }
+    },
+    {
+      "District ID": 13,
+      "District Name": "Zaragoza",
+      "Seats": 7,
+      "Region": "Aragón",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 495935,
+      "Baseline": { "PP": 37.661, "PSOE": 32.234, "VOX": 16.005, "SMR": 14.1 }
+    },
+    {
+      "District ID": 14,
+      "District Name": "Teruel",
+      "Seats": 3,
+      "Region": "Aragón",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 62870,
+      "Baseline": { "PP": 42.287, "PSOE": 35.352, "VOX": 15.798, "SMR": 6.563 }
+    },
+    {
+      "District ID": 15,
+      "District Name": "León",
+      "Seats": 4,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 248211,
+      "Baseline": { "PP": 40.935, "PSOE": 37.298, "VOX": 14.283, "SMR": 7.484 }
+    },
+    {
+      "District ID": 16,
+      "District Name": "Zamora",
+      "Seats": 3,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 99288,
+      "Baseline": { "PP": 46.527, "PSOE": 33.842, "VOX": 13.75, "SMR": 5.881 }
+    },
+    {
+      "District ID": 17,
+      "District Name": "Salamanca",
+      "Seats": 4,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 194251,
+      "Baseline": { "PP": 48.04, "PSOE": 31.257, "VOX": 15.034, "SMR": 5.669 }
+    },
+    {
+      "District ID": 18,
+      "District Name": "Ávila",
+      "Seats": 3,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 89292,
+      "Baseline": { "PP": 47.45, "PSOE": 30.045, "VOX": 16.875, "SMR": 5.63 }
+    },
+    {
+      "District ID": 19,
+      "District Name": "Segovia",
+      "Seats": 3,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 86654,
+      "Baseline": { "PP": 46.038, "PSOE": 31.289, "VOX": 14.437, "SMR": 8.236 }
+    },
+    {
+      "District ID": 20,
+      "District Name": "Soria",
+      "Seats": 2,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 40550,
+      "Baseline": { "PP": 46.597, "PSOE": 36.908, "VOX": 12.276, "SMR": 4.219 }
+    },
+    {
+      "District ID": 21,
+      "District Name": "Valladolid",
+      "Seats": 5,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 308763,
+      "Baseline": { "PP": 41.835, "PSOE": 33.552, "VOX": 15.529, "SMR": 9.084 }
+    },
+    {
+      "District ID": 22,
+      "District Name": "Palencia",
+      "Seats": 3,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 92703,
+      "Baseline": { "PP": 43.913, "PSOE": 36.259, "VOX": 13.488, "SMR": 6.34 }
+    },
+    {
+      "District ID": 23,
+      "District Name": "Burgos",
+      "Seats": 4,
+      "Region": "Castilla y León",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 195470,
+      "Baseline": { "PP": 42.118, "PSOE": 35.696, "VOX": 13.229, "SMR": 8.957 }
+    },
+    {
+      "District ID": 24,
+      "District Name": "Barcelona",
+      "Seats": 32,
+      "Region": "Cataluña",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "ERC", "JxC"],
+      "Votes": 2514490,
+      "Baseline": { "PP": 14.616, "PSOE": 37.874, "VOX": 8.024, "SMR": 16.146, "ERC": 13.072, "JxC": 10.267 }
+    },
+    {
+      "District ID": 25,
+      "District Name": "Tarragona",
+      "Seats": 6,
+      "Region": "Cataluña",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "ERC", "JxC"],
+      "Votes": 348197,
+      "Baseline": { "PP": 14.664, "PSOE": 34.787, "VOX": 10.925, "SMR": 11.981, "ERC": 15.928, "JxC": 11.715 }
+    },
+    {
+      "District ID": 26,
+      "District Name": "Lleida",
+      "Seats": 4,
+      "Region": "Cataluña",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "ERC", "JxC"],
+      "Votes": 172793,
+      "Baseline": { "PP": 13.715, "PSOE": 31.491, "VOX": 7.269, "SMR": 8.427, "ERC": 19.868, "JxC": 19.23 }
+    },
+    {
+      "District ID": 27,
+      "District Name": "Girona",
+      "Seats": 6,
+      "Region": "Cataluña",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "ERC", "JxC"],
+      "Votes": 293621,
+      "Baseline": { "PP": 10.674, "PSOE": 31.826, "VOX": 7.733, "SMR": 12.037, "ERC": 16.188, "JxC": 21.542 }
+    },
+    {
+      "District ID": 28,
+      "District Name": "Illes Balears",
+      "Seats": 8,
+      "Region": "Illes Balears",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 491123,
+      "Baseline": { "PP": 36.509, "PSOE": 30.906, "VOX": 15.586, "SMR": 16.999 }
+    },
+    {
+      "District ID": 29,
+      "District Name": "Castellón",
+      "Seats": 5,
+      "Region": "Comunitat Valenciana",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 301932,
+      "Baseline": { "PP": 35.87, "PSOE": 33.296, "VOX": 16.2, "SMR": 14.635 }
+    },
+    {
+      "District ID": 30,
+      "District Name": "Valencia",
+      "Seats": 16,
+      "Region": "Comunitat Valenciana",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 1406318,
+      "Baseline": { "PP": 34.378, "PSOE": 32.806, "VOX": 15.548, "SMR": 17.268 }
+    },
+    {
+      "District ID": 31,
+      "District Name": "Alicante",
+      "Seats": 12,
+      "Region": "Comunitat Valenciana",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 879950,
+      "Baseline": { "PP": 37.535, "PSOE": 32.699, "VOX": 16.607, "SMR": 13.158 }
+    },
+    {
+      "District ID": 32,
+      "District Name": "Murcia",
+      "Seats": 10,
+      "Region": "Región de Murcia",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 731884,
+      "Baseline": { "PP": 42.079, "PSOE": 25.852, "VOX": 22.288, "SMR": 9.78 }
+    },
+    {
+      "District ID": 33,
+      "District Name": "Madrid",
+      "Seats": 37,
+      "Region": "Comunidad de Madrid",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 3531726,
+      "Baseline": { "PP": 41.43, "PSOE": 28.445, "VOX": 14.332, "SMR": 15.793 }
+    },
+    {
+      "District ID": 34,
+      "District Name": "Albacete",
+      "Seats": 4,
+      "Region": "Castilla-La Mancha",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 217205,
+      "Baseline": { "PP": 40.652, "PSOE": 35.138, "VOX": 16.92, "SMR": 7.29 }
+    },
+    {
+      "District ID": 35,
+      "District Name": "Ciudad Real",
+      "Seats": 5,
+      "Region": "Castilla-La Mancha",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 278262,
+      "Baseline": { "PP": 41.223, "PSOE": 35.974, "VOX": 16.548, "SMR": 6.255 }
+    },
+    {
+      "District ID": 36,
+      "District Name": "Cuenca",
+      "Seats": 3,
+      "Region": "Castilla-La Mancha",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 111808,
+      "Baseline": { "PP": 40.476, "PSOE": 38.037, "VOX": 15.831, "SMR": 5.657 }
+    },
+    {
+      "District ID": 37,
+      "District Name": "Guadalajara",
+      "Seats": 3,
+      "Region": "Castilla-La Mancha",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 137707,
+      "Baseline": { "PP": 37.177, "PSOE": 33.752, "VOX": 19.698, "SMR": 9.373 }
+    },
+    {
+      "District ID": 38,
+      "District Name": "Toledo",
+      "Seats": 6,
+      "Region": "Castilla-La Mancha",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 380525,
+      "Baseline": { "PP": 38.508, "PSOE": 33.131, "VOX": 19.984, "SMR": 8.377 }
+    },
+    {
+      "District ID": 39,
+      "District Name": "Badajoz",
+      "Seats": 5,
+      "Region": "Extremadura",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 381811,
+      "Baseline": { "PP": 38.78, "PSOE": 40.196, "VOX": 14.01, "SMR": 7.013 }
+    },
+    {
+      "District ID": 40,
+      "District Name": "Cáceres",
+      "Seats": 4,
+      "Region": "Extremadura",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 229755,
+      "Baseline": { "PP": 39.012, "PSOE": 39.909, "VOX": 13.961, "SMR": 7.118 }
+    },
+    {
+      "District ID": 41,
+      "District Name": "Almería",
+      "Seats": 6,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 314655,
+      "Baseline": { "PP": 41.799, "PSOE": 29.646, "VOX": 21.727, "SMR": 6.828 }
+    },
+    {
+      "District ID": 42,
+      "District Name": "Cádiz",
+      "Seats": 9,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 611738,
+      "Baseline": { "PP": 36.241, "PSOE": 34.525, "VOX": 15.811, "SMR": 13.423 }
+    },
+    {
+      "District ID": 43,
+      "District Name": "Córdoba",
+      "Seats": 6,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 438176,
+      "Baseline": { "PP": 38.792, "PSOE": 32.882, "VOX": 14.27, "SMR": 14.057 }
+    },
+    {
+      "District ID": 44,
+      "District Name": "Granada",
+      "Seats": 7,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 491505,
+      "Baseline": { "PP": 37.842, "PSOE": 33.746, "VOX": 16.496, "SMR": 11.916 }
+    },
+    {
+      "District ID": 45,
+      "District Name": "Huelva",
+      "Seats": 5,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 250215,
+      "Baseline": { "PP": 37.394, "PSOE": 36.899, "VOX": 15.016, "SMR": 10.692 }
+    },
+    {
+      "District ID": 46,
+      "District Name": "Jaén",
+      "Seats": 5,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 355297,
+      "Baseline": { "PP": 38.733, "PSOE": 37.664, "VOX": 15.311, "SMR": 8.292 }
+    },
+    {
+      "District ID": 47,
+      "District Name": "Málaga",
+      "Seats": 11,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 767582,
+      "Baseline": { "PP": 39.344, "PSOE": 31.159, "VOX": 16.905, "SMR": 12.592 }
+    },
+    {
+      "District ID": 48,
+      "District Name": "Sevilla",
+      "Seats": 12,
+      "Region": "Andalucía",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 1031255,
+      "Baseline": { "PP": 34.294, "PSOE": 37.601, "VOX": 13.681, "SMR": 14.424 }
+    },
+    {
+      "District ID": 49,
+      "District Name": "Las Palmas",
+      "Seats": 8,
+      "Region": "Canarias",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR", "CC"],
+      "Votes": 477798,
+      "Baseline": { "PP": 28.643, "PSOE": 36.767, "VOX": 16.187, "SMR": 11.379, "CC": 7.023 }
+    },
+    {
+      "District ID": 50,
+      "District Name": "Santa Cruz de Tenerife",
+      "Seats": 7,
+      "Region": "Canarias",
+      "Active Parties": ["PP", "PSOE", "SMR", "CC"],
+      "Votes": 476797,
+      "Baseline": { "PP": 36.655, "PSOE": 34.73, "SMR": 11.248, "CC": 17.367 }
+    },
+    {
+      "District ID": 51,
+      "District Name": "Ceuta",
+      "Seats": 1,
+      "Region": "Ceuta",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 32823,
+      "Baseline": { "PP": 39.357, "PSOE": 34.525, "VOX": 23.618, "SMR": 2.501 }
+    },
+    {
+      "District ID": 52,
+      "District Name": "Melilla",
+      "Seats": 1,
+      "Region": "Melilla",
+      "Active Parties": ["PP", "PSOE", "VOX", "SMR"],
+      "Votes": 25575,
+      "Baseline": { "PP": 52.575, "PSOE": 27.148, "VOX": 17.044, "SMR": 3.234 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": ["Galicia", "Asturias", "Cantabria", "País Vasco", "Navarra", "La Rioja", "Aragón", "Castilla y León", "Cataluña", "Illes Balears", "Comunitat Valenciana", "Región de Murcia", "Comunidad de Madrid", "Castilla-La Mancha", "Extremadura", "Andalucía", "Canarias", "Ceuta", "Melilla"],
+    "PP": [44.2209, 36.6251, 42.9675, 11.7321, 17.5666, 46.7364, 38.4589, 43.8675, 14.2267, 36.5088, 35.6257, 42.0793, 41.4297, 39.6258, 38.8676, 37.4621, 32.6449, 39.3565, 52.5748],
+    "PSOE": [30.2, 35.2884, 34.0051, 25.6618, 28.7641, 36.539, 33.0043, 34.1495, 36.6866, 30.9059, 32.8267, 25.8525, 28.445, 34.7846, 40.0881, 34.445, 35.7493, 34.5246, 27.1476],
+    "VOX": [4.9422, 12.8335, 14.3617, 2.6827, 5.9928, 9.9998, 15.503, 14.5495, 8.2629, 15.5861, 15.9842, 22.2882, 14.3319, 18.0955, 13.9916, 15.7615, 8.1022, 23.6176, 17.044],
+    "SMR": [11.0844, 15.253, 8.6658, 11.2722, 13.5044, 6.7248, 13.0338, 7.4335, 14.9475, 16.9992, 15.5634, 9.78, 15.7934, 7.4941, 7.0527, 12.3314, 11.3138, 2.5013, 3.2336],
+    "ERC": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 13.9984, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "JxC": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 11.878, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "EHB": [0.0, 0.0, 0.0, 24.2767, 18.1262, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "PNV": [0.0, 0.0, 0.0, 24.3746, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "BNG": [9.5525, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "CC": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 12.1898, 0.0, 0.0],
+    "UPN": [0.0, 0.0, 0.0, 0.0, 16.0459, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  "scenarios": {
+    "2023 investiture (Sánchez)": ["PSOE", "SMR", "ERC", "JxC", "EHB", "PNV", "BNG", "CC"],
+    "2023 investiture (Feijóo)": ["PP", "VOX", "UPN", "CC"],
+    "PP + Vox": ["PP", "VOX"],
+    "PSOE + Sumar": ["PSOE", "SMR"],
+    "Grand coalition": ["PP", "PSOE"]
+  }
+}

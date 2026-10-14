@@ -1,0 +1,248 @@
+{
+  "version": 6,
+  "title": "Assembly of the Republic of Portugal",
+  "titleHighlight": "Portugal",
+  "election": "Legislative election, 18 May 2025",
+  "source": "Votes by constituency: official results (Comissão Nacional de Eleições), via Wikipedia. Compass positions: estimates on the Chapel Hill Expert Survey scales (economic left-right; GAL-TAN as Liberty-Authority).",
+  "notes": "D'Hondt in 22 constituencies with no threshold, including two for voters abroad. AD includes the Azores PSD/CDS/PPM coalition. Shares are among the nine lists that won seats (97.4% of valid votes).",
+  "system": { "type": "dhondt", "threshold": 0 },
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "hemicycle",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "AD", "name": "Aliança Democrática (PSD/CDS)", "colour": "#F68A21", "lr": 6.5, "al": 6, "share": 34.03 },
+    { "id": "CH", "name": "Chega", "colour": "#202056", "lr": 7, "al": 9.5, "share": 24.36 },
+    { "id": "PS", "name": "Partido Socialista", "colour": "#FF66B2", "lr": 3.5, "al": 3.5, "share": 24.44 },
+    { "id": "IL", "name": "Iniciativa Liberal", "colour": "#00ADEF", "lr": 9, "al": 3, "share": 5.77 },
+    { "id": "L", "name": "Livre", "colour": "#89BC40", "lr": 2, "al": 1, "share": 4.33 },
+    { "id": "CDU", "name": "CDU (PCP–PEV)", "colour": "#D7191C", "lr": 0.5, "al": 5, "share": 3.11 },
+    { "id": "BE", "name": "Bloco de Esquerda", "colour": "#7B1E3A", "lr": 1, "al": 1.5, "share": 2.13 },
+    { "id": "PAN", "name": "PAN", "colour": "#1FA2A6", "lr": 3.5, "al": 1.5, "share": 1.47 },
+    { "id": "JPP", "name": "Juntos pelo Povo", "colour": "#5E3C99", "lr": 5, "al": 5, "share": 0.35 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": ["Norte", "Centro", "Lisboa e Vale do Tejo", "Alentejo", "Algarve", "Açores", "Madeira", "Emigração"],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "Braga",
+      "Seats": 19,
+      "Region": "Norte",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 521635,
+      "Baseline": { "AD": 37.992, "CH": 22.989, "PS": 24.066, "IL": 7.033, "L": 3.185, "CDU": 1.76, "BE": 1.923, "PAN": 0.993, "JPP": 0.059 }
+    },
+    {
+      "District ID": 2,
+      "District Name": "Bragança",
+      "Seats": 3,
+      "Region": "Norte",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 66799,
+      "Baseline": { "AD": 45.826, "CH": 21.39, "PS": 26.641, "IL": 2.286, "L": 1.186, "CDU": 1.085, "BE": 0.885, "PAN": 0.702 }
+    },
+    {
+      "District ID": 3,
+      "District Name": "Porto",
+      "Seats": 40,
+      "Region": "Norte",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 1044663,
+      "Baseline": { "AD": 35.955, "CH": 21.711, "PS": 25.251, "IL": 6.406, "L": 4.514, "CDU": 2.393, "BE": 2.124, "PAN": 1.573, "JPP": 0.072 }
+    },
+    {
+      "District ID": 4,
+      "District Name": "Viana do Castelo",
+      "Seats": 5,
+      "Region": "Norte",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 133242,
+      "Baseline": { "AD": 41.56, "CH": 24.122, "PS": 22.81, "IL": 4.011, "L": 2.732, "CDU": 2.074, "BE": 1.715, "PAN": 0.976 }
+    },
+    {
+      "District ID": 5,
+      "District Name": "Vila Real",
+      "Seats": 5,
+      "Region": "Norte",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 108816,
+      "Baseline": { "AD": 46.429, "CH": 20.911, "PS": 25.722, "IL": 2.28, "L": 1.602, "CDU": 1.287, "BE": 1.057, "PAN": 0.712 }
+    },
+    {
+      "District ID": 6,
+      "District Name": "Aveiro",
+      "Seats": 16,
+      "Region": "Centro",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 392705,
+      "Baseline": { "AD": 41.664, "CH": 21.838, "PS": 22.921, "IL": 5.97, "L": 3.261, "CDU": 1.254, "BE": 1.786, "PAN": 1.307 }
+    },
+    {
+      "District ID": 7,
+      "District Name": "Castelo Branco",
+      "Seats": 4,
+      "Region": "Centro",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 98361,
+      "Baseline": { "AD": 34.176, "CH": 24.718, "PS": 30.247, "IL": 3.195, "L": 2.696, "CDU": 2.264, "BE": 1.744, "PAN": 0.96 }
+    },
+    {
+      "District ID": 8,
+      "District Name": "Coimbra",
+      "Seats": 9,
+      "Region": "Centro",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 218869,
+      "Baseline": { "AD": 36.334, "CH": 19.43, "PS": 28.943, "IL": 4.694, "L": 4.291, "CDU": 2.648, "BE": 2.297, "PAN": 1.292, "JPP": 0.07 }
+    },
+    {
+      "District ID": 9,
+      "District Name": "Guarda",
+      "Seats": 3,
+      "Region": "Centro",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 76965,
+      "Baseline": { "AD": 41.955, "CH": 22.409, "PS": 28.0, "IL": 2.591, "L": 1.597, "CDU": 1.347, "BE": 1.312, "PAN": 0.789 }
+    },
+    {
+      "District ID": 10,
+      "District Name": "Leiria",
+      "Seats": 10,
+      "Region": "Centro",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 248666,
+      "Baseline": { "AD": 39.508, "CH": 24.596, "PS": 20.236, "IL": 6.423, "L": 3.74, "CDU": 2.199, "BE": 2.051, "PAN": 1.248 }
+    },
+    {
+      "District ID": 11,
+      "District Name": "Viseu",
+      "Seats": 8,
+      "Region": "Centro",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE"],
+      "Votes": 195190,
+      "Baseline": { "AD": 45.276, "CH": 23.461, "PS": 23.162, "IL": 3.312, "L": 2.251, "CDU": 1.275, "BE": 1.262 }
+    },
+    {
+      "District ID": 12,
+      "District Name": "Lisboa",
+      "Seats": 48,
+      "Region": "Lisboa e Vale do Tejo",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 1213872,
+      "Baseline": { "AD": 29.864, "CH": 21.89, "PS": 24.837, "IL": 7.999, "L": 7.211, "CDU": 3.743, "BE": 2.464, "PAN": 1.925, "JPP": 0.067 }
+    },
+    {
+      "District ID": 13,
+      "District Name": "Santarém",
+      "Seats": 9,
+      "Region": "Lisboa e Vale do Tejo",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 232294,
+      "Baseline": { "AD": 32.164, "CH": 29.569, "PS": 23.912, "IL": 4.13, "L": 3.382, "CDU": 3.78, "BE": 1.88, "PAN": 1.183 }
+    },
+    {
+      "District ID": 14,
+      "District Name": "Setúbal",
+      "Seats": 19,
+      "Region": "Lisboa e Vale do Tejo",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 468892,
+      "Baseline": { "AD": 22.005, "CH": 27.633, "PS": 26.164, "IL": 6.121, "L": 5.77, "CDU": 7.455, "BE": 2.787, "PAN": 1.968, "JPP": 0.097 }
+    },
+    {
+      "District ID": 15,
+      "District Name": "Beja",
+      "Seats": 3,
+      "Region": "Alentejo",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 70377,
+      "Baseline": { "AD": 21.892, "CH": 29.054, "PS": 27.759, "IL": 2.045, "L": 2.198, "CDU": 14.209, "BE": 1.94, "PAN": 0.904 }
+    },
+    {
+      "District ID": 16,
+      "District Name": "Évora",
+      "Seats": 3,
+      "Region": "Alentejo",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 81391,
+      "Baseline": { "AD": 25.887, "CH": 25.9, "PS": 29.015, "IL": 2.967, "L": 2.821, "CDU": 10.612, "BE": 1.827, "PAN": 0.971 }
+    },
+    {
+      "District ID": 17,
+      "District Name": "Portalegre",
+      "Seats": 2,
+      "Region": "Alentejo",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN"],
+      "Votes": 54999,
+      "Baseline": { "AD": 28.106, "CH": 31.31, "PS": 29.319, "IL": 2.013, "L": 1.793, "CDU": 5.413, "BE": 1.333, "PAN": 0.715 }
+    },
+    {
+      "District ID": 18,
+      "District Name": "Faro",
+      "Seats": 9,
+      "Region": "Algarve",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 218913,
+      "Baseline": { "AD": 27.113, "CH": 35.707, "PS": 21.604, "IL": 4.589, "L": 3.533, "CDU": 2.818, "BE": 2.615, "PAN": 1.901, "JPP": 0.12 }
+    },
+    {
+      "District ID": 19,
+      "District Name": "Açores",
+      "Seats": 5,
+      "Region": "Açores",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 94667,
+      "Baseline": { "AD": 38.957, "CH": 24.352, "PS": 25.151, "IL": 3.677, "L": 2.677, "CDU": 1.288, "BE": 2.225, "PAN": 1.388, "JPP": 0.286 }
+    },
+    {
+      "District ID": 20,
+      "District Name": "Madeira",
+      "Seats": 6,
+      "Region": "Madeira",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 132788,
+      "Baseline": { "AD": 43.262, "CH": 21.868, "PS": 14.086, "IL": 2.754, "L": 1.317, "CDU": 1.328, "BE": 1.408, "PAN": 1.088, "JPP": 12.889 }
+    },
+    {
+      "District ID": 21,
+      "District Name": "Europa",
+      "Seats": 2,
+      "Region": "Emigração",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 167626,
+      "Baseline": { "AD": 22.315, "CH": 42.947, "PS": 20.626, "IL": 3.849, "L": 3.356, "CDU": 1.32, "BE": 2.83, "PAN": 2.429, "JPP": 0.329 }
+    },
+    {
+      "District ID": 22,
+      "District Name": "Fora da Europa",
+      "Seats": 2,
+      "Region": "Emigração",
+      "Active Parties": ["AD", "CH", "PS", "IL", "L", "CDU", "BE", "PAN", "JPP"],
+      "Votes": 60027,
+      "Baseline": { "AD": 31.742, "CH": 33.655, "PS": 21.855, "IL": 3.437, "L": 1.659, "CDU": 0.975, "BE": 2.925, "PAN": 3.362, "JPP": 0.39 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": ["Norte", "Centro", "Lisboa e Vale do Tejo", "Alentejo", "Algarve", "Açores", "Madeira", "Emigração"],
+    "AD": [37.8793, 40.2732, 28.2186, 25.1176, 27.1126, 38.9566, 43.2622, 24.8009],
+    "CH": [22.1798, 22.4905, 24.2277, 28.4122, 35.7073, 24.3517, 21.8679, 40.4967],
+    "PS": [24.8252, 24.3907, 25.0497, 28.6685, 21.6036, 25.1513, 14.0856, 20.9499],
+    "IL": [6.0243, 4.9799, 7.0698, 2.3993, 4.5895, 3.6771, 2.754, 3.7403],
+    "L": [3.7301, 3.2314, 6.3937, 2.3355, 3.5334, 2.6768, 1.3171, 2.9088],
+    "CDU": [2.0836, 1.7826, 4.656, 10.4533, 2.8185, 1.2877, 1.3277, 1.2291],
+    "BE": [1.933, 1.8143, 2.4725, 1.7338, 2.6147, 2.2246, 1.4083, 2.8548],
+    "PAN": [1.2883, 1.0248, 1.8457, 0.8797, 1.9008, 1.388, 1.0882, 2.6747],
+    "JPP": [0.0563, 0.0125, 0.0662, 0.0, 0.1197, 0.2863, 12.889, 0.3448]
+  },
+  "scenarios": {
+    "AD alone": ["AD"],
+    "AD + IL": ["AD", "IL"],
+    "AD + Chega": ["AD", "CH"],
+    "AD + PS": ["AD", "PS"],
+    "Left: PS + Livre + CDU + BE + PAN": ["PS", "L", "CDU", "BE", "PAN"]
+  }
+}

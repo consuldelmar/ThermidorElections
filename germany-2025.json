@@ -1,0 +1,58 @@
+{
+  "version": 6,
+  "title": "Bundestag, Germany",
+  "titleHighlight": "Germany",
+  "election": "Federal election, 23 February 2025",
+  "source": "Second votes: official final result of the Federal Returning Officer. Compass positions: estimates on the Chapel Hill Expert Survey scales (economic left-right; GAL-TAN as Liberty-Authority).",
+  "notes": "The 630 seats are shared by the nationwide second vote under Sainte-Laguë with a 5% threshold, which is how party totals are set since the 2023 reform. Shares are of all valid votes; minor parties are pooled as 'Other parties' (they would act as one list if the threshold were lowered). Not modelled: the exemption that gave the Danish-minority SSW 1 seat, and the three-constituency rule.",
+  "system": { "type": "sainte-lague", "threshold": 5 },
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "hemicycle",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "CDU", "name": "CDU", "colour": "#3A3A3A", "lr": 6.5, "al": 6.5, "share": 22.55 },
+    { "id": "CSU", "name": "CSU", "colour": "#0570B9", "lr": 6.5, "al": 7.5, "share": 5.97 },
+    { "id": "AFD", "name": "AfD", "colour": "#00A2DE", "lr": 8, "al": 9.5, "share": 20.8 },
+    { "id": "SPD", "name": "SPD", "colour": "#E3000F", "lr": 3.5, "al": 3.5, "share": 16.41 },
+    { "id": "GRUENE", "name": "Grüne", "colour": "#46962B", "lr": 3, "al": 1.5, "share": 11.61 },
+    { "id": "LINKE", "name": "Die Linke", "colour": "#BE3075", "lr": 1, "al": 2.5, "share": 8.77 },
+    { "id": "BSW", "name": "BSW", "colour": "#7D254F", "lr": 2.5, "al": 7, "share": 4.98 },
+    { "id": "FDP", "name": "FDP", "colour": "#FFED00", "lr": 8.5, "al": 3.5, "share": 4.33 },
+    { "id": "OTH", "name": "Other parties", "colour": "#A0A0A0", "lr": 5, "al": 5, "share": 4.57 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": [],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "Germany (second vote)",
+      "Seats": 630,
+      "Region": null,
+      "Active Parties": ["CDU", "CSU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 49649512,
+      "Baseline": { "CDU": 22.551, "CSU": 5.97, "AFD": 20.803, "SPD": 16.413, "GRUENE": 11.606, "LINKE": 8.775, "BSW": 4.981, "FDP": 4.328, "OTH": 4.573 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": [],
+    "CDU": [],
+    "CSU": [],
+    "AFD": [],
+    "SPD": [],
+    "GRUENE": [],
+    "LINKE": [],
+    "BSW": [],
+    "FDP": [],
+    "OTH": []
+  },
+  "scenarios": {
+    "CDU/CSU + SPD (Merz cabinet)": ["CDU", "CSU", "SPD"],
+    "CDU/CSU + Greens": ["CDU", "CSU", "GRUENE"],
+    "CDU/CSU + AfD": ["CDU", "CSU", "AFD"],
+    "SPD + Greens + Linke": ["SPD", "GRUENE", "LINKE"]
+  }
+}

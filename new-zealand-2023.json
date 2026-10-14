@@ -1,0 +1,51 @@
+{
+  "version": 6,
+  "title": "House of Representatives of New Zealand",
+  "titleHighlight": "New Zealand",
+  "election": "General election, 14 October 2023",
+  "source": "Party votes: Electoral Commission official result. Compass positions: estimates on the Chapel Hill Expert Survey scales, which don't cover New Zealand.",
+  "notes": "MMP: seats follow the party vote under Sainte-Laguë. Only the six parties that entered Parliament are listed and the threshold is set to 0, because Te Pāti Māori got in below 5% by winning electorates, which the app can't model. Set the threshold to 5% to see the rule without that exemption. Not modelled: the two overhang seats Te Pāti Māori won and National's extra seat from the Port Waikato by-election (123 seats in all).",
+  "system": { "type": "sainte-lague", "threshold": 0 },
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "westminster",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "NAT", "name": "National", "colour": "#00529F", "lr": 7, "al": 6, "share": 40.33 },
+    { "id": "LAB", "name": "Labour", "colour": "#D82A20", "lr": 3.5, "al": 3, "share": 28.51 },
+    { "id": "GRN", "name": "Green", "colour": "#098137", "lr": 1.5, "al": 1, "share": 12.29 },
+    { "id": "ACT", "name": "ACT", "colour": "#FDE401", "lr": 9, "al": 4, "share": 9.16 },
+    { "id": "NZF", "name": "NZ First", "colour": "#4D4D4D", "lr": 5, "al": 8, "share": 6.45 },
+    { "id": "TPM", "name": "Te Pāti Māori", "colour": "#7A1F2B", "lr": 2, "al": 4, "share": 3.26 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": [],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "New Zealand (party vote)",
+      "Seats": 120,
+      "Region": null,
+      "Active Parties": ["NAT", "LAB", "GRN", "ACT", "NZF", "TPM"],
+      "Votes": 2692168,
+      "Baseline": { "NAT": 40.334, "LAB": 28.51, "GRN": 12.291, "ACT": 9.155, "NZF": 6.447, "TPM": 3.263 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": [],
+    "NAT": [],
+    "LAB": [],
+    "GRN": [],
+    "ACT": [],
+    "NZF": [],
+    "TPM": []
+  },
+  "scenarios": {
+    "National + ACT + NZ First (Luxon government)": ["NAT", "ACT", "NZF"],
+    "Labour + Green + Te Pāti Māori": ["LAB", "GRN", "TPM"],
+    "National + Labour": ["NAT", "LAB"]
+  }
+}
