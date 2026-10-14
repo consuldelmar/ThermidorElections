@@ -2,7 +2,7 @@
 
 An election simulator built for the Civic Assembly of [Higher Thermidor](https://www.nationstates.net/nation=higher_thermidor), a nation on NationStates. Set it up for your own country, with your parties, districts, regions and electoral system, or load a real one: Spain, the United Kingdom, Australia, Canada, Ireland, the Netherlands, Germany, Portugal or New Zealand, each starting from its last election.
 
-[**Open the simulator**](https://consuldelmar.github.io/ThermidorElections/) · [**Read the guide on NationStates**](https://www.nationstates.net/page=dispatch/id=2795939)
+[**Open the simulator**](https://consuldelmar.github.io/ThermidorElections/) · [**Read the guide on NationStates**](https://www.nationstates.net/page=dispatch/id=2823704)
 
 ![The simulator after a run](docs/screenshot.png)
 
