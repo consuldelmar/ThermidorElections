@@ -1,0 +1,455 @@
+{
+  "version": 6,
+  "title": "Dáil Éireann, Ireland",
+  "titleHighlight": "Ireland",
+  "election": "General election, 29 November 2024",
+  "source": "First preferences by constituency: Oireachtas official results, as compiled in the ireland-fptp dataset on GitHub. Compass positions: estimates on the Chapel Hill Expert Survey scales (economic left-right; GAL-TAN as Liberty-Authority). Transfers: estimates of typical 2024 patterns.",
+  "notes": "STV in 43 constituencies of 3 to 5 seats. Independents are one group in each constituency, and the count treats a group like a party. So that scattered independents don't act as one strong candidate, only those who mattered are kept (the leading independents, or the group where an independent won); the rest are left out. 'Other candidates' pools minor parties, including the 100% Redress Party.",
+  "system": { "type": "stv", "threshold": 0 },
+  "swing": "proportional",
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "hemicycle",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "FF", "name": "Fianna Fáil", "colour": "#66BB66", "lr": 5.5, "al": 5.5, "share": 23.4 },
+    { "id": "FG", "name": "Fine Gael", "colour": "#6699FF", "lr": 6.5, "al": 5, "share": 22.27 },
+    { "id": "SF", "name": "Sinn Féin", "colour": "#326760", "lr": 2.5, "al": 4, "share": 20.35 },
+    { "id": "SD", "name": "Social Democrats", "colour": "#752F8B", "lr": 2.5, "al": 2, "share": 5.05 },
+    { "id": "LAB", "name": "Labour", "colour": "#CC0000", "lr": 3, "al": 2.5, "share": 4.79 },
+    { "id": "GP", "name": "Green Party", "colour": "#99CC33", "lr": 3, "al": 1.5, "share": 3.25 },
+    { "id": "PBP", "name": "People Before Profit–Solidarity", "colour": "#8E2420", "lr": 0.5, "al": 1.5, "share": 3.04 },
+    { "id": "AON", "name": "Aontú", "colour": "#C9792B", "lr": 4, "al": 8.5, "share": 3.92 },
+    { "id": "II", "name": "Independent Ireland", "colour": "#0E7C7B", "lr": 6.5, "al": 8, "share": 3.76 },
+    { "id": "IND", "name": "Independents", "colour": "#9A9A9A", "lr": 5, "al": 5.5, "share": 7.06 },
+    { "id": "OTH", "name": "Other candidates", "colour": "#C4C4C4", "lr": 6, "al": 7, "share": 3.1 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": ["Dublin", "Rest of Leinster", "Munster", "Connacht–Ulster"],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "Dublin Bay North",
+      "Seats": 5,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "IND", "OTH"],
+      "Votes": 65569,
+      "Baseline": { "FF": 18.86, "FG": 17.19, "SF": 19.68, "SD": 14.85, "LAB": 4.45, "GP": 3.21, "PBP": 3.12, "AON": 2.46, "IND": 13.18, "OTH": 3.0 }
+    },
+    {
+      "District ID": 2,
+      "District Name": "Dublin Bay South",
+      "Seats": 4,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 35567,
+      "Baseline": { "FF": 15.571, "FG": 28.569, "SF": 13.704, "SD": 10.167, "LAB": 15.984, "GP": 9.138, "PBP": 3.77, "AON": 2.685, "OTH": 0.413 }
+    },
+    {
+      "District ID": 3,
+      "District Name": "Dublin Central",
+      "Seats": 4,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 28050,
+      "Baseline": { "FF": 8.36, "FG": 19.583, "SF": 27.255, "SD": 15.519, "LAB": 8.791, "GP": 6.959, "PBP": 5.244, "AON": 2.545, "OTH": 5.743 }
+    },
+    {
+      "District ID": 4,
+      "District Name": "Dublin Fingal East",
+      "Seats": 3,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 36834,
+      "Baseline": { "FF": 26.731, "FG": 14.601, "SF": 14.796, "SD": 10.927, "LAB": 14.652, "GP": 3.755, "PBP": 2.036, "AON": 4.208, "OTH": 8.294 }
+    },
+    {
+      "District ID": 5,
+      "District Name": "Dublin Fingal West",
+      "Seats": 3,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 26374,
+      "Baseline": { "FF": 16.751, "FG": 17.381, "SF": 26.412, "LAB": 19.129, "GP": 6.988, "PBP": 5.274, "AON": 4.41, "OTH": 3.655 }
+    },
+    {
+      "District ID": 6,
+      "District Name": "Dublin Mid-West",
+      "Seats": 5,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "IND", "OTH"],
+      "Votes": 47475,
+      "Baseline": { "FF": 11.789, "FG": 17.951, "SF": 32.051, "SD": 6.121, "LAB": 4.779, "GP": 1.34, "PBP": 5.489, "AON": 3.141, "II": 3.84, "IND": 9.74, "OTH": 3.76 }
+    },
+    {
+      "District ID": 7,
+      "District Name": "Dublin North-West",
+      "Seats": 3,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 30452,
+      "Baseline": { "FF": 14.653, "FG": 12.781, "SF": 33.052, "SD": 15.211, "LAB": 2.558, "GP": 3.097, "PBP": 9.579, "AON": 4.492, "OTH": 4.578 }
+    },
+    {
+      "District ID": 8,
+      "District Name": "Dublin Rathdown",
+      "Seats": 4,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 42279,
+      "Baseline": { "FF": 17.332, "FG": 38.83, "SF": 8.397, "SD": 10.114, "LAB": 7.197, "GP": 9.804, "PBP": 3.16, "AON": 4.279, "OTH": 0.887 }
+    },
+    {
+      "District ID": 9,
+      "District Name": "Dublin South-Central",
+      "Seats": 4,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "GP", "PBP", "AON", "OTH"],
+      "Votes": 36530,
+      "Baseline": { "FF": 10.917, "FG": 8.363, "SF": 31.864, "SD": 9.16, "GP": 6.206, "PBP": 9.119, "AON": 4.038, "OTH": 20.334 }
+    },
+    {
+      "District ID": 10,
+      "District Name": "Dublin South-West",
+      "Seats": 5,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 60467,
+      "Baseline": { "FF": 21.516, "FG": 21.14, "SF": 22.986, "SD": 6.498, "LAB": 9.571, "GP": 3.193, "PBP": 8.4, "AON": 2.873, "OTH": 3.824 }
+    },
+    {
+      "District ID": 11,
+      "District Name": "Dublin West",
+      "Seats": 5,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 40635,
+      "Baseline": { "FF": 24.265, "FG": 16.71, "SF": 22.882, "SD": 5.335, "LAB": 6.042, "GP": 7.164, "PBP": 8.741, "AON": 6.042, "OTH": 2.82 }
+    },
+    {
+      "District ID": 12,
+      "District Name": "Dún Laoghaire",
+      "Seats": 4,
+      "Region": "Dublin",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 55325,
+      "Baseline": { "FF": 15.958, "FG": 36.193, "SF": 9.027, "SD": 7.577, "LAB": 5.726, "GP": 7.769, "PBP": 12.286, "AON": 4.296, "OTH": 1.168 }
+    },
+    {
+      "District ID": 13,
+      "District Name": "Carlow-Kilkenny",
+      "Seats": 5,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 66315,
+      "Baseline": { "FF": 37.807, "FG": 24.859, "SF": 18.052, "SD": 5.112, "LAB": 2.598, "GP": 4.397, "PBP": 2.209, "AON": 3.587, "OTH": 1.378 }
+    },
+    {
+      "District ID": 14,
+      "District Name": "Kildare North",
+      "Seats": 5,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 54120,
+      "Baseline": { "FF": 26.986, "FG": 24.531, "SF": 14.878, "SD": 14.067, "LAB": 6.164, "GP": 3.805, "PBP": 2.14, "AON": 4.015, "OTH": 3.415 }
+    },
+    {
+      "District ID": 15,
+      "District Name": "Kildare South",
+      "Seats": 4,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 38595,
+      "Baseline": { "FF": 19.401, "FG": 23.995, "SF": 18.767, "SD": 8.177, "LAB": 17.243, "GP": 1.513, "PBP": 1.29, "AON": 4.35, "II": 2.793, "OTH": 2.469 }
+    },
+    {
+      "District ID": 16,
+      "District Name": "Laois",
+      "Seats": 3,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "IND"],
+      "Votes": 38276,
+      "Baseline": { "FF": 22.531, "FG": 24.219, "SF": 12.841, "GP": 1.949, "PBP": 1.949, "AON": 2.709, "IND": 33.802 }
+    },
+    {
+      "District ID": 17,
+      "District Name": "Longford-Westmeath",
+      "Seats": 5,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "II", "IND", "OTH"],
+      "Votes": 55955,
+      "Baseline": { "FF": 24.795, "FG": 32.991, "SF": 16.699, "LAB": 2.809, "GP": 0.829, "PBP": 1.714, "AON": 3.44, "II": 5.286, "IND": 9.888, "OTH": 1.548 }
+    },
+    {
+      "District ID": 18,
+      "District Name": "Louth",
+      "Seats": 5,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 58631,
+      "Baseline": { "FF": 18.219, "FG": 16.491, "SF": 35.242, "SD": 2.642, "LAB": 12.947, "GP": 2.565, "PBP": 2.848, "AON": 3.979, "II": 0.522, "OTH": 4.544 }
+    },
+    {
+      "District ID": 19,
+      "District Name": "Meath East",
+      "Seats": 4,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "IND", "OTH"],
+      "Votes": 49984,
+      "Baseline": { "FF": 19.26, "FG": 26.27, "SF": 22.149, "LAB": 4.099, "GP": 1.691, "PBP": 2.761, "AON": 6.56, "IND": 15.249, "OTH": 1.961 }
+    },
+    {
+      "District ID": 20,
+      "District Name": "Meath West",
+      "Seats": 3,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 33534,
+      "Baseline": { "FF": 19.485, "FG": 18.384, "SF": 25.658, "SD": 7.577, "LAB": 1.249, "GP": 1.697, "PBP": 1.506, "AON": 22.556, "OTH": 1.888 }
+    },
+    {
+      "District ID": 21,
+      "District Name": "Offaly",
+      "Seats": 3,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II", "IND", "OTH"],
+      "Votes": 37388,
+      "Baseline": { "FF": 23.839, "FG": 17.599, "SF": 16.61, "GP": 2.469, "PBP": 1.541, "AON": 0.851, "II": 5.55, "IND": 31.532, "OTH": 0.011 }
+    },
+    {
+      "District ID": 22,
+      "District Name": "Wexford",
+      "Seats": 4,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "IND", "OTH"],
+      "Votes": 50385,
+      "Baseline": { "FF": 17.644, "FG": 15.653, "SF": 15.153, "LAB": 14.35, "GP": 1.449, "PBP": 1.552, "AON": 7.492, "IND": 22.507, "OTH": 4.2 }
+    },
+    {
+      "District ID": 23,
+      "District Name": "Wicklow",
+      "Seats": 4,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 46764,
+      "Baseline": { "FF": 7.604, "FG": 42.593, "SF": 18.074, "SD": 16.464, "LAB": 4.296, "GP": 5.064, "PBP": 2.697, "AON": 1.538, "OTH": 1.672 }
+    },
+    {
+      "District ID": 24,
+      "District Name": "Wicklow-Wexford",
+      "Seats": 3,
+      "Region": "Rest of Leinster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II"],
+      "Votes": 34245,
+      "Baseline": { "FF": 40.263, "FG": 25.759, "SF": 22.543, "GP": 2.625, "PBP": 2.981, "AON": 3.942, "II": 1.886 }
+    },
+    {
+      "District ID": 25,
+      "District Name": "Clare",
+      "Seats": 4,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 58744,
+      "Baseline": { "FF": 39.233, "FG": 25.475, "SF": 13.355, "SD": 3.65, "GP": 6.418, "PBP": 1.399, "AON": 3.577, "II": 4.395, "OTH": 2.499 }
+    },
+    {
+      "District ID": 26,
+      "District Name": "Cork East",
+      "Seats": 4,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 38924,
+      "Baseline": { "FF": 28.479, "FG": 28.527, "SF": 16.884, "SD": 12.309, "GP": 4.131, "PBP": 1.703, "AON": 4.601, "II": 2.515, "OTH": 0.85 }
+    },
+    {
+      "District ID": 27,
+      "District Name": "Cork North-Central",
+      "Seats": 5,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 58349,
+      "Baseline": { "FF": 23.81, "FG": 16.855, "SF": 17.635, "SD": 5.973, "LAB": 10.305, "GP": 2.166, "PBP": 5.983, "AON": 3.2, "II": 9.831, "OTH": 4.242 }
+    },
+    {
+      "District ID": 28,
+      "District Name": "Cork North-West",
+      "Seats": 3,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II"],
+      "Votes": 42309,
+      "Baseline": { "FF": 37.165, "FG": 35.271, "SF": 12.891, "GP": 2.491, "PBP": 1.985, "AON": 7.949, "II": 2.248 }
+    },
+    {
+      "District ID": 29,
+      "District Name": "Cork South-Central",
+      "Seats": 5,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 58265,
+      "Baseline": { "FF": 39.55, "FG": 17.424, "SF": 16.585, "SD": 9.211, "LAB": 5.156, "GP": 3.702, "PBP": 1.507, "AON": 3.896, "II": 0.774, "OTH": 2.195 }
+    },
+    {
+      "District ID": 30,
+      "District Name": "Cork South-West",
+      "Seats": 3,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 45072,
+      "Baseline": { "FF": 20.221, "FG": 24.681, "SF": 5.067, "SD": 20.902, "LAB": 0.965, "GP": 0.777, "PBP": 0.777, "AON": 1.564, "II": 24.408, "OTH": 0.639 }
+    },
+    {
+      "District ID": 31,
+      "District Name": "Kerry",
+      "Seats": 5,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "II", "IND", "OTH"],
+      "Votes": 76462,
+      "Baseline": { "FF": 26.927, "FG": 10.379, "SF": 16.692, "LAB": 2.392, "GP": 2.597, "PBP": 1.325, "AON": 1.878, "II": 1.283, "IND": 35.572, "OTH": 0.955 }
+    },
+    {
+      "District ID": 32,
+      "District Name": "Limerick City",
+      "Seats": 4,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 38977,
+      "Baseline": { "FF": 28.337, "FG": 22.949, "SF": 18.762, "SD": 7.207, "LAB": 7.012, "GP": 4.577, "PBP": 1.85, "AON": 5.075, "II": 1.763, "OTH": 2.468 }
+    },
+    {
+      "District ID": 33,
+      "District Name": "Limerick County",
+      "Seats": 3,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 43974,
+      "Baseline": { "FF": 24.947, "FG": 29.729, "SF": 13.658, "GP": 1.988, "PBP": 0.941, "AON": 2.972, "II": 23.973, "OTH": 1.792 }
+    },
+    {
+      "District ID": 34,
+      "District Name": "Tipperary North",
+      "Seats": 3,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "IND", "OTH"],
+      "Votes": 45386,
+      "Baseline": { "FF": 23.283, "FG": 9.741, "SF": 9.58, "LAB": 15.58, "GP": 1.613, "PBP": 1.392, "AON": 1.957, "IND": 35.877, "OTH": 0.978 }
+    },
+    {
+      "District ID": 35,
+      "District Name": "Tipperary South",
+      "Seats": 3,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "AON", "II", "IND", "OTH"],
+      "Votes": 40926,
+      "Baseline": { "FF": 14.262, "FG": 20.456, "SF": 12.066, "GP": 1.425, "AON": 1.185, "II": 0.391, "IND": 45.206, "OTH": 5.009 }
+    },
+    {
+      "District ID": 36,
+      "District Name": "Waterford",
+      "Seats": 4,
+      "Region": "Munster",
+      "Active Parties": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "OTH"],
+      "Votes": 46741,
+      "Baseline": { "FF": 21.315, "FG": 22.199, "SF": 37.924, "SD": 5.809, "LAB": 3.213, "GP": 3.571, "PBP": 1.378, "AON": 3.558, "OTH": 1.033 }
+    },
+    {
+      "District ID": 37,
+      "District Name": "Cavan-Monaghan",
+      "Seats": 5,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 68096,
+      "Baseline": { "FF": 27.486, "FG": 21.711, "SF": 33.365, "GP": 1.088, "PBP": 1.423, "AON": 7.556, "II": 4.524, "OTH": 2.847 }
+    },
+    {
+      "District ID": 38,
+      "District Name": "Donegal",
+      "Seats": 5,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "OTH"],
+      "Votes": 68968,
+      "Baseline": { "FF": 26.553, "FG": 10.01, "SF": 46.429, "GP": 1.277, "PBP": 0.877, "AON": 3.577, "OTH": 11.276 }
+    },
+    {
+      "District ID": 39,
+      "District Name": "Galway East",
+      "Seats": 4,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II", "IND", "OTH"],
+      "Votes": 54214,
+      "Baseline": { "FF": 26.191, "FG": 21.66, "SF": 13.76, "GP": 2.33, "PBP": 2.28, "AON": 2.87, "II": 9.499, "IND": 20.29, "OTH": 1.12 }
+    },
+    {
+      "District ID": 40,
+      "District Name": "Galway West",
+      "Seats": 5,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "II", "IND", "OTH"],
+      "Votes": 54043,
+      "Baseline": { "FF": 18.728, "FG": 20.991, "SF": 15.103, "LAB": 4.015, "GP": 3.401, "PBP": 1.673, "AON": 2.287, "II": 10.551, "IND": 17.899, "OTH": 5.353 }
+    },
+    {
+      "District ID": 41,
+      "District Name": "Mayo",
+      "Seats": 5,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 61860,
+      "Baseline": { "FF": 22.958, "FG": 40.165, "SF": 22.179, "GP": 1.5, "PBP": 1.937, "AON": 2.097, "II": 4.02, "OTH": 5.144 }
+    },
+    {
+      "District ID": 42,
+      "District Name": "Roscommon-Galway",
+      "Seats": 3,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 36600,
+      "Baseline": { "FF": 19.902, "FG": 19.148, "SF": 21.97, "GP": 1.202, "PBP": 2.224, "AON": 2.158, "II": 32.79, "OTH": 0.607 }
+    },
+    {
+      "District ID": 43,
+      "District Name": "Sligo-Leitrim",
+      "Seats": 4,
+      "Region": "Connacht–Ulster",
+      "Active Parties": ["FF", "FG", "SF", "LAB", "GP", "PBP", "AON", "II", "OTH"],
+      "Votes": 49185,
+      "Baseline": { "FF": 29.373, "FG": 18.256, "SF": 26.307, "LAB": 4.245, "GP": 1.47, "PBP": 3.367, "AON": 2.257, "II": 12.296, "OTH": 2.43 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": ["Dublin", "Rest of Leinster", "Munster", "Connacht–Ulster"],
+    "FF": [17.3249, 23.3348, 27.7512, 24.7561],
+    "FG": [21.4358, 24.6234, 21.0772, 21.7851],
+    "SF": [21.0661, 19.8301, 16.0238, 26.7359],
+    "SD": [9.3323, 4.5991, 5.1726, 0.0],
+    "LAB": [7.7166, 5.7753, 3.8017, 1.0836],
+    "GP": [5.472, 2.589, 3.0012, 1.734],
+    "PBP": [6.4517, 2.1307, 1.7619, 1.8785],
+    "AON": [3.7003, 5.057, 3.3417, 3.4611],
+    "II": [0.3606, 1.2519, 5.7344, 8.7715],
+    "IND": [2.624, 8.7243, 10.4326, 5.2608],
+    "OTH": [4.5158, 2.0844, 1.9016, 4.5335]
+  },
+  "scenarios": {
+    "FF + FG + Independents": ["FF", "FG", "IND"],
+    "FF + FG": ["FF", "FG"],
+    "Left alternative": ["SF", "SD", "LAB", "PBP", "GP"],
+    "Sinn Féin + Fianna Fáil": ["SF", "FF"]
+  },
+  "transfers": {
+    "columns": ["FF", "FG", "SF", "SD", "LAB", "GP", "PBP", "AON", "II", "IND", "OTH", "None", "Kept"],
+    "FF": [0, 40.7, 7.2, 4.5, 5.4, 2.7, 0.9, 3.6, 5.4, 12.7, 1.8, 15, 80],
+    "FG": [39.0, 0, 3.5, 6.9, 7.8, 5.2, 0.9, 2.6, 5.2, 12.1, 1.7, 15, 80],
+    "SF": [6.9, 3.1, 0, 10.7, 6.9, 3.1, 13.8, 9.2, 4.6, 13.8, 3.1, 25, 85],
+    "SD": [7.0, 7.9, 13.2, 0, 22.0, 17.6, 8.8, 1.8, 0.9, 7.9, 0.9, 12, 85],
+    "LAB": [7.1, 8.9, 10.7, 26.7, 0, 17.8, 6.2, 0.9, 0.9, 8.0, 0.9, 12, 85],
+    "GP": [6.2, 10.6, 5.3, 26.4, 24.6, 0, 5.3, 0.9, 0.9, 7.0, 0.9, 12, 85],
+    "PBP": [1.5, 0.8, 26.2, 16.5, 10.5, 7.5, 0, 1.5, 0.8, 9.0, 0.8, 25, 85],
+    "AON": [7.5, 4.5, 13.5, 1.5, 1.5, 0.8, 2.2, 0, 18.8, 16.5, 8.2, 25, 85],
+    "II": [11.2, 7.5, 6.0, 0.8, 0.8, 0.8, 0.8, 18.8, 0, 19.5, 9.0, 25, 85],
+    "IND": [14.3, 11.9, 11.1, 5.6, 4.8, 3.2, 2.4, 5.6, 7.2, 0, 4.0, 30, 70],
+    "OTH": [7.0, 4.2, 8.4, 2.1, 2.1, 1.4, 2.1, 12.6, 14.0, 16.1, 0, 30, 85]
+  }
+}

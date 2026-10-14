@@ -1,0 +1,3130 @@
+{
+  "version": 6,
+  "title": "House of Commons of Canada",
+  "titleHighlight": "Canada",
+  "election": "Federal election, 28 April 2025",
+  "source": "Votes by riding: Elections Canada, 2025 federal election (via the canadian-election-projections dataset on GitHub). Compass positions: estimates on the Chapel Hill Expert Survey scales, which don't cover Canada.",
+  "notes": "Shares are among the five parties that won seats (98.9% of votes); the People's Party, independents and minor parties are left out. First past the post in every riding.",
+  "system": { "type": "fptp", "threshold": 0 },
+  "swing": "proportional",
+  "voteMode": "exact",
+  "variance": 0,
+  "pollGlobalDev": 3,
+  "seed": "",
+  "hemiSort": "lr",
+  "chamberLayout": "westminster",
+  "trendsEnabled": false,
+  "parties": [
+    { "id": "LPC", "name": "Liberal", "colour": "#D71920", "lr": 5, "al": 4, "share": 44.26 },
+    { "id": "CPC", "name": "Conservative", "colour": "#1A4782", "lr": 7.5, "al": 7, "share": 41.78 },
+    { "id": "BQ", "name": "Bloc Québécois", "colour": "#33B2CC", "lr": 4, "al": 5, "share": 6.37 },
+    { "id": "NDP", "name": "New Democratic Party", "colour": "#F37021", "lr": 2.5, "al": 2.5, "share": 6.36 },
+    { "id": "GPC", "name": "Green", "colour": "#3D9B35", "lr": 2, "al": 1.5, "share": 1.23 }
+  ],
+  "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
+  "regions": ["Newfoundland and Labrador", "Prince Edward Island", "Nova Scotia", "New Brunswick", "Quebec", "Ontario", "Manitoba", "Saskatchewan", "Alberta", "British Columbia", "Yukon", "Northwest Territories", "Nunavut"],
+  "districts": [
+    {
+      "District ID": 1,
+      "District Name": "Avalon",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 46800,
+      "Baseline": { "LPC": 58.895, "CPC": 36.224, "NDP": 4.88 }
+    },
+    {
+      "District ID": 2,
+      "District Name": "Cape Spear",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 45818,
+      "Baseline": { "LPC": 68.506, "CPC": 25.85, "NDP": 5.339, "GPC": 0.306 }
+    },
+    {
+      "District ID": 3,
+      "District Name": "Central Newfoundland",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 40636,
+      "Baseline": { "LPC": 43.548, "CPC": 54.078, "NDP": 2.375 }
+    },
+    {
+      "District ID": 4,
+      "District Name": "Labrador",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 11284,
+      "Baseline": { "LPC": 51.498, "CPC": 41.732, "NDP": 6.771 }
+    },
+    {
+      "District ID": 5,
+      "District Name": "Long Range Mountains",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 44969,
+      "Baseline": { "LPC": 43.866, "CPC": 51.662, "NDP": 4.472 }
+    },
+    {
+      "District ID": 6,
+      "District Name": "St. John's East",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 45953,
+      "Baseline": { "LPC": 62.414, "CPC": 25.985, "NDP": 11.255, "GPC": 0.346 }
+    },
+    {
+      "District ID": 7,
+      "District Name": "Terra Nova--The Peninsulas",
+      "Seats": 1,
+      "Region": "Newfoundland and Labrador",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 40875,
+      "Baseline": { "LPC": 47.934, "CPC": 47.963, "NDP": 4.103 }
+    },
+    {
+      "District ID": 8,
+      "District Name": "Cardigan",
+      "Seats": 1,
+      "Region": "Prince Edward Island",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 24677,
+      "Baseline": { "LPC": 58.37, "CPC": 38.262, "NDP": 2.046, "GPC": 1.321 }
+    },
+    {
+      "District ID": 9,
+      "District Name": "Charlottetown",
+      "Seats": 1,
+      "Region": "Prince Edward Island",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 20958,
+      "Baseline": { "LPC": 65.159, "CPC": 29.292, "NDP": 4.323, "GPC": 1.226 }
+    },
+    {
+      "District ID": 10,
+      "District Name": "Egmont",
+      "Seats": 1,
+      "Region": "Prince Edward Island",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 24008,
+      "Baseline": { "LPC": 51.924, "CPC": 43.398, "NDP": 2.437, "GPC": 2.241 }
+    },
+    {
+      "District ID": 11,
+      "District Name": "Malpeque",
+      "Seats": 1,
+      "Region": "Prince Edward Island",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 26751,
+      "Baseline": { "LPC": 57.886, "CPC": 36.806, "NDP": 1.387, "GPC": 3.921 }
+    },
+    {
+      "District ID": 12,
+      "District Name": "Acadie--Annapolis",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 47866,
+      "Baseline": { "LPC": 46.987, "CPC": 48.101, "NDP": 3.694, "GPC": 1.218 }
+    },
+    {
+      "District ID": 13,
+      "District Name": "Cape Breton--Canso--Antigonish",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 47708,
+      "Baseline": { "LPC": 52.209, "CPC": 43.745, "NDP": 4.045 }
+    },
+    {
+      "District ID": 14,
+      "District Name": "Central Nova",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 49647,
+      "Baseline": { "LPC": 52.527, "CPC": 43.235, "NDP": 3.321, "GPC": 0.916 }
+    },
+    {
+      "District ID": 15,
+      "District Name": "Cumberland--Colchester",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 49197,
+      "Baseline": { "LPC": 48.639, "CPC": 46.143, "NDP": 3.807, "GPC": 1.411 }
+    },
+    {
+      "District ID": 16,
+      "District Name": "Dartmouth--Cole Harbour",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58753,
+      "Baseline": { "LPC": 68.706, "CPC": 23.075, "NDP": 7.15, "GPC": 1.069 }
+    },
+    {
+      "District ID": 17,
+      "District Name": "Halifax",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 51889,
+      "Baseline": { "LPC": 63.378, "CPC": 19.154, "NDP": 16.655, "GPC": 0.813 }
+    },
+    {
+      "District ID": 18,
+      "District Name": "Halifax West",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 54800,
+      "Baseline": { "LPC": 66.058, "CPC": 27.409, "NDP": 5.626, "GPC": 0.907 }
+    },
+    {
+      "District ID": 19,
+      "District Name": "Kings--Hants",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58588,
+      "Baseline": { "LPC": 61.166, "CPC": 33.749, "NDP": 3.677, "GPC": 1.408 }
+    },
+    {
+      "District ID": 20,
+      "District Name": "Sackville--Bedford--Preston",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 57772,
+      "Baseline": { "LPC": 62.421, "CPC": 32.646, "NDP": 4.023, "GPC": 0.91 }
+    },
+    {
+      "District ID": 21,
+      "District Name": "South Shore--St. Margarets",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "GPC"],
+      "Votes": 49513,
+      "Baseline": { "LPC": 56.209, "CPC": 42.138, "GPC": 1.652 }
+    },
+    {
+      "District ID": 22,
+      "District Name": "Sydney--Glace Bay",
+      "Seats": 1,
+      "Region": "Nova Scotia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 45533,
+      "Baseline": { "LPC": 56.588, "CPC": 39.483, "NDP": 3.929 }
+    },
+    {
+      "District ID": 23,
+      "District Name": "Acadie--Bathurst",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 47205,
+      "Baseline": { "LPC": 68.967, "CPC": 26.567, "NDP": 4.466 }
+    },
+    {
+      "District ID": 24,
+      "District Name": "Beauséjour",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58740,
+      "Baseline": { "LPC": 61.524, "CPC": 33.813, "NDP": 2.465, "GPC": 2.198 }
+    },
+    {
+      "District ID": 25,
+      "District Name": "Fredericton--Oromocto",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 49426,
+      "Baseline": { "LPC": 62.214, "CPC": 32.776, "NDP": 1.837, "GPC": 3.172 }
+    },
+    {
+      "District ID": 26,
+      "District Name": "Fundy Royal",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 46982,
+      "Baseline": { "LPC": 40.66, "CPC": 54.087, "NDP": 3.208, "GPC": 2.045 }
+    },
+    {
+      "District ID": 27,
+      "District Name": "Madawaska--Restigouche",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 40291,
+      "Baseline": { "LPC": 56.39, "CPC": 40.505, "NDP": 3.105 }
+    },
+    {
+      "District ID": 28,
+      "District Name": "Miramichi--Grand Lake",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 38257,
+      "Baseline": { "LPC": 47.147, "CPC": 48.151, "NDP": 2.53, "GPC": 2.172 }
+    },
+    {
+      "District ID": 29,
+      "District Name": "Moncton--Dieppe",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 47958,
+      "Baseline": { "LPC": 63.003, "CPC": 31.223, "NDP": 3.701, "GPC": 2.073 }
+    },
+    {
+      "District ID": 30,
+      "District Name": "Saint John--Kennebecasis",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 44859,
+      "Baseline": { "LPC": 58.247, "CPC": 37.422, "NDP": 2.688, "GPC": 1.643 }
+    },
+    {
+      "District ID": 31,
+      "District Name": "Saint John--St. Croix",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 49812,
+      "Baseline": { "LPC": 41.725, "CPC": 53.383, "NDP": 3.298, "GPC": 1.594 }
+    },
+    {
+      "District ID": 32,
+      "District Name": "Tobique--Mactaquac",
+      "Seats": 1,
+      "Region": "New Brunswick",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 39166,
+      "Baseline": { "LPC": 36.322, "CPC": 59.547, "NDP": 2.073, "GPC": 2.058 }
+    },
+    {
+      "District ID": 33,
+      "District Name": "Abitibi--Baie-James--Nunavik--Eeyou",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 30561,
+      "Baseline": { "LPC": 41.157, "CPC": 22.414, "BQ": 33.968, "NDP": 2.461 }
+    },
+    {
+      "District ID": 34,
+      "District Name": "Abitibi--Témiscamingue",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 49666,
+      "Baseline": { "LPC": 27.284, "CPC": 19.855, "BQ": 49.881, "NDP": 2.98 }
+    },
+    {
+      "District ID": 35,
+      "District Name": "Ahuntsic-Cartierville",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 50304,
+      "Baseline": { "LPC": 61.293, "CPC": 15.108, "BQ": 16.973, "NDP": 6.626 }
+    },
+    {
+      "District ID": 36,
+      "District Name": "Alfred-Pellan",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 59908,
+      "Baseline": { "LPC": 54.974, "CPC": 21.151, "BQ": 20.463, "NDP": 3.412 }
+    },
+    {
+      "District ID": 37,
+      "District Name": "Argenteuil--La Petite-Nation",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 58647,
+      "Baseline": { "LPC": 47.955, "CPC": 25.06, "BQ": 23.053, "NDP": 2.556, "GPC": 1.376 }
+    },
+    {
+      "District ID": 38,
+      "District Name": "Beauce",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 59356,
+      "Baseline": { "LPC": 20.313, "CPC": 63.353, "BQ": 14.48, "NDP": 1.853 }
+    },
+    {
+      "District ID": 39,
+      "District Name": "Beauharnois--Salaberry--Soulanges--Huntingdon",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 67639,
+      "Baseline": { "LPC": 32.435, "CPC": 19.56, "BQ": 44.361, "NDP": 2.459, "GPC": 1.186 }
+    },
+    {
+      "District ID": 40,
+      "District Name": "Beauport--Limoilou",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 60927,
+      "Baseline": { "LPC": 35.876, "CPC": 30.351, "BQ": 28.818, "NDP": 3.439, "GPC": 1.517 }
+    },
+    {
+      "District ID": 41,
+      "District Name": "Bécancour--Nicolet--Saurel--Alnôbak",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 53886,
+      "Baseline": { "LPC": 27.49, "CPC": 21.744, "BQ": 47.333, "NDP": 2.064, "GPC": 1.37 }
+    },
+    {
+      "District ID": 42,
+      "District Name": "Bellechasse--Les Etchemins--Lévis",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 64604,
+      "Baseline": { "LPC": 28.856, "CPC": 49.683, "BQ": 18.952, "NDP": 2.509 }
+    },
+    {
+      "District ID": 43,
+      "District Name": "Beloeil--Chambly",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 67570,
+      "Baseline": { "LPC": 34.24, "CPC": 13.614, "BQ": 48.607, "NDP": 3.539 }
+    },
+    {
+      "District ID": 44,
+      "District Name": "Berthier--Maskinongé",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 61381,
+      "Baseline": { "LPC": 24.529, "CPC": 17.336, "BQ": 35.314, "NDP": 21.924, "GPC": 0.898 }
+    },
+    {
+      "District ID": 45,
+      "District Name": "Bourassa",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 35446,
+      "Baseline": { "LPC": 59.804, "CPC": 16.659, "BQ": 17.508, "NDP": 6.029 }
+    },
+    {
+      "District ID": 46,
+      "District Name": "Brome--Missisquoi",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 71391,
+      "Baseline": { "LPC": 48.643, "CPC": 19.25, "BQ": 28.27, "NDP": 2.241, "GPC": 1.595 }
+    },
+    {
+      "District ID": 47,
+      "District Name": "Brossard--Saint-Lambert",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 58358,
+      "Baseline": { "LPC": 62.615, "CPC": 18.979, "BQ": 13.429, "NDP": 3.511, "GPC": 1.465 }
+    },
+    {
+      "District ID": 48,
+      "District Name": "Charlesbourg--Haute-Saint-Charles",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 64393,
+      "Baseline": { "LPC": 35.092, "CPC": 43.014, "BQ": 19.173, "NDP": 2.721 }
+    },
+    {
+      "District ID": 49,
+      "District Name": "Châteauguay--Les Jardins-de-Napierville",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 62072,
+      "Baseline": { "LPC": 45.47, "CPC": 21.81, "BQ": 29.256, "NDP": 2.218, "GPC": 1.245 }
+    },
+    {
+      "District ID": 50,
+      "District Name": "Chicoutimi--Le Fjord",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 50500,
+      "Baseline": { "LPC": 31.327, "CPC": 34.368, "BQ": 31.4, "NDP": 1.962, "GPC": 0.943 }
+    },
+    {
+      "District ID": 51,
+      "District Name": "Compton--Stanstead",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 64833,
+      "Baseline": { "LPC": 46.197, "CPC": 22.044, "BQ": 26.692, "NDP": 3.276, "GPC": 1.791 }
+    },
+    {
+      "District ID": 52,
+      "District Name": "Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 62322,
+      "Baseline": { "LPC": 30.642, "CPC": 46.329, "BQ": 20.214, "NDP": 1.72, "GPC": 1.094 }
+    },
+    {
+      "District ID": 53,
+      "District Name": "Côte-Nord--Kawawachikamach--Nitassinan",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 36433,
+      "Baseline": { "LPC": 27.955, "CPC": 25.705, "BQ": 44.583, "NDP": 1.757 }
+    },
+    {
+      "District ID": 54,
+      "District Name": "Dorval--Lachine--LaSalle",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 49620,
+      "Baseline": { "LPC": 60.312, "CPC": 21.016, "BQ": 12.773, "NDP": 4.24, "GPC": 1.659 }
+    },
+    {
+      "District ID": 55,
+      "District Name": "Drummond",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 55466,
+      "Baseline": { "LPC": 28.843, "CPC": 23.059, "BQ": 43.398, "NDP": 4.7 }
+    },
+    {
+      "District ID": 56,
+      "District Name": "Gaspésie--Les Îles-de-la-Madeleine--Listuguj",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 55960,
+      "Baseline": { "LPC": 38.987, "CPC": 12.593, "BQ": 46.624, "NDP": 1.796 }
+    },
+    {
+      "District ID": 57,
+      "District Name": "Gatineau",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 56721,
+      "Baseline": { "LPC": 61.267, "CPC": 19.361, "BQ": 16.525, "NDP": 2.847 }
+    },
+    {
+      "District ID": 58,
+      "District Name": "Hochelaga--Rosemont-Est",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 50905,
+      "Baseline": { "LPC": 46.363, "CPC": 10.612, "BQ": 27.31, "NDP": 13.105, "GPC": 2.611 }
+    },
+    {
+      "District ID": 59,
+      "District Name": "Honoré-Mercier",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 49429,
+      "Baseline": { "LPC": 60.586, "CPC": 21.631, "BQ": 13.019, "NDP": 3.615, "GPC": 1.149 }
+    },
+    {
+      "District ID": 60,
+      "District Name": "Hull--Aylmer",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 50938,
+      "Baseline": { "LPC": 62.778, "CPC": 17.133, "BQ": 12.266, "NDP": 5.605, "GPC": 2.218 }
+    },
+    {
+      "District ID": 61,
+      "District Name": "Joliette--Manawan",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 57229,
+      "Baseline": { "LPC": 31.26, "CPC": 15.239, "BQ": 49.269, "NDP": 2.46, "GPC": 1.772 }
+    },
+    {
+      "District ID": 62,
+      "District Name": "Jonquière",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 50113,
+      "Baseline": { "LPC": 26.285, "CPC": 30.559, "BQ": 40.403, "NDP": 1.86, "GPC": 0.894 }
+    },
+    {
+      "District ID": 63,
+      "District Name": "La Pointe-de-l'Île",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 53028,
+      "Baseline": { "LPC": 37.812, "CPC": 12.788, "BQ": 43.26, "NDP": 4.298, "GPC": 1.842 }
+    },
+    {
+      "District ID": 64,
+      "District Name": "La Prairie--Atateken",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 66400,
+      "Baseline": { "LPC": 44.304, "CPC": 17.327, "BQ": 34.988, "NDP": 2.392, "GPC": 0.989 }
+    },
+    {
+      "District ID": 65,
+      "District Name": "Lac-Saint-Jean",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 47216,
+      "Baseline": { "LPC": 26.55, "CPC": 24.975, "BQ": 46.741, "NDP": 1.735 }
+    },
+    {
+      "District ID": 66,
+      "District Name": "Lac-Saint-Louis",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 63771,
+      "Baseline": { "LPC": 68.128, "CPC": 23.84, "BQ": 3.654, "NDP": 2.943, "GPC": 1.435 }
+    },
+    {
+      "District ID": 67,
+      "District Name": "LaSalle--Émard--Verdun",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 53247,
+      "Baseline": { "LPC": 51.532, "CPC": 14.003, "BQ": 21.535, "NDP": 10.493, "GPC": 2.438 }
+    },
+    {
+      "District ID": 68,
+      "District Name": "Laurentides--Labelle",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 52234,
+      "Baseline": { "LPC": 35.444, "CPC": 15.124, "BQ": 45.21, "NDP": 2.567, "GPC": 1.654 }
+    },
+    {
+      "District ID": 69,
+      "District Name": "Laurier--Sainte-Marie",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 51469,
+      "Baseline": { "LPC": 53.014, "CPC": 9.318, "BQ": 15.697, "NDP": 19.149, "GPC": 2.821 }
+    },
+    {
+      "District ID": 70,
+      "District Name": "Laval--Les Îles",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 56916,
+      "Baseline": { "LPC": 49.726, "CPC": 32.249, "BQ": 14.579, "NDP": 3.445 }
+    },
+    {
+      "District ID": 71,
+      "District Name": "Les Pays-d'en-Haut",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 65064,
+      "Baseline": { "LPC": 41.447, "CPC": 18.161, "BQ": 36.503, "NDP": 2.295, "GPC": 1.595 }
+    },
+    {
+      "District ID": 72,
+      "District Name": "Lévis--Lotbinière",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 69123,
+      "Baseline": { "LPC": 29.728, "CPC": 48.192, "BQ": 19.714, "NDP": 2.365 }
+    },
+    {
+      "District ID": 73,
+      "District Name": "Longueuil--Charles-LeMoyne",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 50100,
+      "Baseline": { "LPC": 50.176, "CPC": 17.06, "BQ": 27.112, "NDP": 5.653 }
+    },
+    {
+      "District ID": 74,
+      "District Name": "Longueuil--Saint-Hubert",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 59138,
+      "Baseline": { "LPC": 40.984, "CPC": 14.284, "BQ": 39.683, "NDP": 5.049 }
+    },
+    {
+      "District ID": 75,
+      "District Name": "Louis-Hébert",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 60113,
+      "Baseline": { "LPC": 55.748, "CPC": 20.235, "BQ": 21.455, "NDP": 2.562 }
+    },
+    {
+      "District ID": 76,
+      "District Name": "Louis-Saint-Laurent--Akiawenhrahk",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 65290,
+      "Baseline": { "LPC": 33.226, "CPC": 45.221, "BQ": 19.092, "NDP": 2.461 }
+    },
+    {
+      "District ID": 77,
+      "District Name": "Marc-Aurèle-Fortin",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 57563,
+      "Baseline": { "LPC": 51.992, "CPC": 20.713, "BQ": 23.598, "NDP": 3.697 }
+    },
+    {
+      "District ID": 78,
+      "District Name": "Mégantic--L'Érable--Lotbinière",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 57737,
+      "Baseline": { "LPC": 21.813, "CPC": 59.702, "BQ": 16.639, "NDP": 1.846 }
+    },
+    {
+      "District ID": 79,
+      "District Name": "Mirabel",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 55959,
+      "Baseline": { "LPC": 33.589, "CPC": 22.416, "BQ": 40.197, "NDP": 2.382, "GPC": 1.415 }
+    },
+    {
+      "District ID": 80,
+      "District Name": "Mount Royal",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 49812,
+      "Baseline": { "LPC": 51.281, "CPC": 40.641, "BQ": 3.355, "NDP": 4.724 }
+    },
+    {
+      "District ID": 81,
+      "District Name": "Mont-Saint-Bruno--L'Acadie",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 67854,
+      "Baseline": { "LPC": 47.38, "CPC": 13.757, "BQ": 35.292, "NDP": 2.343, "GPC": 1.228 }
+    },
+    {
+      "District ID": 82,
+      "District Name": "Montcalm",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 58519,
+      "Baseline": { "LPC": 26.947, "CPC": 23.222, "BQ": 46.597, "NDP": 3.235 }
+    },
+    {
+      "District ID": 83,
+      "District Name": "Montmorency--Charlevoix",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 59050,
+      "Baseline": { "LPC": 28.96, "CPC": 34.706, "BQ": 33.819, "NDP": 1.533, "GPC": 0.982 }
+    },
+    {
+      "District ID": 84,
+      "District Name": "Notre-Dame-de-Grâce--Westmount",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 52682,
+      "Baseline": { "LPC": 64.967, "CPC": 19.963, "BQ": 5.034, "NDP": 7.509, "GPC": 2.526 }
+    },
+    {
+      "District ID": 85,
+      "District Name": "Outremont",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 47142,
+      "Baseline": { "LPC": 55.203, "CPC": 12.539, "BQ": 11.972, "NDP": 10.657, "GPC": 9.628 }
+    },
+    {
+      "District ID": 86,
+      "District Name": "Papineau",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 44959,
+      "Baseline": { "LPC": 54.939, "CPC": 10.959, "BQ": 17.185, "NDP": 16.918 }
+    },
+    {
+      "District ID": 87,
+      "District Name": "Pierre-Boucher--Les Patriotes--Verchères",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 61898,
+      "Baseline": { "LPC": 39.124, "CPC": 11.915, "BQ": 46.472, "NDP": 2.49 }
+    },
+    {
+      "District ID": 88,
+      "District Name": "Pierrefonds--Dollard",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 56489,
+      "Baseline": { "LPC": 60.766, "CPC": 30.896, "BQ": 5.482, "NDP": 2.855 }
+    },
+    {
+      "District ID": 89,
+      "District Name": "Pontiac--Kitigan Zibi",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 58100,
+      "Baseline": { "LPC": 55.229, "CPC": 27.919, "BQ": 10.449, "NDP": 5.114, "GPC": 1.289 }
+    },
+    {
+      "District ID": 90,
+      "District Name": "Portneuf--Jacques-Cartier",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 64417,
+      "Baseline": { "LPC": 29.286, "CPC": 49.962, "BQ": 18.017, "NDP": 1.605, "GPC": 1.13 }
+    },
+    {
+      "District ID": 91,
+      "District Name": "Québec Centre",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "BQ", "NDP"],
+      "Votes": 52483,
+      "Baseline": { "LPC": 53.122, "BQ": 38.494, "NDP": 8.384 }
+    },
+    {
+      "District ID": 92,
+      "District Name": "Repentigny",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 62317,
+      "Baseline": { "LPC": 39.185, "CPC": 15.378, "BQ": 42.674, "NDP": 2.763 }
+    },
+    {
+      "District ID": 93,
+      "District Name": "Richmond--Arthabaska",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 61178,
+      "Baseline": { "LPC": 33.72, "CPC": 36.297, "BQ": 27.943, "NDP": 2.04 }
+    },
+    {
+      "District ID": 94,
+      "District Name": "Rimouski--La Matapédia",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 52446,
+      "Baseline": { "LPC": 36.611, "CPC": 13.965, "BQ": 47.567, "NDP": 1.857 }
+    },
+    {
+      "District ID": 95,
+      "District Name": "Rivière-des-Mille-Îles",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 59397,
+      "Baseline": { "LPC": 46.006, "CPC": 17.506, "BQ": 33.114, "NDP": 2.138, "GPC": 1.236 }
+    },
+    {
+      "District ID": 96,
+      "District Name": "Rivière-du-Nord",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 58018,
+      "Baseline": { "LPC": 31.619, "CPC": 21.033, "BQ": 43.845, "NDP": 3.502 }
+    },
+    {
+      "District ID": 97,
+      "District Name": "Rosemont--La Petite-Patrie",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 59420,
+      "Baseline": { "LPC": 31.567, "CPC": 6.855, "BQ": 18.283, "NDP": 40.993, "GPC": 2.302 }
+    },
+    {
+      "District ID": 98,
+      "District Name": "Saint-Hyacinthe--Bagot--Acton",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 57555,
+      "Baseline": { "LPC": 33.888, "CPC": 18.124, "BQ": 44.213, "NDP": 2.386, "GPC": 1.39 }
+    },
+    {
+      "District ID": 99,
+      "District Name": "Saint-Jean",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 63591,
+      "Baseline": { "LPC": 34.595, "CPC": 16.48, "BQ": 44.777, "NDP": 2.595, "GPC": 1.554 }
+    },
+    {
+      "District ID": 100,
+      "District Name": "Saint-Laurent",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 43699,
+      "Baseline": { "LPC": 59.546, "CPC": 28.552, "BQ": 5.774, "NDP": 4.542, "GPC": 1.586 }
+    },
+    {
+      "District ID": 101,
+      "District Name": "Saint-Léonard--Saint-Michel",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 40678,
+      "Baseline": { "LPC": 65.964, "CPC": 20.79, "BQ": 7.223, "NDP": 6.023 }
+    },
+    {
+      "District ID": 102,
+      "District Name": "Saint-Maurice--Champlain",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 61534,
+      "Baseline": { "LPC": 50.533, "CPC": 24.898, "BQ": 21.435, "NDP": 1.989, "GPC": 1.144 }
+    },
+    {
+      "District ID": 103,
+      "District Name": "Shefford",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 65842,
+      "Baseline": { "LPC": 39.724, "CPC": 17.32, "BQ": 40.591, "NDP": 2.365 }
+    },
+    {
+      "District ID": 104,
+      "District Name": "Sherbrooke",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 60355,
+      "Baseline": { "LPC": 51.775, "CPC": 13.227, "BQ": 26.881, "NDP": 5.826, "GPC": 2.291 }
+    },
+    {
+      "District ID": 105,
+      "District Name": "Terrebonne",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 59850,
+      "Baseline": { "LPC": 39.018, "CPC": 18.314, "BQ": 39.016, "NDP": 2.6, "GPC": 1.053 }
+    },
+    {
+      "District ID": 106,
+      "District Name": "Thérèse-De Blainville",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 63951,
+      "Baseline": { "LPC": 46.159, "CPC": 18.794, "BQ": 32.569, "NDP": 2.478 }
+    },
+    {
+      "District ID": 107,
+      "District Name": "Trois-Rivières",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 60782,
+      "Baseline": { "LPC": 41.372, "CPC": 27.488, "BQ": 27.839, "NDP": 2.364, "GPC": 0.936 }
+    },
+    {
+      "District ID": 108,
+      "District Name": "Vaudreuil",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 70291,
+      "Baseline": { "LPC": 58.303, "CPC": 23.017, "BQ": 15.039, "NDP": 2.279, "GPC": 1.361 }
+    },
+    {
+      "District ID": 109,
+      "District Name": "Ville-Marie--Le Sud-Ouest--Île-des-Soeurs",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP", "GPC"],
+      "Votes": 48310,
+      "Baseline": { "LPC": 63.972, "CPC": 18.864, "BQ": 9.033, "NDP": 6.069, "GPC": 2.062 }
+    },
+    {
+      "District ID": 110,
+      "District Name": "Vimy",
+      "Seats": 1,
+      "Region": "Quebec",
+      "Active Parties": ["LPC", "CPC", "BQ", "NDP"],
+      "Votes": 49677,
+      "Baseline": { "LPC": 53.407, "CPC": 24.716, "BQ": 17.163, "NDP": 4.714 }
+    },
+    {
+      "District ID": 111,
+      "District Name": "Ajax",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65007,
+      "Baseline": { "LPC": 56.878, "CPC": 39.47, "NDP": 2.71, "GPC": 0.941 }
+    },
+    {
+      "District ID": 112,
+      "District Name": "Algonquin--Renfrew--Pembroke",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65758,
+      "Baseline": { "LPC": 38.532, "CPC": 56.773, "NDP": 3.755, "GPC": 0.94 }
+    },
+    {
+      "District ID": 113,
+      "District Name": "Aurora--Oak Ridges--Richmond Hill",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 61913,
+      "Baseline": { "LPC": 42.947, "CPC": 54.953, "NDP": 1.349, "GPC": 0.751 }
+    },
+    {
+      "District ID": 114,
+      "District Name": "Barrie South--Innisfil",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 66630,
+      "Baseline": { "LPC": 38.357, "CPC": 58.447, "NDP": 3.197 }
+    },
+    {
+      "District ID": 115,
+      "District Name": "Barrie--Springwater--Oro-Medonte",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65551,
+      "Baseline": { "LPC": 44.469, "CPC": 51.79, "NDP": 2.378, "GPC": 1.362 }
+    },
+    {
+      "District ID": 116,
+      "District Name": "Bay of Quinte",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65182,
+      "Baseline": { "LPC": 50.391, "CPC": 44.69, "NDP": 3.641, "GPC": 1.278 }
+    },
+    {
+      "District ID": 117,
+      "District Name": "Beaches--East York",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58409,
+      "Baseline": { "LPC": 68.147, "CPC": 23.678, "NDP": 6.894, "GPC": 1.281 }
+    },
+    {
+      "District ID": 118,
+      "District Name": "Bowmanville--Oshawa North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 70024,
+      "Baseline": { "LPC": 46.004, "CPC": 50.314, "NDP": 2.902, "GPC": 0.78 }
+    },
+    {
+      "District ID": 119,
+      "District Name": "Brampton Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 40375,
+      "Baseline": { "LPC": 48.832, "CPC": 47.319, "NDP": 2.687, "GPC": 1.162 }
+    },
+    {
+      "District ID": 120,
+      "District Name": "Brampton--Chinguacousy Park",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 42817,
+      "Baseline": { "LPC": 50.288, "CPC": 45.755, "NDP": 2.74, "GPC": 1.217 }
+    },
+    {
+      "District ID": 121,
+      "District Name": "Brampton East",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 46168,
+      "Baseline": { "LPC": 51.152, "CPC": 47.069, "NDP": 1.778 }
+    },
+    {
+      "District ID": 122,
+      "District Name": "Brampton North--Caledon",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 45960,
+      "Baseline": { "LPC": 49.711, "CPC": 48.096, "NDP": 2.193 }
+    },
+    {
+      "District ID": 123,
+      "District Name": "Brampton South",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 43971,
+      "Baseline": { "LPC": 50.035, "CPC": 48.198, "NDP": 1.767 }
+    },
+    {
+      "District ID": 124,
+      "District Name": "Brampton West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 42292,
+      "Baseline": { "LPC": 47.749, "CPC": 49.92, "NDP": 1.674, "GPC": 0.657 }
+    },
+    {
+      "District ID": 125,
+      "District Name": "Brantford--Brant South--Six Nations",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65053,
+      "Baseline": { "LPC": 41.554, "CPC": 53.035, "NDP": 3.705, "GPC": 1.706 }
+    },
+    {
+      "District ID": 126,
+      "District Name": "Bruce--Grey--Owen Sound",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65837,
+      "Baseline": { "LPC": 40.763, "CPC": 53.897, "NDP": 3.143, "GPC": 2.198 }
+    },
+    {
+      "District ID": 127,
+      "District Name": "Burlington",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 77423,
+      "Baseline": { "LPC": 56.305, "CPC": 40.926, "NDP": 2.001, "GPC": 0.769 }
+    },
+    {
+      "District ID": 128,
+      "District Name": "Burlington North--Milton West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 69834,
+      "Baseline": { "LPC": 53.205, "CPC": 44.637, "NDP": 2.158 }
+    },
+    {
+      "District ID": 129,
+      "District Name": "Cambridge",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65310,
+      "Baseline": { "LPC": 46.408, "CPC": 48.639, "NDP": 3.343, "GPC": 1.611 }
+    },
+    {
+      "District ID": 130,
+      "District Name": "Carleton",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 84961,
+      "Baseline": { "LPC": 51.607, "CPC": 46.295, "NDP": 1.437, "GPC": 0.66 }
+    },
+    {
+      "District ID": 131,
+      "District Name": "Chatham-Kent--Leamington",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 71290,
+      "Baseline": { "LPC": 36.44, "CPC": 58.37, "NDP": 4.128, "GPC": 1.062 }
+    },
+    {
+      "District ID": 132,
+      "District Name": "Davenport",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 60787,
+      "Baseline": { "LPC": 58.177, "CPC": 23.342, "NDP": 17.194, "GPC": 1.286 }
+    },
+    {
+      "District ID": 133,
+      "District Name": "Don Valley North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 48007,
+      "Baseline": { "LPC": 53.788, "CPC": 42.798, "NDP": 2.481, "GPC": 0.933 }
+    },
+    {
+      "District ID": 134,
+      "District Name": "Don Valley West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58222,
+      "Baseline": { "LPC": 63.11, "CPC": 33.458, "NDP": 2.374, "GPC": 1.058 }
+    },
+    {
+      "District ID": 135,
+      "District Name": "Dufferin--Caledon",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 69583,
+      "Baseline": { "LPC": 35.667, "CPC": 61.018, "NDP": 1.983, "GPC": 1.332 }
+    },
+    {
+      "District ID": 136,
+      "District Name": "Eglinton--Lawrence",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 60435,
+      "Baseline": { "LPC": 49.556, "CPC": 48.086, "NDP": 1.648, "GPC": 0.71 }
+    },
+    {
+      "District ID": 137,
+      "District Name": "Elgin--St. Thomas--London South",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 63693,
+      "Baseline": { "LPC": 43.977, "CPC": 51.128, "NDP": 4.895 }
+    },
+    {
+      "District ID": 138,
+      "District Name": "Essex",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 79338,
+      "Baseline": { "LPC": 37.043, "CPC": 58.135, "NDP": 4.822 }
+    },
+    {
+      "District ID": 139,
+      "District Name": "Etobicoke Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 67510,
+      "Baseline": { "LPC": 53.601, "CPC": 44.013, "NDP": 2.386 }
+    },
+    {
+      "District ID": 140,
+      "District Name": "Etobicoke--Lakeshore",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 64525,
+      "Baseline": { "LPC": 58.136, "CPC": 39.284, "NDP": 2.58 }
+    },
+    {
+      "District ID": 141,
+      "District Name": "Etobicoke North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 41377,
+      "Baseline": { "LPC": 53.822, "CPC": 41.953, "NDP": 3.272, "GPC": 0.952 }
+    },
+    {
+      "District ID": 142,
+      "District Name": "Flamborough--Glanbrook--Brant North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66385,
+      "Baseline": { "LPC": 43.557, "CPC": 53.093, "NDP": 2.455, "GPC": 0.895 }
+    },
+    {
+      "District ID": 143,
+      "District Name": "Guelph",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65784,
+      "Baseline": { "LPC": 55.342, "CPC": 31.117, "NDP": 3.236, "GPC": 10.305 }
+    },
+    {
+      "District ID": 144,
+      "District Name": "Haldimand--Norfolk",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 70420,
+      "Baseline": { "LPC": 36.978, "CPC": 58.532, "NDP": 3.425, "GPC": 1.065 }
+    },
+    {
+      "District ID": 145,
+      "District Name": "Haliburton--Kawartha Lakes",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 74549,
+      "Baseline": { "LPC": 39.2, "CPC": 57.279, "NDP": 3.521 }
+    },
+    {
+      "District ID": 146,
+      "District Name": "Hamilton Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 55866,
+      "Baseline": { "LPC": 38.284, "CPC": 30.571, "NDP": 29.68, "GPC": 1.464 }
+    },
+    {
+      "District ID": 147,
+      "District Name": "Hamilton East--Stoney Creek",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 66706,
+      "Baseline": { "LPC": 47.039, "CPC": 49.256, "NDP": 3.704 }
+    },
+    {
+      "District ID": 148,
+      "District Name": "Hamilton Mountain",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 59203,
+      "Baseline": { "LPC": 46.116, "CPC": 41.986, "NDP": 11.898 }
+    },
+    {
+      "District ID": 149,
+      "District Name": "Hamilton West--Ancaster--Dundas",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 68994,
+      "Baseline": { "LPC": 56.483, "CPC": 37.028, "NDP": 5.287, "GPC": 1.202 }
+    },
+    {
+      "District ID": 150,
+      "District Name": "Hastings--Lennox and Addington--Tyendinaga",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65904,
+      "Baseline": { "LPC": 40.582, "CPC": 54.632, "NDP": 3.567, "GPC": 1.218 }
+    },
+    {
+      "District ID": 151,
+      "District Name": "Humber River--Black Creek",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 37551,
+      "Baseline": { "LPC": 56.875, "CPC": 36.604, "NDP": 6.522 }
+    },
+    {
+      "District ID": 152,
+      "District Name": "Huron--Bruce",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 69190,
+      "Baseline": { "LPC": 41.821, "CPC": 53.515, "NDP": 3.324, "GPC": 1.34 }
+    },
+    {
+      "District ID": 153,
+      "District Name": "Kanata",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 74338,
+      "Baseline": { "LPC": 60.863, "CPC": 35.725, "NDP": 2.29, "GPC": 1.123 }
+    },
+    {
+      "District ID": 154,
+      "District Name": "Kapuskasing--Timmins--Mushkegowuk",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 46323,
+      "Baseline": { "LPC": 39.648, "CPC": 49.785, "NDP": 10.567 }
+    },
+    {
+      "District ID": 155,
+      "District Name": "Kenora--Kiiwetinoong",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 26547,
+      "Baseline": { "LPC": 35.612, "CPC": 49.38, "NDP": 13.93, "GPC": 1.077 }
+    },
+    {
+      "District ID": 156,
+      "District Name": "Kingston and the Islands",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 76993,
+      "Baseline": { "LPC": 63.229, "CPC": 30.642, "NDP": 4.738, "GPC": 1.391 }
+    },
+    {
+      "District ID": 157,
+      "District Name": "King--Vaughan",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67379,
+      "Baseline": { "LPC": 36.142, "CPC": 61.862, "NDP": 1.141, "GPC": 0.855 }
+    },
+    {
+      "District ID": 158,
+      "District Name": "Kitchener Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58542,
+      "Baseline": { "LPC": 29.538, "CPC": 34.563, "NDP": 1.976, "GPC": 33.923 }
+    },
+    {
+      "District ID": 159,
+      "District Name": "Kitchener--Conestoga",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 61301,
+      "Baseline": { "LPC": 48.94, "CPC": 48.089, "NDP": 2.971 }
+    },
+    {
+      "District ID": 160,
+      "District Name": "Kitchener South--Hespeler",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59949,
+      "Baseline": { "LPC": 46.615, "CPC": 48.329, "NDP": 3.041, "GPC": 2.015 }
+    },
+    {
+      "District ID": 161,
+      "District Name": "Lanark--Frontenac",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67813,
+      "Baseline": { "LPC": 45.566, "CPC": 50.412, "NDP": 2.929, "GPC": 1.093 }
+    },
+    {
+      "District ID": 162,
+      "District Name": "Leeds--Grenville--Thousand Islands--Rideau Lakes",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66215,
+      "Baseline": { "LPC": 44.787, "CPC": 50.498, "NDP": 3.535, "GPC": 1.179 }
+    },
+    {
+      "District ID": 163,
+      "District Name": "London Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59300,
+      "Baseline": { "LPC": 57.334, "CPC": 31.422, "NDP": 9.764, "GPC": 1.481 }
+    },
+    {
+      "District ID": 164,
+      "District Name": "London--Fanshawe",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 57747,
+      "Baseline": { "LPC": 30.933, "CPC": 41.126, "NDP": 27.941 }
+    },
+    {
+      "District ID": 165,
+      "District Name": "London West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 62438,
+      "Baseline": { "LPC": 56.55, "CPC": 37.219, "NDP": 5.546, "GPC": 0.684 }
+    },
+    {
+      "District ID": 166,
+      "District Name": "Markham--Stouffville",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 61110,
+      "Baseline": { "LPC": 51.805, "CPC": 45.652, "NDP": 1.834, "GPC": 0.709 }
+    },
+    {
+      "District ID": 167,
+      "District Name": "Markham--Thornhill",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 49529,
+      "Baseline": { "LPC": 55.531, "CPC": 42.405, "NDP": 2.063 }
+    },
+    {
+      "District ID": 168,
+      "District Name": "Markham--Unionville",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 53414,
+      "Baseline": { "LPC": 47.053, "CPC": 50.652, "NDP": 1.354, "GPC": 0.942 }
+    },
+    {
+      "District ID": 169,
+      "District Name": "Middlesex--London",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 69079,
+      "Baseline": { "LPC": 42.56, "CPC": 52.249, "NDP": 4.181, "GPC": 1.01 }
+    },
+    {
+      "District ID": 170,
+      "District Name": "Milton East--Halton Hills South",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66036,
+      "Baseline": { "LPC": 48.728, "CPC": 48.696, "NDP": 1.558, "GPC": 1.018 }
+    },
+    {
+      "District ID": 171,
+      "District Name": "Mississauga Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 54117,
+      "Baseline": { "LPC": 54.706, "CPC": 42.519, "NDP": 2.775 }
+    },
+    {
+      "District ID": 172,
+      "District Name": "Mississauga East--Cooksville",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 52758,
+      "Baseline": { "LPC": 51.439, "CPC": 45.703, "NDP": 2.858 }
+    },
+    {
+      "District ID": 173,
+      "District Name": "Mississauga--Erin Mills",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59126,
+      "Baseline": { "LPC": 56.571, "CPC": 40.591, "NDP": 2.217, "GPC": 0.621 }
+    },
+    {
+      "District ID": 174,
+      "District Name": "Mississauga--Lakeshore",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66228,
+      "Baseline": { "LPC": 52.804, "CPC": 44.416, "NDP": 1.893, "GPC": 0.886 }
+    },
+    {
+      "District ID": 175,
+      "District Name": "Mississauga--Malton",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 49285,
+      "Baseline": { "LPC": 54.363, "CPC": 43.019, "NDP": 2.617 }
+    },
+    {
+      "District ID": 176,
+      "District Name": "Mississauga--Streetsville",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 60365,
+      "Baseline": { "LPC": 51.846, "CPC": 45.127, "NDP": 2.299, "GPC": 0.727 }
+    },
+    {
+      "District ID": 177,
+      "District Name": "Nepean",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 71976,
+      "Baseline": { "LPC": 64.012, "CPC": 33.368, "NDP": 1.978, "GPC": 0.642 }
+    },
+    {
+      "District ID": 178,
+      "District Name": "Newmarket--Aurora",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 62312,
+      "Baseline": { "LPC": 47.02, "CPC": 50.616, "NDP": 2.364 }
+    },
+    {
+      "District ID": 179,
+      "District Name": "New Tecumseth--Gwillimbury",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65629,
+      "Baseline": { "LPC": 37.246, "CPC": 59.801, "NDP": 1.868, "GPC": 1.085 }
+    },
+    {
+      "District ID": 180,
+      "District Name": "Niagara Falls--Niagara-on-the-Lake",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59826,
+      "Baseline": { "LPC": 45.464, "CPC": 49.768, "NDP": 3.903, "GPC": 0.866 }
+    },
+    {
+      "District ID": 181,
+      "District Name": "Niagara South",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 75400,
+      "Baseline": { "LPC": 44.706, "CPC": 48.676, "NDP": 5.712, "GPC": 0.906 }
+    },
+    {
+      "District ID": 182,
+      "District Name": "Niagara West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 69104,
+      "Baseline": { "LPC": 44.026, "CPC": 52.7, "NDP": 3.273 }
+    },
+    {
+      "District ID": 183,
+      "District Name": "Nipissing--Timiskaming",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 57928,
+      "Baseline": { "LPC": 47.773, "CPC": 45.092, "NDP": 6.125, "GPC": 1.01 }
+    },
+    {
+      "District ID": 184,
+      "District Name": "Northumberland--Clarke",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 70230,
+      "Baseline": { "LPC": 46.487, "CPC": 49.64, "NDP": 2.976, "GPC": 0.897 }
+    },
+    {
+      "District ID": 185,
+      "District Name": "Oakville East",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 60478,
+      "Baseline": { "LPC": 51.47, "CPC": 45.142, "NDP": 2.808, "GPC": 0.58 }
+    },
+    {
+      "District ID": 186,
+      "District Name": "Oakville West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59734,
+      "Baseline": { "LPC": 53.357, "CPC": 44.645, "NDP": 1.391, "GPC": 0.608 }
+    },
+    {
+      "District ID": 187,
+      "District Name": "Orléans",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 77933,
+      "Baseline": { "LPC": 68.194, "CPC": 28.322, "NDP": 2.647, "GPC": 0.837 }
+    },
+    {
+      "District ID": 188,
+      "District Name": "Oshawa",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66700,
+      "Baseline": { "LPC": 42.958, "CPC": 48.172, "NDP": 7.664, "GPC": 1.205 }
+    },
+    {
+      "District ID": 189,
+      "District Name": "Ottawa Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 80569,
+      "Baseline": { "LPC": 63.332, "CPC": 15.753, "NDP": 19.778, "GPC": 1.137 }
+    },
+    {
+      "District ID": 190,
+      "District Name": "Ottawa South",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66057,
+      "Baseline": { "LPC": 65.683, "CPC": 27.264, "NDP": 6.081, "GPC": 0.972 }
+    },
+    {
+      "District ID": 191,
+      "District Name": "Ottawa--Vanier--Gloucester",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67076,
+      "Baseline": { "LPC": 68.481, "CPC": 21.816, "NDP": 7.699, "GPC": 2.005 }
+    },
+    {
+      "District ID": 192,
+      "District Name": "Ottawa West--Nepean",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67699,
+      "Baseline": { "LPC": 64.336, "CPC": 27.352, "NDP": 7.16, "GPC": 1.152 }
+    },
+    {
+      "District ID": 193,
+      "District Name": "Oxford",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 69445,
+      "Baseline": { "LPC": 39.328, "CPC": 54.995, "NDP": 4.386, "GPC": 1.292 }
+    },
+    {
+      "District ID": 194,
+      "District Name": "Parry Sound--Muskoka",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 63605,
+      "Baseline": { "LPC": 43.335, "CPC": 53.049, "NDP": 3.616 }
+    },
+    {
+      "District ID": 195,
+      "District Name": "Perth--Wellington",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 63023,
+      "Baseline": { "LPC": 41.48, "CPC": 53.904, "NDP": 4.616 }
+    },
+    {
+      "District ID": 196,
+      "District Name": "Peterborough",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 78397,
+      "Baseline": { "LPC": 54.709, "CPC": 41.387, "NDP": 3.069, "GPC": 0.835 }
+    },
+    {
+      "District ID": 197,
+      "District Name": "Pickering--Brooklin",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 70271,
+      "Baseline": { "LPC": 54.899, "CPC": 41.724, "NDP": 2.616, "GPC": 0.761 }
+    },
+    {
+      "District ID": 198,
+      "District Name": "Prescott--Russell--Cumberland",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 70432,
+      "Baseline": { "LPC": 55.529, "CPC": 40.898, "NDP": 2.456, "GPC": 1.117 }
+    },
+    {
+      "District ID": 199,
+      "District Name": "Richmond Hill South",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58173,
+      "Baseline": { "LPC": 44.71, "CPC": 52.628, "NDP": 1.812, "GPC": 0.851 }
+    },
+    {
+      "District ID": 200,
+      "District Name": "Sarnia--Lambton--Bkejwanong",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 73625,
+      "Baseline": { "LPC": 39.307, "CPC": 55.14, "NDP": 5.552 }
+    },
+    {
+      "District ID": 201,
+      "District Name": "Sault Ste. Marie--Algoma",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65012,
+      "Baseline": { "LPC": 47.585, "CPC": 44.927, "NDP": 6.656, "GPC": 0.832 }
+    },
+    {
+      "District ID": 202,
+      "District Name": "Scarborough--Agincourt",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 50733,
+      "Baseline": { "LPC": 54.308, "CPC": 42.836, "NDP": 2.856 }
+    },
+    {
+      "District ID": 203,
+      "District Name": "Scarborough Centre--Don Valley East",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 47429,
+      "Baseline": { "LPC": 58.102, "CPC": 38.599, "NDP": 3.3 }
+    },
+    {
+      "District ID": 204,
+      "District Name": "Scarborough--Guildwood--Rouge Park",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 55185,
+      "Baseline": { "LPC": 63.958, "CPC": 31.684, "NDP": 3.211, "GPC": 1.147 }
+    },
+    {
+      "District ID": 205,
+      "District Name": "Scarborough North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 46732,
+      "Baseline": { "LPC": 62.95, "CPC": 33.14, "NDP": 3.91 }
+    },
+    {
+      "District ID": 206,
+      "District Name": "Scarborough Southwest",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 53631,
+      "Baseline": { "LPC": 62.455, "CPC": 31.049, "NDP": 5.09, "GPC": 1.406 }
+    },
+    {
+      "District ID": 207,
+      "District Name": "Scarborough--Woburn",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 41537,
+      "Baseline": { "LPC": 60.864, "CPC": 34.405, "NDP": 3.529, "GPC": 1.201 }
+    },
+    {
+      "District ID": 208,
+      "District Name": "Simcoe--Grey",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67384,
+      "Baseline": { "LPC": 43.712, "CPC": 52.481, "NDP": 2.336, "GPC": 1.471 }
+    },
+    {
+      "District ID": 209,
+      "District Name": "Simcoe North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65776,
+      "Baseline": { "LPC": 45.255, "CPC": 49.016, "NDP": 3.813, "GPC": 1.916 }
+    },
+    {
+      "District ID": 210,
+      "District Name": "Spadina--Harbourfront",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 52673,
+      "Baseline": { "LPC": 60.433, "CPC": 30.919, "NDP": 7.797, "GPC": 0.851 }
+    },
+    {
+      "District ID": 211,
+      "District Name": "St. Catharines",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 65784,
+      "Baseline": { "LPC": 52.824, "CPC": 41.063, "NDP": 6.112 }
+    },
+    {
+      "District ID": 212,
+      "District Name": "Stormont--Dundas--Glengarry",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66133,
+      "Baseline": { "LPC": 39.93, "CPC": 56.551, "NDP": 2.5, "GPC": 1.019 }
+    },
+    {
+      "District ID": 213,
+      "District Name": "Sudbury",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 60066,
+      "Baseline": { "LPC": 52.527, "CPC": 39.681, "NDP": 7.791 }
+    },
+    {
+      "District ID": 214,
+      "District Name": "Sudbury East--Manitoulin--Nickel Belt",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59518,
+      "Baseline": { "LPC": 42.13, "CPC": 48.987, "NDP": 8.102, "GPC": 0.781 }
+    },
+    {
+      "District ID": 215,
+      "District Name": "Taiaiako'n--Parkdale--High Park",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 64804,
+      "Baseline": { "LPC": 56.23, "CPC": 19.539, "NDP": 23.151, "GPC": 1.08 }
+    },
+    {
+      "District ID": 216,
+      "District Name": "Thornhill",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66478,
+      "Baseline": { "LPC": 31.398, "CPC": 66.818, "NDP": 1.253, "GPC": 0.531 }
+    },
+    {
+      "District ID": 217,
+      "District Name": "Thunder Bay--Rainy River",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 43098,
+      "Baseline": { "LPC": 49.016, "CPC": 43.355, "NDP": 6.854, "GPC": 0.775 }
+    },
+    {
+      "District ID": 218,
+      "District Name": "Thunder Bay--Superior North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 45053,
+      "Baseline": { "LPC": 55.788, "CPC": 36.106, "NDP": 7.18, "GPC": 0.926 }
+    },
+    {
+      "District ID": 219,
+      "District Name": "Toronto Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58250,
+      "Baseline": { "LPC": 65.076, "CPC": 21.152, "NDP": 12.632, "GPC": 1.14 }
+    },
+    {
+      "District ID": 220,
+      "District Name": "Toronto--Danforth",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58630,
+      "Baseline": { "LPC": 66.845, "CPC": 19.081, "NDP": 13.007, "GPC": 1.068 }
+    },
+    {
+      "District ID": 221,
+      "District Name": "Toronto--St. Paul's",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 71061,
+      "Baseline": { "LPC": 62.359, "CPC": 33.352, "NDP": 3.512, "GPC": 0.777 }
+    },
+    {
+      "District ID": 222,
+      "District Name": "University--Rosedale",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 61705,
+      "Baseline": { "LPC": 64.577, "CPC": 23.7, "NDP": 9.996, "GPC": 1.728 }
+    },
+    {
+      "District ID": 223,
+      "District Name": "Vaughan--Woodbridge",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 66930,
+      "Baseline": { "LPC": 38.274, "CPC": 60.394, "NDP": 1.331 }
+    },
+    {
+      "District ID": 224,
+      "District Name": "Waterloo",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 62366,
+      "Baseline": { "LPC": 60.256, "CPC": 32.984, "NDP": 4.196, "GPC": 2.564 }
+    },
+    {
+      "District ID": 225,
+      "District Name": "Wellington--Halton Hills North",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 66080,
+      "Baseline": { "LPC": 44.808, "CPC": 51.053, "NDP": 2.037, "GPC": 2.102 }
+    },
+    {
+      "District ID": 226,
+      "District Name": "Whitby",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67388,
+      "Baseline": { "LPC": 52.864, "CPC": 43.954, "NDP": 2.431, "GPC": 0.751 }
+    },
+    {
+      "District ID": 227,
+      "District Name": "Willowdale",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 47689,
+      "Baseline": { "LPC": 53.446, "CPC": 43.987, "NDP": 2.567 }
+    },
+    {
+      "District ID": 228,
+      "District Name": "Windsor--Tecumseh--Lakeshore",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 68884,
+      "Baseline": { "LPC": 46.58, "CPC": 46.586, "NDP": 6.155, "GPC": 0.679 }
+    },
+    {
+      "District ID": 229,
+      "District Name": "Windsor West",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 54051,
+      "Baseline": { "LPC": 31.426, "CPC": 39.614, "NDP": 28.225, "GPC": 0.734 }
+    },
+    {
+      "District ID": 230,
+      "District Name": "York Centre",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 47619,
+      "Baseline": { "LPC": 42.668, "CPC": 54.831, "NDP": 2.501 }
+    },
+    {
+      "District ID": 231,
+      "District Name": "York--Durham",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 71681,
+      "Baseline": { "LPC": 40.075, "CPC": 56.262, "NDP": 2.552, "GPC": 1.112 }
+    },
+    {
+      "District ID": 232,
+      "District Name": "York South--Weston--Etobicoke",
+      "Seats": 1,
+      "Region": "Ontario",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 44599,
+      "Baseline": { "LPC": 55.299, "CPC": 39.79, "NDP": 4.91 }
+    },
+    {
+      "District ID": 233,
+      "District Name": "Brandon--Souris",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 46027,
+      "Baseline": { "LPC": 23.391, "CPC": 62.19, "NDP": 14.42 }
+    },
+    {
+      "District ID": 234,
+      "District Name": "Churchill--Keewatinook Aski",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 20120,
+      "Baseline": { "LPC": 46.287, "CPC": 24.488, "NDP": 29.225 }
+    },
+    {
+      "District ID": 235,
+      "District Name": "Elmwood--Transcona",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 46434,
+      "Baseline": { "LPC": 22.639, "CPC": 41.915, "NDP": 34.755, "GPC": 0.691 }
+    },
+    {
+      "District ID": 236,
+      "District Name": "Kildonan--St. Paul",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 55035,
+      "Baseline": { "LPC": 45.077, "CPC": 47.904, "NDP": 7.019 }
+    },
+    {
+      "District ID": 237,
+      "District Name": "Portage--Lisgar",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 44988,
+      "Baseline": { "LPC": 23.324, "CPC": 70.883, "NDP": 4.47, "GPC": 1.323 }
+    },
+    {
+      "District ID": 238,
+      "District Name": "Provencher",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 50861,
+      "Baseline": { "LPC": 26.335, "CPC": 67.565, "NDP": 4.715, "GPC": 1.386 }
+    },
+    {
+      "District ID": 239,
+      "District Name": "Riding Mountain",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 41309,
+      "Baseline": { "LPC": 22.467, "CPC": 68.772, "NDP": 7.437, "GPC": 1.324 }
+    },
+    {
+      "District ID": 240,
+      "District Name": "St. Boniface--St. Vital",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 53997,
+      "Baseline": { "LPC": 60.372, "CPC": 32.641, "NDP": 6.987 }
+    },
+    {
+      "District ID": 241,
+      "District Name": "Selkirk--Interlake--Eastman",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 53602,
+      "Baseline": { "LPC": 30.913, "CPC": 61.169, "NDP": 6.595, "GPC": 1.323 }
+    },
+    {
+      "District ID": 242,
+      "District Name": "Winnipeg Centre",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 33709,
+      "Baseline": { "LPC": 36.008, "CPC": 22.718, "NDP": 40.12, "GPC": 1.154 }
+    },
+    {
+      "District ID": 243,
+      "District Name": "Winnipeg North",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 33785,
+      "Baseline": { "LPC": 58.582, "CPC": 34.749, "NDP": 6.094, "GPC": 0.574 }
+    },
+    {
+      "District ID": 244,
+      "District Name": "Winnipeg South",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 45934,
+      "Baseline": { "LPC": 59.514, "CPC": 35.381, "NDP": 4.602, "GPC": 0.503 }
+    },
+    {
+      "District ID": 245,
+      "District Name": "Winnipeg South Centre",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 52495,
+      "Baseline": { "LPC": 64.452, "CPC": 28.094, "NDP": 6.597, "GPC": 0.857 }
+    },
+    {
+      "District ID": 246,
+      "District Name": "Winnipeg West",
+      "Seats": 1,
+      "Region": "Manitoba",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 55591,
+      "Baseline": { "LPC": 54.462, "CPC": 40.76, "NDP": 3.99, "GPC": 0.788 }
+    },
+    {
+      "District ID": 247,
+      "District Name": "Battlefords--Lloydminster--Meadow Lake",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 37523,
+      "Baseline": { "LPC": 18.85, "CPC": 76.311, "NDP": 4.84 }
+    },
+    {
+      "District ID": 248,
+      "District Name": "Carlton Trail--Eagle Creek",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 47051,
+      "Baseline": { "LPC": 17.02, "CPC": 77.42, "NDP": 5.56 }
+    },
+    {
+      "District ID": 249,
+      "District Name": "Desnethé--Missinippi--Churchill River",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 9027,
+      "Baseline": { "LPC": 65.094, "CPC": 25.49, "NDP": 9.416 }
+    },
+    {
+      "District ID": 250,
+      "District Name": "Moose Jaw--Lake Centre--Lanigan",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 44521,
+      "Baseline": { "LPC": 17.208, "CPC": 74.102, "NDP": 7.767, "GPC": 0.923 }
+    },
+    {
+      "District ID": 251,
+      "District Name": "Prince Albert",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 38844,
+      "Baseline": { "LPC": 19.182, "CPC": 71.473, "NDP": 9.345 }
+    },
+    {
+      "District ID": 252,
+      "District Name": "Regina--Lewvan",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 43726,
+      "Baseline": { "LPC": 43.208, "CPC": 50.286, "NDP": 5.884, "GPC": 0.622 }
+    },
+    {
+      "District ID": 253,
+      "District Name": "Regina--Qu'Appelle",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 41803,
+      "Baseline": { "LPC": 27.249, "CPC": 64.646, "NDP": 8.105 }
+    },
+    {
+      "District ID": 254,
+      "District Name": "Regina--Wascana",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 43751,
+      "Baseline": { "LPC": 44.004, "CPC": 50.449, "NDP": 4.887, "GPC": 0.661 }
+    },
+    {
+      "District ID": 255,
+      "District Name": "Saskatoon South",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 49448,
+      "Baseline": { "LPC": 40.663, "CPC": 49.579, "NDP": 9.131, "GPC": 0.627 }
+    },
+    {
+      "District ID": 256,
+      "District Name": "Saskatoon--University",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 47098,
+      "Baseline": { "LPC": 41.662, "CPC": 49.212, "NDP": 8.567, "GPC": 0.558 }
+    },
+    {
+      "District ID": 257,
+      "District Name": "Saskatoon West",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 37631,
+      "Baseline": { "LPC": 27.249, "CPC": 52.653, "NDP": 19.099, "GPC": 0.999 }
+    },
+    {
+      "District ID": 258,
+      "District Name": "Souris--Moose Mountain",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 40967,
+      "Baseline": { "LPC": 9.888, "CPC": 84.929, "NDP": 4.609, "GPC": 0.574 }
+    },
+    {
+      "District ID": 259,
+      "District Name": "Swift Current--Grasslands--Kindersley",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 38962,
+      "Baseline": { "LPC": 11.344, "CPC": 82.881, "NDP": 5.775 }
+    },
+    {
+      "District ID": 260,
+      "District Name": "Yorkton--Melville",
+      "Seats": 1,
+      "Region": "Saskatchewan",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 36787,
+      "Baseline": { "LPC": 14.511, "CPC": 78.022, "NDP": 5.529, "GPC": 1.938 }
+    },
+    {
+      "District ID": 261,
+      "District Name": "Airdrie--Cochrane",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 69557,
+      "Baseline": { "LPC": 24.029, "CPC": 72.246, "NDP": 3.725 }
+    },
+    {
+      "District ID": 262,
+      "District Name": "Battle River--Crowfoot",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 63785,
+      "Baseline": { "LPC": 11.862, "CPC": 84.164, "NDP": 3.231, "GPC": 0.743 }
+    },
+    {
+      "District ID": 263,
+      "District Name": "Bow River",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 55856,
+      "Baseline": { "LPC": 17.119, "CPC": 79.857, "NDP": 3.024 }
+    },
+    {
+      "District ID": 264,
+      "District Name": "Calgary Centre",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 62455,
+      "Baseline": { "LPC": 46.152, "CPC": 50.603, "NDP": 2.666, "GPC": 0.58 }
+    },
+    {
+      "District ID": 265,
+      "District Name": "Calgary Confederation",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 68195,
+      "Baseline": { "LPC": 48.555, "CPC": 46.688, "NDP": 4.17, "GPC": 0.587 }
+    },
+    {
+      "District ID": 266,
+      "District Name": "Calgary Crowfoot",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67444,
+      "Baseline": { "LPC": 37.64, "CPC": 59.265, "NDP": 2.581, "GPC": 0.513 }
+    },
+    {
+      "District ID": 267,
+      "District Name": "Calgary East",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 52308,
+      "Baseline": { "LPC": 32.618, "CPC": 62.113, "NDP": 3.999, "GPC": 1.269 }
+    },
+    {
+      "District ID": 268,
+      "District Name": "Calgary Heritage",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67945,
+      "Baseline": { "LPC": 34.841, "CPC": 61.944, "NDP": 2.489, "GPC": 0.726 }
+    },
+    {
+      "District ID": 269,
+      "District Name": "Calgary McKnight",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 41886,
+      "Baseline": { "LPC": 46.665, "CPC": 49.809, "NDP": 2.874, "GPC": 0.652 }
+    },
+    {
+      "District ID": 270,
+      "District Name": "Calgary Midnapore",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 72876,
+      "Baseline": { "LPC": 30.159, "CPC": 66.045, "NDP": 3.116, "GPC": 0.679 }
+    },
+    {
+      "District ID": 271,
+      "District Name": "Calgary Nose Hill",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 61278,
+      "Baseline": { "LPC": 36.352, "CPC": 59.723, "NDP": 3.223, "GPC": 0.702 }
+    },
+    {
+      "District ID": 272,
+      "District Name": "Calgary Shepard",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 64866,
+      "Baseline": { "LPC": 28.399, "CPC": 68.392, "NDP": 2.744, "GPC": 0.466 }
+    },
+    {
+      "District ID": 273,
+      "District Name": "Calgary Signal Hill",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 68468,
+      "Baseline": { "LPC": 36.768, "CPC": 60.814, "NDP": 2.419 }
+    },
+    {
+      "District ID": 274,
+      "District Name": "Calgary Skyview",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 48001,
+      "Baseline": { "LPC": 39.253, "CPC": 57.932, "NDP": 2.815 }
+    },
+    {
+      "District ID": 275,
+      "District Name": "Edmonton Centre",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 53204,
+      "Baseline": { "LPC": 45.369, "CPC": 38.768, "NDP": 15.863 }
+    },
+    {
+      "District ID": 276,
+      "District Name": "Edmonton Gateway",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 48385,
+      "Baseline": { "LPC": 40.167, "CPC": 54.531, "NDP": 5.301 }
+    },
+    {
+      "District ID": 277,
+      "District Name": "Edmonton Griesbach",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 48248,
+      "Baseline": { "LPC": 18.598, "CPC": 46.128, "NDP": 34.648, "GPC": 0.626 }
+    },
+    {
+      "District ID": 278,
+      "District Name": "Edmonton Manning",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 48983,
+      "Baseline": { "LPC": 35.937, "CPC": 53.988, "NDP": 10.075 }
+    },
+    {
+      "District ID": 279,
+      "District Name": "Edmonton Northwest",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 54033,
+      "Baseline": { "LPC": 38.693, "CPC": 54.03, "NDP": 6.657, "GPC": 0.62 }
+    },
+    {
+      "District ID": 280,
+      "District Name": "Edmonton Riverbend",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 59981,
+      "Baseline": { "LPC": 45.139, "CPC": 50.588, "NDP": 4.273 }
+    },
+    {
+      "District ID": 281,
+      "District Name": "Edmonton Southeast",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 46223,
+      "Baseline": { "LPC": 39.982, "CPC": 54.531, "NDP": 5.486 }
+    },
+    {
+      "District ID": 282,
+      "District Name": "Edmonton Strathcona",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58870,
+      "Baseline": { "LPC": 18.191, "CPC": 33.579, "NDP": 47.608, "GPC": 0.622 }
+    },
+    {
+      "District ID": 283,
+      "District Name": "Edmonton West",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 58360,
+      "Baseline": { "LPC": 41.115, "CPC": 53.463, "NDP": 5.422 }
+    },
+    {
+      "District ID": 284,
+      "District Name": "Foothills",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 71092,
+      "Baseline": { "LPC": 19.279, "CPC": 77.187, "NDP": 2.705, "GPC": 0.829 }
+    },
+    {
+      "District ID": 285,
+      "District Name": "Fort McMurray--Cold Lake",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 48469,
+      "Baseline": { "LPC": 14.84, "CPC": 81.803, "NDP": 2.758, "GPC": 0.598 }
+    },
+    {
+      "District ID": 286,
+      "District Name": "Grande Prairie",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 57310,
+      "Baseline": { "LPC": 12.12, "CPC": 83.588, "NDP": 4.292 }
+    },
+    {
+      "District ID": 287,
+      "District Name": "Lakeland",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 55276,
+      "Baseline": { "LPC": 12.457, "CPC": 82.904, "NDP": 3.895, "GPC": 0.744 }
+    },
+    {
+      "District ID": 288,
+      "District Name": "Leduc--Wetaskiwin",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 63010,
+      "Baseline": { "LPC": 17.673, "CPC": 76.094, "NDP": 6.232 }
+    },
+    {
+      "District ID": 289,
+      "District Name": "Lethbridge",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65653,
+      "Baseline": { "LPC": 33.356, "CPC": 62.245, "NDP": 3.703, "GPC": 0.696 }
+    },
+    {
+      "District ID": 290,
+      "District Name": "Medicine Hat--Cardston--Warner",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 54100,
+      "Baseline": { "LPC": 17.66, "CPC": 76.743, "NDP": 4.784, "GPC": 0.813 }
+    },
+    {
+      "District ID": 291,
+      "District Name": "Parkland",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 69556,
+      "Baseline": { "LPC": 18.244, "CPC": 76.87, "NDP": 4.24, "GPC": 0.646 }
+    },
+    {
+      "District ID": 292,
+      "District Name": "Peace River--Westlock",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 50321,
+      "Baseline": { "LPC": 12.476, "CPC": 81.735, "NDP": 5.789 }
+    },
+    {
+      "District ID": 293,
+      "District Name": "Ponoka--Didsbury",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["CPC", "NDP"],
+      "Votes": 63520,
+      "Baseline": { "CPC": 88.328, "NDP": 11.672 }
+    },
+    {
+      "District ID": 294,
+      "District Name": "Red Deer",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 60796,
+      "Baseline": { "LPC": 22.311, "CPC": 72.766, "NDP": 3.907, "GPC": 1.017 }
+    },
+    {
+      "District ID": 295,
+      "District Name": "Sherwood Park--Fort Saskatchewan",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 80893,
+      "Baseline": { "LPC": 27.416, "CPC": 66.917, "NDP": 5.113, "GPC": 0.554 }
+    },
+    {
+      "District ID": 296,
+      "District Name": "St. Albert--Sturgeon River",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 75877,
+      "Baseline": { "LPC": 30.282, "CPC": 64.863, "NDP": 4.855 }
+    },
+    {
+      "District ID": 297,
+      "District Name": "Yellowhead",
+      "Seats": 1,
+      "Region": "Alberta",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 68085,
+      "Baseline": { "LPC": 25.658, "CPC": 70.299, "NDP": 4.043 }
+    },
+    {
+      "District ID": 298,
+      "District Name": "Abbotsford--South Langley",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 45766,
+      "Baseline": { "LPC": 41.448, "CPC": 52.694, "NDP": 4.597, "GPC": 1.261 }
+    },
+    {
+      "District ID": 299,
+      "District Name": "Burnaby Central",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 50987,
+      "Baseline": { "LPC": 42.648, "CPC": 39.008, "NDP": 18.344 }
+    },
+    {
+      "District ID": 300,
+      "District Name": "Burnaby North--Seymour",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 63692,
+      "Baseline": { "LPC": 59.394, "CPC": 34.136, "NDP": 6.47 }
+    },
+    {
+      "District ID": 301,
+      "District Name": "Cariboo--Prince George",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 62473,
+      "Baseline": { "LPC": 30.802, "CPC": 61.106, "NDP": 6.243, "GPC": 1.849 }
+    },
+    {
+      "District ID": 302,
+      "District Name": "Chilliwack--Hope",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65143,
+      "Baseline": { "LPC": 35.697, "CPC": 55.304, "NDP": 7.336, "GPC": 1.662 }
+    },
+    {
+      "District ID": 303,
+      "District Name": "Cloverdale--Langley City",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 53277,
+      "Baseline": { "LPC": 46.602, "CPC": 48.062, "NDP": 4.411, "GPC": 0.925 }
+    },
+    {
+      "District ID": 304,
+      "District Name": "Columbia--Kootenay--Southern Rockies",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 70200,
+      "Baseline": { "LPC": 28.752, "CPC": 51.397, "NDP": 18.335, "GPC": 1.516 }
+    },
+    {
+      "District ID": 305,
+      "District Name": "Coquitlam--Port Coquitlam",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 56737,
+      "Baseline": { "LPC": 48.029, "CPC": 43.587, "NDP": 7.496, "GPC": 0.888 }
+    },
+    {
+      "District ID": 306,
+      "District Name": "Courtenay--Alberni",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 79075,
+      "Baseline": { "LPC": 22.862, "CPC": 35.445, "NDP": 39.984, "GPC": 1.71 }
+    },
+    {
+      "District ID": 307,
+      "District Name": "Cowichan--Malahat--Langford",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 76174,
+      "Baseline": { "LPC": 28.196, "CPC": 37.244, "NDP": 32.591, "GPC": 1.969 }
+    },
+    {
+      "District ID": 308,
+      "District Name": "Delta",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 62903,
+      "Baseline": { "LPC": 52.147, "CPC": 43.422, "NDP": 4.431 }
+    },
+    {
+      "District ID": 309,
+      "District Name": "Esquimalt--Saanich--Sooke",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 72888,
+      "Baseline": { "LPC": 49.639, "CPC": 28.924, "NDP": 18.749, "GPC": 2.688 }
+    },
+    {
+      "District ID": 310,
+      "District Name": "Fleetwood--Port Kells",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 48034,
+      "Baseline": { "LPC": 48.403, "CPC": 44.633, "NDP": 6.006, "GPC": 0.958 }
+    },
+    {
+      "District ID": 311,
+      "District Name": "Kamloops--Shuswap--Central Rockies",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67454,
+      "Baseline": { "LPC": 39.329, "CPC": 52.711, "NDP": 5.53, "GPC": 2.43 }
+    },
+    {
+      "District ID": 312,
+      "District Name": "Kamloops--Thompson--Nicola",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 61586,
+      "Baseline": { "LPC": 40.53, "CPC": 51.973, "NDP": 5.977, "GPC": 1.52 }
+    },
+    {
+      "District ID": 313,
+      "District Name": "Kelowna",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58841,
+      "Baseline": { "LPC": 48.779, "CPC": 46.94, "NDP": 3.299, "GPC": 0.982 }
+    },
+    {
+      "District ID": 314,
+      "District Name": "Langley Township--Fraser Heights",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 64710,
+      "Baseline": { "LPC": 43.323, "CPC": 51.884, "NDP": 4.035, "GPC": 0.759 }
+    },
+    {
+      "District ID": 315,
+      "District Name": "Mission--Matsqui--Abbotsford",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59097,
+      "Baseline": { "LPC": 36.953, "CPC": 57.179, "NDP": 4.645, "GPC": 1.223 }
+    },
+    {
+      "District ID": 316,
+      "District Name": "Nanaimo--Ladysmith",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 74108,
+      "Baseline": { "LPC": 27.873, "CPC": 35.598, "NDP": 18.333, "GPC": 18.196 }
+    },
+    {
+      "District ID": 317,
+      "District Name": "New Westminster--Burnaby--Maillardville",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 55318,
+      "Baseline": { "LPC": 35.336, "CPC": 31.648, "NDP": 31.769, "GPC": 1.247 }
+    },
+    {
+      "District ID": 318,
+      "District Name": "North Island--Powell River",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 80436,
+      "Baseline": { "LPC": 26.379, "CPC": 38.983, "NDP": 32.768, "GPC": 1.871 }
+    },
+    {
+      "District ID": 319,
+      "District Name": "North Vancouver--Capilano",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 63006,
+      "Baseline": { "LPC": 60.164, "CPC": 33.868, "NDP": 4.26, "GPC": 1.708 }
+    },
+    {
+      "District ID": 320,
+      "District Name": "Okanagan Lake West--South Kelowna",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 64837,
+      "Baseline": { "LPC": 44.461, "CPC": 51.235, "NDP": 3.376, "GPC": 0.928 }
+    },
+    {
+      "District ID": 321,
+      "District Name": "Pitt Meadows--Maple Ridge",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 66793,
+      "Baseline": { "LPC": 46.005, "CPC": 47.795, "NDP": 6.2 }
+    },
+    {
+      "District ID": 322,
+      "District Name": "Port Moody--Coquitlam",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 62079,
+      "Baseline": { "LPC": 43.612, "CPC": 40.474, "NDP": 15.078, "GPC": 0.836 }
+    },
+    {
+      "District ID": 323,
+      "District Name": "Prince George--Peace River--Northern Rockies",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 58302,
+      "Baseline": { "LPC": 19.802, "CPC": 71.963, "NDP": 6.075, "GPC": 2.159 }
+    },
+    {
+      "District ID": 324,
+      "District Name": "Richmond Centre--Marpole",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 47293,
+      "Baseline": { "LPC": 44.895, "CPC": 49.758, "NDP": 4.459, "GPC": 0.888 }
+    },
+    {
+      "District ID": 325,
+      "District Name": "Richmond East--Steveston",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 53055,
+      "Baseline": { "LPC": 48.45, "CPC": 46.376, "NDP": 4.243, "GPC": 0.931 }
+    },
+    {
+      "District ID": 326,
+      "District Name": "Saanich--Gulf Islands",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 79786,
+      "Baseline": { "LPC": 31.846, "CPC": 25.086, "NDP": 3.964, "GPC": 39.103 }
+    },
+    {
+      "District ID": 327,
+      "District Name": "Similkameen--South Okanagan--West Kootenay",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67562,
+      "Baseline": { "LPC": 37.641, "CPC": 44.484, "NDP": 16.33, "GPC": 1.545 }
+    },
+    {
+      "District ID": 328,
+      "District Name": "Skeena--Bulkley Valley",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 44330,
+      "Baseline": { "LPC": 11.105, "CPC": 47.828, "NDP": 39.876, "GPC": 1.191 }
+    },
+    {
+      "District ID": 329,
+      "District Name": "South Surrey--White Rock",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 65527,
+      "Baseline": { "LPC": 50.504, "CPC": 45.667, "NDP": 2.494, "GPC": 1.335 }
+    },
+    {
+      "District ID": 330,
+      "District Name": "Surrey Centre",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 41026,
+      "Baseline": { "LPC": 48.506, "CPC": 43.68, "NDP": 6.852, "GPC": 0.963 }
+    },
+    {
+      "District ID": 331,
+      "District Name": "Surrey Newton",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 40753,
+      "Baseline": { "LPC": 49.721, "CPC": 44.225, "NDP": 6.054 }
+    },
+    {
+      "District ID": 332,
+      "District Name": "Vancouver Centre",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 53787,
+      "Baseline": { "LPC": 55.506, "CPC": 30.431, "NDP": 12.655, "GPC": 1.407 }
+    },
+    {
+      "District ID": 333,
+      "District Name": "Vancouver East",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 56493,
+      "Baseline": { "LPC": 35.911, "CPC": 17.988, "NDP": 44.156, "GPC": 1.945 }
+    },
+    {
+      "District ID": 334,
+      "District Name": "Vancouver Fraserview--South Burnaby",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 51363,
+      "Baseline": { "LPC": 52.795, "CPC": 36.018, "NDP": 9.906, "GPC": 1.281 }
+    },
+    {
+      "District ID": 335,
+      "District Name": "Vancouver Granville",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 59577,
+      "Baseline": { "LPC": 62.121, "CPC": 28.758, "NDP": 7.535, "GPC": 1.586 }
+    },
+    {
+      "District ID": 336,
+      "District Name": "Vancouver Kingsway",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 50124,
+      "Baseline": { "LPC": 36.879, "CPC": 24.643, "NDP": 37.483, "GPC": 0.996 }
+    },
+    {
+      "District ID": 337,
+      "District Name": "Vancouver Quadra",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 55815,
+      "Baseline": { "LPC": 63.395, "CPC": 30.472, "NDP": 4.284, "GPC": 1.849 }
+    },
+    {
+      "District ID": 338,
+      "District Name": "Vernon--Lake Country--Monashee",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 67141,
+      "Baseline": { "LPC": 42.849, "CPC": 50.416, "NDP": 5.089, "GPC": 1.646 }
+    },
+    {
+      "District ID": 339,
+      "District Name": "Victoria",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 75225,
+      "Baseline": { "LPC": 54.673, "CPC": 17.109, "NDP": 25.094, "GPC": 3.124 }
+    },
+    {
+      "District ID": 340,
+      "District Name": "West Vancouver--Sunshine Coast--Sea to Sky Country",
+      "Seats": 1,
+      "Region": "British Columbia",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 63840,
+      "Baseline": { "LPC": 60.125, "CPC": 33.178, "NDP": 3.242, "GPC": 3.454 }
+    },
+    {
+      "District ID": 341,
+      "District Name": "Yukon",
+      "Seats": 1,
+      "Region": "Yukon",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 22636,
+      "Baseline": { "LPC": 53.053, "CPC": 38.518, "NDP": 6.335, "GPC": 2.094 }
+    },
+    {
+      "District ID": 342,
+      "District Name": "Northwest Territories",
+      "Seats": 1,
+      "Region": "Northwest Territories",
+      "Active Parties": ["LPC", "CPC", "NDP", "GPC"],
+      "Votes": 16549,
+      "Baseline": { "LPC": 53.508, "CPC": 33.313, "NDP": 12.152, "GPC": 1.027 }
+    },
+    {
+      "District ID": 343,
+      "District Name": "Nunavut",
+      "Seats": 1,
+      "Region": "Nunavut",
+      "Active Parties": ["LPC", "CPC", "NDP"],
+      "Votes": 7657,
+      "Baseline": { "LPC": 36.725, "CPC": 26.015, "NDP": 37.26 }
+    }
+  ],
+  "regionalPolling": {
+    "columns": ["Newfoundland and Labrador", "Prince Edward Island", "Nova Scotia", "New Brunswick", "Quebec", "Ontario", "Manitoba", "Saskatchewan", "Alberta", "British Columbia", "Yukon", "Northwest Territories", "Nunavut"],
+    "LPC": [54.4477, 58.1063, 58.1785, 54.1736, 43.05, 49.6804, 41.1924, 26.815, 28.3992, 42.2314, 53.0527, 53.5078, 36.7246],
+    "CPC": [39.9005, 37.187, 35.7191, 41.1564, 23.5346, 44.2774, 46.9342, 65.0637, 64.8084, 41.6055, 38.5183, 33.3132, 26.0154],
+    "BQ": [0.0, 0.0, 0.0, 0.0, 27.9512, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "NDP": [5.5436, 2.4555, 5.1487, 2.9449, 4.5419, 4.8982, 11.151, 7.6064, 6.3904, 13.1342, 6.335, 12.1518, 37.26],
+    "GPC": [0.1082, 2.2512, 0.9537, 1.7251, 0.9223, 1.144, 0.7224, 0.515, 0.4019, 3.0289, 2.094, 1.0273, 0.0]
+  },
+  "scenarios": {
+    "Liberal alone": ["LPC"],
+    "Liberal + NDP": ["LPC", "NDP"],
+    "Liberal + Bloc": ["LPC", "BQ"],
+    "Conservative alone": ["CPC"],
+    "Conservative + Bloc": ["CPC", "BQ"]
+  }
+}
