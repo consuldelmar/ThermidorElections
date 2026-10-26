@@ -4809,7 +4809,12 @@ function resetDistricts() {
 
 function addDistrict() {
   const maxId = draftDistricts.length ? Math.max(...draftDistricts.map(d => d.id)) : 0;
-  draftDistricts.push({ id: maxId + 1, name: String(draftDistricts.length + 1), seats: 4, region: null, parties: new Set(partyIds()) });
+  const last = draftDistricts[draftDistricts.length - 1];
+  draftDistricts.push({
+    id: maxId + 1, name: String(draftDistricts.length + 1), seats: 4,
+    region: last && draftRegions.includes(last.region) ? last.region : null,
+    parties: new Set(partyIds()),
+  });
   buildDistrictTable();
   scrollModalToEnd('#dist-modal .modal-body');
 }
@@ -4829,12 +4834,13 @@ function addRegion() {
   buildRegionChips();
 }
 
-// Group the districts, in list order, into `n` regions called Region 1, Region 2…
-// Each region takes a run of neighbouring districts worth roughly its share of
-// the seats. Shares vary a little, as real regions do, and every region gets at
-// least one district: once the districts left only just cover the regions left,
-// each remaining region takes one.
-function splitIntoRegions(list, n) {
+// Group the districts, in list order, into `n` regions. With `names`, the regions
+// keep those names (so their regional polling carries over); otherwise they are
+// called Region 1, Region 2… Each region takes a run of neighbouring districts
+// worth roughly its share of the seats. Shares vary a little, as real regions do,
+// and every region gets at least one district: once the districts left only just
+// cover the regions left, each remaining region takes one.
+function splitIntoRegions(list, n, names = null) {
   const total = list.reduce((s, d) => s + d.seats, 0);
   const weights = Array.from({ length: n }, () => 0.6 + Math.random() * 0.8);
   const wSum = weights.reduce((a, b) => a + b, 0);
@@ -4842,7 +4848,7 @@ function splitIntoRegions(list, n) {
   const ends = weights.map(w => (edge += w / wSum * total));
   let r = 0, acc = 0;
   list.forEach((d, i) => {
-    d.region = `Region ${r + 1}`;
+    d.region = names ? names[r] : `Region ${r + 1}`;
     acc += d.seats;
     const districtsLeft = list.length - i - 1, regionsLeft = n - r - 1;
     if (regionsLeft > 0 && (districtsLeft === regionsLeft || acc + list[i + 1].seats / 2 > ends[r])) r++;
@@ -4931,6 +4937,12 @@ function generateDistricts() {
   }
 
   draftDistricts = seats.map((s, i) => ({ id: i + 1, name: String(i + 1), seats: s, region: null, parties: new Set(partyIds()) }));
+  // Existing regions keep their names and share out the new districts, so nothing
+  // is left unassigned and their regional polling carries over. With more regions
+  // than districts, the extra regions are left empty.
+  if (draftRegions.length) {
+    splitIntoRegions(draftDistricts, Math.min(draftRegions.length, draftDistricts.length), draftRegions);
+  }
   buildDistrictTable();
   document.querySelector('#dist-modal .modal-body').scrollTop = 0;
 }
