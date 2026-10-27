@@ -1,6 +1,7 @@
 [
   { "file": "spain-2023.json", "name": "Spain", "election": "2023 general election", "system": "D'Hondt, 52 provinces", "seats": 350 },
   { "file": "uk-2024.json", "name": "United Kingdom", "election": "2024 general election", "system": "First past the post, 650 constituencies", "seats": 650 },
+  { "file": "us-2024.json", "name": "United States", "election": "2024 presidential election", "system": "Electoral college, 50 states, DC and 5 districts", "seats": 538 },
   { "file": "australia-2025.json", "name": "Australia", "election": "2025 federal election", "system": "Preferential voting, 150 divisions", "seats": 150 },
   { "file": "canada-2025.json", "name": "Canada", "election": "2025 federal election", "system": "First past the post, 343 ridings", "seats": 343 },
   { "file": "ireland-2024.json", "name": "Ireland", "election": "2024 general election", "system": "STV, 43 constituencies", "seats": 174 },
