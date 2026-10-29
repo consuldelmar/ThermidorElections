@@ -4,7 +4,7 @@
   "titleHighlight": "Germany",
   "election": "Federal election, 23 February 2025",
   "source": "Second votes: official final result of the Federal Returning Officer. Compass positions: estimates on the Chapel Hill Expert Survey scales (economic left-right; GAL-TAN as Liberty-Authority).",
-  "notes": ""Each state is a district, with the seats it received in 2025, counted by Sainte-Laguë. The 5% threshold is counted on the national vote, as in the real system. Minor parties are pooled as 'Other parties'. Regions group the states for Regional Swing.",
+  "notes": "Each state is a district, with the seats it received in 2025, counted by Sainte-Laguë. The 5% threshold is counted on the national vote, as in the real system. Minor parties are pooled as 'Other parties'. Regions group the states for Regional Swing.",
   "system": { "type": "sainte-lague", "threshold": 5 },
   "voteMode": "exact",
   "variance": 0,
