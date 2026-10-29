@@ -1554,10 +1554,14 @@ button:has(> .ico.l), a:has(> .ico.l), label:has(> .ico.l) { white-space: nowrap
     <option value="college">Electoral college (presidential)</option>
   </select>
   <div class="sys-row" id="threshold-row">
-    <label for="threshold-inp">Threshold in each district</label>
+        <label for="threshold-inp">Threshold</label>
     <input type="number" id="threshold-inp" min="0" max="20" step="0.5" value="0"
-      data-help="Threshold" data-help-text="Parties below this share of a district's vote win no seats there. Spain uses 3%.">
+      data-help="Threshold" data-help-text="Parties below this share of the vote win no seats. In each district: counted district by district, as in Spain (3%). Nationwide: counted on the national vote, as in Germany (5%).">
     <span>%</span>
+    <select id="threshold-scope" class="sys-sel" aria-label="Where the threshold is counted">
+      <option value="district">in each district</option>
+      <option value="national">nationwide</option>
+    </select>
   </div>
   <div class="hint" id="system-hint"></div>
   <div class="sys-note" id="system-note" role="note"></div>
@@ -2156,6 +2160,20 @@ const DEFAULT_DISTRICT_SIZES = {
   'Insulae Custodes':           [4, 4],
 };
 const DEFAULT_REGIONS = Object.keys(DEFAULT_DISTRICT_SIZES);
+// Regional vote shares in Higher Thermidor's default model.
+const DEFAULT_REGION_SHARES = {
+  CF: [35.6, 30.6, 25.8, 32.5, 25.6, 26.3, 24.4, 24.6, 23.6, 18.8],
+  WCA: [10.8, 9.7, 24.1, 12.4, 25.8, 22.6, 23.4, 19.9, 15.2, 17.3],
+  MCP: [7.0, 9.2, 10.3, 14.8, 7.4, 8.6, 11.1, 8.2, 19.8, 13.3],
+  GM: [11.4, 13.6, 10.2, 7.2, 14.1, 9.9, 9.7, 22.2, 11.2, 11.3],
+  FT: [3.3, 2.6, 2.7, 1.5, 0.8, 3.6, 2.2, 1.4, 0.8, 3.0],
+  NCG: [15.8, 20.7, 6.8, 11.0, 3.5, 3.7, 3.5, 3.7, 3.5, 7.5],
+  RMB: [4.1, 4.5, 8.7, 6.8, 14.0, 12.7, 13.5, 11.0, 9.1, 13.0],
+  CiU: [10.7, 7.9, 9.8, 12.3, 7.7, 10.8, 10.7, 7.7, 14.7, 13.4],
+  Ind: [1.3, 1.2, 1.6, 1.5, 1.1, 1.8, 1.5, 1.3, 2.1, 2.4],
+};
+const defaultRegionShares = () => Object.fromEntries(Object.entries(DEFAULT_REGION_SHARES).map(([id, row]) =>
+  [id, Object.fromEntries(DEFAULT_REGIONS.map((r, i) => [r, row[i]]))]));
 
 function defaultDistricts() {
   const everyone = partyIds();
@@ -2352,8 +2370,8 @@ let surplusKept = {};            // party id -> % of its surplus that stays with
 let trendsEnabled = false;
 let trends = {};                 // party id -> key of TREND_CATS (missing means stable)
 
-let regionShares = {};           // party id -> region -> vote % (0-100)
-let electoralSystem = { type: 'stv', threshold: 0 };  // see SYSTEMS
+let regionShares = defaultRegionShares();  // party id -> region -> vote % (0-100)
+let electoralSystem = { type: 'stv', threshold: 0, scope: 'district' };  // see SYSTEMS
 let assembly = null;             // { title, highlight, election } of a country preset; null for Higher Thermidor
 let currentPreset = '';          // preset file on screen: '' for Higher Thermidor, null for a file the user loaded
 let nativeSystem = 'stv';        // the electoral system the loaded config came with
@@ -3890,13 +3908,15 @@ const isCollegeResult = () => !!(sim && sim.system === 'college');
 // The tile map needs every contest placed on its grid; otherwise electors sit in the hemicycle.
 const hasTileMap = list => !!list && list.length > 0 && list.every(d => Array.isArray(d.tile));
 const collegeMap = () => isCollegeResult() && hasTileMap(sim.dists);
-const DEFAULT_SYSTEM = { type: 'stv', threshold: 0 };
+const DEFAULT_SYSTEM = { type: 'stv', threshold: 0 , scope: 'district' };
 const isListSystem = (t = electoralSystem.type) => t === 'dhondt' || t === 'sainte-lague';
 
 function normaliseSystem(sys) {
   const type = sys && SYSTEMS[sys.type] ? sys.type : DEFAULT_SYSTEM.type;
   const threshold = Math.max(0, Math.min(20, parseFloat(sys && sys.threshold) || 0));
-  return { type, threshold };
+  // The threshold counts each district's vote, or (as in Germany) the national vote.
+  const scope = sys && sys.scope === 'national' ? 'national' : 'district';
+  return { type, threshold, scope };
 }
 
 // First past the post: every seat in the district goes to its largest party
@@ -3934,11 +3954,13 @@ function countHighestAverage(shares, nSeats, active, method, threshold = 0) {
   }
   return won;
 }
+// A threshold on the national vote: lists below it are left out of every district's count.
+const nationalThreshold = () => isListSystem() && electoralSystem.scope === 'national' && electoralSystem.threshold > 0;
 
 function countSeats(shares, nSeats, active, rng, sample = true) {
   const t = electoralSystem.type;
   if (t === 'fptp' || t === 'college') return countPlurality(shares, nSeats, active);
-  if (isListSystem(t)) return countHighestAverage(shares, nSeats, active, t, electoralSystem.threshold || 0);
+  if (isListSystem(t)) return countHighestAverage(shares, nSeats, active, t, nationalThreshold() ? 0 : electoralSystem.threshold || 0);
   return countDistrict(shares, nSeats, active, rng, 8000, sample);
 }
 
@@ -4241,6 +4263,7 @@ function startSimulation(n) {
     }
     const nat = zeroes(ids);
     const fromBase = plan && baselineShares(geo, polls, plan);
+    const national5 = nationalThreshold();
     const rows = districts.map((d, i) => {
       const active = [...d.parties];
       let start = fromBase && fromBase[i] ? fromBase[i] : districtBase(d, geo, polls);
@@ -4255,7 +4278,8 @@ function startSimulation(n) {
       });
       if (regional && d.region && regional[d.region]) start = shiftShares(start, regional[d.region], active);
       const shares = addVariance(start, variance, active, rng);
-      const won = countSeats(shares, d.seats, active, rng, !(fromBase && fromBase[i]));
+            // With a national threshold, the count waits until the whole national vote is known.
+      const won = national5 ? zeroes(ids) : countSeats(shares, d.seats, active, rng, !(fromBase && fromBase[i]));
       ids.forEach(id => nat[id] += won[id]);
       return {
         id: d.id, name: d.name, seats: d.seats, region: d.region || null, ...(d.votes > 0 ? { votes: d.votes } : {}),
@@ -4264,6 +4288,16 @@ function startSimulation(n) {
         ...(prevWin[i] ? { prev: prevWin[i] } : {}),
       };
     });
+      if (national5) {
+      const pv = popularVote(rows);
+      let passed = ids.filter(id => (pv[id] || 0) * 100 >= electoralSystem.threshold);
+      if (!passed.length) passed = ids;
+      rows.forEach(r => {
+        const running = [...r.parties].filter(id => passed.includes(id));
+        r.won = countHighestAverage(r.actualShares, r.seats, running.length ? running : [...r.parties], electoralSystem.type, 0);
+        ids.forEach(id => nat[id] += r.won[id]);
+      });
+    }
     districtsByRun.push(rows);
     if (popular) sampledShares[sampledShares.length - 1] = popularVote(rows);
     results.push(nat);
@@ -7936,6 +7970,7 @@ function updateSystemUI() {
   $('system-sel').value = t;
   $('threshold-row').style.display = isListSystem(t) ? '' : 'none';
   $('threshold-inp').value = electoralSystem.threshold || 0;
+  $('threshold-scope').value = electoralSystem.scope;
   $('transfer-btn').style.display = t === 'stv' ? '' : 'none';
   const base = hasBaselines();
   $('system-hint').textContent = SYSTEMS[t].hint;
@@ -7960,6 +7995,7 @@ function setSystem(type) {
     electoralSystem = normaliseSystem({ ...electoralSystem, threshold: f.value });
     f.value = electoralSystem.threshold;
   });
+    $('threshold-scope').addEventListener('change', e => { electoralSystem = normaliseSystem({ ...electoralSystem, scope: e.target.value }); });
 })();
 
 // The top bar names the assembly: Higher Thermidor's, or the country preset's.
@@ -8120,7 +8156,7 @@ function resetToDefault(skipConfirm = false) {
   coalitions = copyCoalitions(DEFAULT_COALITIONS);
   axis2 = { ...DEFAULT_AXIS2 };
   axisWeight = DEFAULT_AXIS_WEIGHT;
-  regionShares = {};
+  regionShares = defaultRegionShares();
   trends = {};
   scenario = htScenario();
   electoralSystem = { ...DEFAULT_SYSTEM };
