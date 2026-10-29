@@ -45,7 +45,7 @@ Keyboard shortcuts: **R** or **Enter** runs one election, **N** runs the batch, 
 | Canada | 2025 | First past the post, 343 ridings | 343 |
 | Ireland | 2024 | STV, 43 constituencies | 174 |
 | Netherlands | 2025 | D'Hondt, one nationwide district, 0.67% threshold | 150 |
-| Germany | 2025 | Sainte-Laguë on the second vote, 5% threshold | 630 |
+| Germany | 2025 | Sainte-Laguë in 16 states, 5% nationwide threshold | 630 |
 | Portugal | 2025 | D'Hondt in 22 constituencies | 230 |
 | New Zealand | 2023 | Sainte-Laguë on the party vote | 120 |
 
