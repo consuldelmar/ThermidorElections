@@ -4,7 +4,7 @@
   "titleHighlight": "Germany",
   "election": "Federal election, 23 February 2025",
   "source": "Second votes: official final result of the Federal Returning Officer. Compass positions: estimates on the Chapel Hill Expert Survey scales (economic left-right; GAL-TAN as Liberty-Authority).",
-  "notes": "The 630 seats are shared by the nationwide second vote under Sainte-Laguë with a 5% threshold, which is how party totals are set since the 2023 reform. Shares are of all valid votes; minor parties are pooled as 'Other parties' (they would act as one list if the threshold were lowered). Not modelled: the exemption that gave the Danish-minority SSW 1 seat, and the three-constituency rule.",
+  "notes": ""Each state is a district, with the seats it received in 2025, counted by Sainte-Laguë. The 5% threshold is counted on the national vote, as in the real system. Minor parties are pooled as 'Other parties'. Regions group the states for Regional Swing.",
   "system": { "type": "sainte-lague", "threshold": 5 },
   "voteMode": "exact",
   "variance": 0,
@@ -27,14 +27,148 @@
   "secondAxis": { "low": "Liberty", "high": "Authority", "weight": 50 },
   "regions": [],
   "districts": [
+    { "District ID": 1,
+      "District Name": "Schleswig-Holstein",
+      "Seats": 25,
+      "Region": "North",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1880005,
+      "Baseline": { "CDU": 27.576, "AFD": 16.285, "SPD": 18.752, "GRUENE": 14.889, "LINKE": 7.789, "BSW": 3.446, "FDP": 4.689, "OTH": 6.574 }
+    },
     {
-      "District ID": 1,
-      "District Name": "Germany (second vote)",
-      "Seats": 630,
-      "Region": null,
-      "Active Parties": ["CDU", "CSU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
-      "Votes": 49649512,
-      "Baseline": { "CDU": 22.551, "CSU": 5.97, "AFD": 20.803, "SPD": 16.413, "GRUENE": 11.606, "LINKE": 8.775, "BSW": 4.981, "FDP": 4.328, "OTH": 4.573 }
+      "District ID": 2,
+      "District Name": "Hamburg",
+      "Seats": 13,
+      "Region": "North",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1045620,
+      "Baseline": { "CDU": 20.747, "AFD": 10.865, "SPD": 22.737, "GRUENE": 19.291, "LINKE": 14.452, "BSW": 4.009, "FDP": 4.506, "OTH": 3.393 }
+    },
+    {
+      "District ID": 3,
+      "District Name": "Niedersachsen",
+      "Seats": 65,
+      "Region": "North",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 5015336,
+      "Baseline": { "CDU": 28.122, "AFD": 17.836, "SPD": 23.0, "GRUENE": 11.502, "LINKE": 8.086, "BSW": 3.776, "FDP": 4.091, "OTH": 3.588 }
+    },
+    {
+      "District ID": 4,
+      "District Name": "Bremen",
+      "Seats": 5,
+      "Region": "North",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 348256,
+      "Baseline": { "CDU": 20.552, "AFD": 15.074, "SPD": 23.145, "GRUENE": 15.586, "LINKE": 14.777, "BSW": 4.34, "FDP": 3.53, "OTH": 2.996 }
+    },
+    {
+      "District ID": 5,
+      "District Name": "Nordrhein-Westfalen",
+      "Seats": 136,
+      "Region": "West",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 10526134,
+      "Baseline": { "CDU": 30.121, "AFD": 16.819, "SPD": 20.03, "GRUENE": 12.359, "LINKE": 8.333, "BSW": 4.113, "FDP": 4.393, "OTH": 3.832 }
+    },
+    {
+      "District ID": 6,
+      "District Name": "Hessen",
+      "Seats": 45,
+      "Region": "West",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 3580834,
+      "Baseline": { "CDU": 28.872, "AFD": 17.783, "SPD": 18.362, "GRUENE": 12.609, "LINKE": 8.687, "BSW": 4.431, "FDP": 5.05, "OTH": 4.207 }
+    },
+    {
+      "District ID": 7,
+      "District Name": "Rheinland-Pfalz",
+      "Seats": 31,
+      "Region": "West",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 2482358,
+      "Baseline": { "CDU": 30.641, "AFD": 20.09, "SPD": 18.64, "GRUENE": 10.348, "LINKE": 6.521, "BSW": 4.234, "FDP": 4.594, "OTH": 4.933 }
+    },
+    {
+      "District ID": 8,
+      "District Name": "Saarland",
+      "Seats": 8,
+      "Region": "West",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 598800,
+      "Baseline": { "CDU": 26.906, "AFD": 21.592, "SPD": 21.9, "GRUENE": 7.243, "LINKE": 7.361, "BSW": 6.2, "FDP": 4.3, "OTH": 4.498 }
+    },
+    {
+      "District ID": 9,
+      "District Name": "Bayern",
+      "Seats": 101,
+      "Region": "South",
+      "Active Parties": ["CSU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 7972054,
+      "Baseline": { "CSU": 37.18, "AFD": 19.013, "SPD": 11.549, "GRUENE": 12.01, "LINKE": 5.732, "BSW": 3.092, "FDP": 4.18, "OTH": 7.244 }
+    },
+    {
+      "District ID": 10,
+      "District Name": "Baden-Württemberg",
+      "Seats": 79,
+      "Region": "South",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 6349998,
+      "Baseline": { "CDU": 31.604, "AFD": 19.786, "SPD": 14.154, "GRUENE": 13.634, "LINKE": 6.764, "BSW": 4.098, "FDP": 5.631, "OTH": 4.33 }
+    },
+    {
+      "District ID": 11,
+      "District Name": "Berlin",
+      "Seats": 24,
+      "Region": "East",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1949533,
+      "Baseline": { "CDU": 18.266, "AFD": 15.234, "SPD": 15.141, "GRUENE": 16.826, "LINKE": 19.862, "BSW": 6.65, "FDP": 3.8, "OTH": 4.22 }
+    },
+    {
+      "District ID": 12,
+      "District Name": "Brandenburg",
+      "Seats": 21,
+      "Region": "East",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1647338,
+      "Baseline": { "CDU": 18.093, "AFD": 32.493, "SPD": 14.812, "GRUENE": 6.592, "LINKE": 10.698, "BSW": 10.708, "FDP": 3.246, "OTH": 3.358 }
+    },
+    {
+      "District ID": 13,
+      "District Name": "Mecklenburg-Vorpommern",
+      "Seats": 13,
+      "Region": "East",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1021242,
+      "Baseline": { "CDU": 17.817, "AFD": 34.993, "SPD": 12.405, "GRUENE": 5.358, "LINKE": 12.05, "BSW": 10.563, "FDP": 3.2, "OTH": 3.614 }
+    },
+    {
+      "District ID": 14,
+      "District Name": "Sachsen",
+      "Seats": 30,
+      "Region": "East",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 2569572,
+      "Baseline": { "CDU": 19.741, "AFD": 37.298, "SPD": 8.451, "GRUENE": 6.51, "LINKE": 11.304, "BSW": 9.039, "FDP": 3.247, "OTH": 4.411 }
+    },
+    {
+      "District ID": 15,
+      "District Name": "Sachsen-Anhalt",
+      "Seats": 16,
+      "Region": "East",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1337349,
+      "Baseline": { "CDU": 19.183, "AFD": 37.097, "SPD": 10.957, "GRUENE": 4.417, "LINKE": 10.753, "BSW": 11.247, "FDP": 3.085, "OTH": 3.262 }
+    },
+    {
+      "District ID": 16,
+      "District Name": "Thüringen",
+      "Seats": 18,
+      "Region": "East",
+      "Active Parties": ["CDU", "AFD", "SPD", "GRUENE", "LINKE", "BSW", "FDP", "OTH"],
+      "Votes": 1324160,
+      "Baseline": { "CDU": 18.583, "AFD": 38.555, "SPD": 8.754, "GRUENE": 4.236, "LINKE": 15.156, "BSW": 9.422, "FDP": 2.816, "OTH": 2.478 }
     }
   ],
   "regionalPolling": {
