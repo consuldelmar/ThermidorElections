@@ -9,13 +9,13 @@
   "chamberLayout": "hemicycle",
   "trendsEnabled": false,
   "parties": [
-    { "id": "CF", "name": "Civic Front", "colour": "#AD2548", "lr": 3.5, "al": 4, "share": 30.7 },
+    { "id": "CF", "name": "Civic Forum", "colour": "#AD2548", "lr": 3.5, "al": 4, "share": 30.7 },
     { "id": "WCA", "name": "Workers' Cooperative Alliance", "colour": "#E03434", "lr": 1, "al": 3, "share": 14.8 },
     { "id": "MCP", "name": "Moderate Civic Party", "colour": "#8B1CB4", "lr": 6, "al": 7, "share": 9.3 },
     { "id": "GM", "name": "Green Movement", "colour": "#47922c", "lr": 2.5, "al": 3, "share": 11.7 },
     { "id": "FT", "name": "Forward Thermidor", "colour": "#F9921C", "lr": 7.5, "al": 2, "share": 2.6 },
     { "id": "NCG", "name": "New Civic Generation", "colour": "#EFE11B", "lr": 3, "al": 2, "share": 12.4 },
-    { "id": "RMB", "name": "Rural and Maritime Bloc", "colour": "#16c68c", "lr": 5, "al": 4, "share": 7 },
+    { "id": "RMB", "name": "Rural and Maritime Bloc", "colour": "#008189", "lr": 5, "al": 4, "share": 7 },
     { "id": "CiU", "name": "Citizens in Unity", "colour": "#283C84", "lr": 8, "al": 8.5, "share": 10.1 },
     { "id": "Ind", "name": "Independents", "colour": "#777777", "lr": 5, "al": 5, "share": 1.4 }
   ],
